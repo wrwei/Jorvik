@@ -10,7 +10,7 @@
       <profile
             description="MySimpleRML"
             name="MySimpleRML"
-            path="platform:/plugin/srml.example/srml.profile.uml"
+            path="pathmap://MYSIMPLERML/srml.profile.uml"
             provider="RW">
       </profile>
    </extension>
@@ -31,7 +31,7 @@
    <extension
          point="org.eclipse.uml2.uml.generated_package">
       <profile
-            location="platform:/plugin/srml.example/srml.profile.uml#_Y3hZsPi5EeiJRprSWVk0Uw"
+            location="pathmap://MYSIMPLERML/srml.profile.uml#_Y3hZsPi5EeiJRprSWVk0Uw"
             uri="http://mySimpleRML/1.0">
       </profile>
    </extension>
