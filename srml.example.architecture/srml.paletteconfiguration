@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="will.wei_1544104160944">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="Default_1544104160945" label="Default">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="requirement" label="Requirement" description="" kind="CreationTool" toolClassName="">
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example.architecture/srml.elementtypesconfigurations#com.example.srml.Requirement"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="refinement" label="Refinement" kind="ConnectionTool">
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example.architecture/srml.elementtypesconfigurations#com.example.srml.Refinement"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+</paletteconfiguration:PaletteConfiguration>
