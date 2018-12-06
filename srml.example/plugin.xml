@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="MySimpleRML"
+            name="MySimpleRML"
+            path="platform:/plugin/srml.example/srml.profile.uml"
+            provider="RW">
+      </profile>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated srml -->
+      <package
+            uri="http://mySimpleRML/1.0"
+            class="simpleRML.SimpleRMLPackage"
+            genModel="srml.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://MYSIMPLERML/"
+            target="platform:/plugin/srml.example/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="platform:/plugin/srml.example/srml.profile.uml#_Y3hZsPi5EeiJRprSWVk0Uw"
+            uri="http://mySimpleRML/1.0">
+      </profile>
+   </extension>
+
+</plugin>
