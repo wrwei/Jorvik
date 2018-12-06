@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_xrAJ8PiDEeikc79zcnRKQA" id="srmlDomain" name="SRML" description="Simple Requirement ML">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_VBrnwPlBEeiNVIEnxMxCbg" id="srmlStakeholder" name="RequirementEngineer" description="Requirement Engineer" concerns="_SI6q4PlBEeiNVIEnxMxCbg"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_SI6q4PlBEeiNVIEnxMxCbg" id="srmlConcern" name="Requirement" description="Requirement ML"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_F3uEcPiQEeiFGMBGbqew9g" id="srmlDL" name="SRMLDL" description="SRML Description Language" creationCommandClass="srml.example.architecture.SRMLCreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_XnX3oPlBEeiNVIEnxMxCbg" id="reqVIewPoint" name="ReqViewPoint" description="Requirement View Point" concerns="_SI6q4PlBEeiNVIEnxMxCbg" representationKinds="_iTRZoPlBEeiNVIEnxMxCbg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/srml.example.architecture/srml.elementtypesconfigurations#com.example.srml.elementTypes"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_iTRZoPlBEeiNVIEnxMxCbg" id="srml" name="RequirementClassDiag" description="Requirement Class Diagram" concerns="_SI6q4PlBEeiNVIEnxMxCbg" implementationID="PapyrusUMLClassDiagram" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_7ew8QPlCEeiSe5eYV2T2tw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Requirement"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Refinement"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_NxGrMPlDEeiSe5eYV2T2tw" permit="true" multiplicity="-1">
+        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Refinement"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Requirement"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_P1wDgPlDEeiSe5eYV2T2tw" permit="true">
+        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Refinement"/>
+        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Requirement"/>
+      </childRules>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+    <profiles xmi:type="ecore:EPackage" href="http://mySimpleRML/1.0#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

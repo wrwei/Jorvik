@@ -35,5 +35,12 @@
             uri="http://mySimpleRML/1.0">
       </profile>
    </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+      <elementTypeSet
+            clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
+            path="srml.elementtypesconfigurations">
+      </elementTypeSet>
+   </extension>
 
 </plugin>
