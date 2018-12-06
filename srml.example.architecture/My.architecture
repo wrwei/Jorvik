@@ -7,14 +7,13 @@
     <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/srml.example.architecture/srml.elementtypesconfigurations#com.example.srml.elementTypes"/>
     <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_iTRZoPlBEeiNVIEnxMxCbg" id="srml" name="RequirementClassDiag" description="Requirement Class Diagram" concerns="_SI6q4PlBEeiNVIEnxMxCbg" implementationID="PapyrusUMLClassDiagram" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_7ew8QPlCEeiSe5eYV2T2tw" permit="true" elementMultiplicity="1" multiplicity="-1">
-        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Requirement"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Refinement"/>
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </modelRules>
       <owningRules xmi:type="representation:OwningRule" xmi:id="_NxGrMPlDEeiSe5eYV2T2tw" permit="true" multiplicity="-1">
-        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Refinement"/>
-        <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Requirement"/>
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
       </owningRules>
       <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_P1wDgPlDEeiSe5eYV2T2tw" permit="true">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
         <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Refinement"/>
         <stereotypes xmi:type="ecore:EClass" href="http://mySimpleRML/1.0#//Requirement"/>
       </childRules>
