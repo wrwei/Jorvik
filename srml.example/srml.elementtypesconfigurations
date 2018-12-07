@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="com.example.srml.elementTypes" identifier="com.example.srml.elementTypes" name="srml" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="com.example.srml.elementTypes" identifier="example.srml.elementTypes" name="srml" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.srml.Refinement" identifier="com.example.srml.Refinement" name="Refinement" hint="UML::Dependency" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_dyXk0vlCEeiJRprSWVk0Uw" iconPath="/icons/full/obj16/Dependency.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_dyXk0_lCEeiJRprSWVk0Uw">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_dyXk0_lCEeiJRprSWVk0Uw" profileUri="http://mySimpleRML/1.0">
       <stereotypesQualifiedNames>srml::Refinement</stereotypesQualifiedNames>
     </matcherConfiguration>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
   </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.srml.Requirement" identifier="com.example.srml.Requirement" name="Requirement" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_dyXk1flCEeiJRprSWVk0Uw" iconPath="/icons/full/obj16/Class.gif" bundleId="org.eclipse.uml2.uml.edit"/>
-    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_dyXk1vlCEeiJRprSWVk0Uw">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_dyXk1vlCEeiJRprSWVk0Uw" profileUri="http://mySimpleRML/1.0">
       <stereotypesQualifiedNames>srml::Requirement</stereotypesQualifiedNames>
     </matcherConfiguration>
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>

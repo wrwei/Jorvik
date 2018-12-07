@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="will.wei_1544104160944">
-  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="Default_1544104160945" label="Default">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="Default_1544104160945" label="Default" description="">
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="requirement" label="Requirement" description="" kind="CreationTool" toolClassName="">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/UseCase.gif"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example.architecture/srml.elementtypesconfigurations#com.example.srml.Requirement"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example/srml.elementtypesconfigurations#com.example.srml.Refinement"/>
       </elementDescriptors>
     </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="refinement" label="Refinement" kind="ConnectionTool">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="refinement" label="Refinement" kind="ConnectionTool" toolClassName="">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/ActivityFinalNode.gif"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example.architecture/srml.elementtypesconfigurations#com.example.srml.Refinement"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example/srml.elementtypesconfigurations#com.example.srml.Refinement"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
