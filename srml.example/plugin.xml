@@ -38,7 +38,7 @@
    <extension
          point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
       <elementTypeSet
-            clientContextID="org.eclipse.papyrus.infra.services.edit.TypeContext"
+            clientContextID="srml.example.elementTypeSet"
             path="srml.elementtypesconfigurations">
       </elementTypeSet>
    </extension>

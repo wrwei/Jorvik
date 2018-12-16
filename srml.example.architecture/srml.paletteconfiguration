@@ -4,7 +4,7 @@
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="requirement" label="Requirement" description="" kind="CreationTool" toolClassName="">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/UseCase.gif"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example/srml.elementtypesconfigurations#com.example.srml.Refinement"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/srml.example/srml.elementtypesconfigurations#com.example.srml.Requirement"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="refinement" label="Refinement" kind="ConnectionTool" toolClassName="">

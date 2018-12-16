@@ -4,7 +4,8 @@
   <concerns xmi:type="architecture:Concern" xmi:id="_SI6q4PlBEeiNVIEnxMxCbg" id="srmlConcern" name="Requirement" description="Requirement ML"/>
   <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_F3uEcPiQEeiFGMBGbqew9g" id="srmlDL" name="SRMLDL" description="SRML Description Language" creationCommandClass="srml.example.architecture.SRMLCreationCommand">
     <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_XnX3oPlBEeiNVIEnxMxCbg" id="reqVIewPoint" name="ReqViewPoint" description="Requirement View Point" concerns="_SI6q4PlBEeiNVIEnxMxCbg" representationKinds="_iTRZoPlBEeiNVIEnxMxCbg"/>
-    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/srml.example.architecture/srml.elementtypesconfigurations#com.example.srml.elementTypes"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/srml.example/srml.elementtypesconfigurations#com.example.srml.elementTypes"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#_ScP1oFYCEeS0WsAAtVmToA"/>
     <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_iTRZoPlBEeiNVIEnxMxCbg" id="srml" name="RequirementClassDiag" description="Requirement Class Diagram" concerns="_SI6q4PlBEeiNVIEnxMxCbg" implementationID="PapyrusUMLClassDiagram" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
       <modelRules xmi:type="representation:ModelRule" xmi:id="_7ew8QPlCEeiSe5eYV2T2tw" permit="true" elementMultiplicity="1" multiplicity="-1">
         <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
