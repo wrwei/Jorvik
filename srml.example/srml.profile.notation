@@ -10,7 +10,7 @@
     </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_bvlzAvi5EeiJRprSWVk0Uw" type="Class_MetaclassNameLabel"/>
     <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bvmaEPi5EeiJRprSWVk0Uw" x="740" y="80"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bvmaEPi5EeiJRprSWVk0Uw" x="380" y="100"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_bvwLEPi5EeiJRprSWVk0Uw" type="StereotypeComment">
     <styles xmi:type="notation:TitleStyle" xmi:id="_bvwLEfi5EeiJRprSWVk0Uw"/>
@@ -35,7 +35,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cZ9lsPi5EeiJRprSWVk0Uw"/>
     </children>
     <element xmi:type="uml:Stereotype" href="srml.profile.uml#_cZ7JcPi5EeiJRprSWVk0Uw"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cZ8-ofi5EeiJRprSWVk0Uw" x="640" y="300"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cZ8-ofi5EeiJRprSWVk0Uw" x="280" y="320"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_dj2l8Pi5EeiJRprSWVk0Uw" type="Stereotype_Shape">
     <children xmi:type="notation:DecorationNode" xmi:id="_dj2l8vi5EeiJRprSWVk0Uw" type="Stereotype_NameLabel"/>
@@ -52,7 +52,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dj3NBPi5EeiJRprSWVk0Uw"/>
     </children>
     <element xmi:type="uml:Stereotype" href="srml.profile.uml#_dj1-4Pi5EeiJRprSWVk0Uw"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dj2l8fi5EeiJRprSWVk0Uw" x="920" y="300"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dj2l8fi5EeiJRprSWVk0Uw" x="560" y="380"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_e_7iYPi5EeiJRprSWVk0Uw" type="Class_MetaclassShape">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e_8Jcvi5EeiJRprSWVk0Uw" source="Stereotype_Annotation">
@@ -64,7 +64,7 @@
     </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_e_8JcPi5EeiJRprSWVk0Uw" type="Class_MetaclassNameLabel"/>
     <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_8Jcfi5EeiJRprSWVk0Uw" x="940" y="80"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_8Jcfi5EeiJRprSWVk0Uw" x="540" y="100"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_fAFTY_i5EeiJRprSWVk0Uw" type="StereotypeComment">
     <styles xmi:type="notation:TitleStyle" xmi:id="_fAFTZPi5EeiJRprSWVk0Uw"/>
@@ -110,8 +110,8 @@
   <edges xmi:type="notation:Connector" xmi:id="_fqtkwPi5EeiJRprSWVk0Uw" type="Extension_Edge" source="_dj2l8Pi5EeiJRprSWVk0Uw" target="_e_7iYPi5EeiJRprSWVk0Uw">
     <styles xmi:type="notation:FontStyle" xmi:id="_fqtkwfi5EeiJRprSWVk0Uw"/>
     <element xmi:type="uml:Extension" href="srml.profile.uml#_fqjzwPi5EeiJRprSWVk0Uw"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fqtkwvi5EeiJRprSWVk0Uw" points="[1020, 340, -643984, -643984]$[980, 130, -643984, -643984]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq5yAPi5EeiJRprSWVk0Uw" id="(1.0,0.4)"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fqtkwvi5EeiJRprSWVk0Uw" points="[620, 360, -643984, -643984]$[580, 150, -643984, -643984]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq5yAPi5EeiJRprSWVk0Uw" id="(0.4,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fq5yAfi5EeiJRprSWVk0Uw" id="(0.4,1.0)"/>
   </edges>
 </notation:Diagram>
