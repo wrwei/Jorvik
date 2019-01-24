@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_ziERQBsJEem84eqi83O6FA" id="simpleTreeDomain" name="SimpleTree" description="Simple Tree">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_36V5EBsJEem84eqi83O6FA" id="treeEngineer" name="TreeEngineer" description="Tree Engineer" concerns="_4LxnUBsJEem84eqi83O6FA"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_4LxnUBsJEem84eqi83O6FA" id="treeConcern" name="TreeConcern" description="TreeConcern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_CKGRoBsKEem84eqi83O6FA" id="treeDL" name="TreeDL" creationCommandClass="tree.profile.example.architecture.TreeCreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_D_lIYBsREem84eqi83O6FA" id="treeViewPoint" name="TreeViewPoint" concerns="_4LxnUBsJEem84eqi83O6FA" representationKinds="_H5FJgBsREem84eqi83O6FA"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="platform:/plugin/tree.profile.example/tree.elementtypesconfigurations#com.example.tree.elementTypes"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_H5FJgBsREem84eqi83O6FA" id="treeDiag" name="TreeDiag" concerns="_4LxnUBsJEem84eqi83O6FA" implementationID="PapyrusUMLClassDiagram" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_RABf4BsREem84eqi83O6FA" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_Tgji8BsREem84eqi83O6FA" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_VLeMoBsREem84eqi83O6FA" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="platform:/plugin/tree.profile.example.architecture/tree.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

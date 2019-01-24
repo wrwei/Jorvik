@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="My Tree Profile"
+            name="TreeProfile"
+            path="pathmap://MYTREE/tree.profile.example.profile.uml">
+      </profile>
+   </extension>
+
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://MYTREE/"
+            target="platform:/plugin/tree.profile.example/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://MYTREE/tree.profile.example.profile.uml#__qSg8BsBEem84eqi83O6FA"
+            uri="http://tree.example/1.0">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
+      <elementTypeSet
+            clientContextID="tree.profile.example.elementTypeSet"
+            path="treeold.elementtypesconfigurations">
+      </elementTypeSet>
+   </extension>
+
+
+</plugin>
