@@ -1,0 +1,21 @@
+[appliedStereotypes~=Node] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	bold:true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+Compartment {
+    visible:false;
+}
+
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+[appliedStereotypes~=Node] {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationComponent.svg';
+}
