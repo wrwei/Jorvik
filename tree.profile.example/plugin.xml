@@ -24,13 +24,6 @@
             uri="http://tree.example/1.0">
       </profile>
    </extension>
-   <extension
-         point="org.eclipse.papyrus.infra.types.core.elementTypeSetConfiguration">
-      <elementTypeSet
-            clientContextID="tree.profile.example.elementTypeSet"
-            path="treeold.elementtypesconfigurations">
-      </elementTypeSet>
-   </extension>
 
 
 </plugin>

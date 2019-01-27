@@ -14,13 +14,6 @@
             provider="RW">
       </profile>
    </extension>
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated srml -->
-      <package
-            uri="http://mySimpleRML/1.0"
-            class="simpleRML.SimpleRMLPackage"
-            genModel="srml.genmodel"/>
-   </extension>
    <extension
          point="org.eclipse.emf.ecore.uri_mapping">
       <mapping
