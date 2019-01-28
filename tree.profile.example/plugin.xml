@@ -17,13 +17,7 @@
             target="platform:/plugin/tree.profile.example/">
       </mapping>
    </extension>
-   <extension
-         point="org.eclipse.uml2.uml.generated_package">
-      <profile
-            location="pathmap://MYTREE/tree.profile.example.profile.uml#__qSg8BsBEem84eqi83O6FA"
-            uri="http://tree.example/1.0">
-      </profile>
-   </extension>
+   
 
 
 </plugin>

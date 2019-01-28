@@ -48,18 +48,27 @@ import UMLProfileGeneration.popup.Activator;
 @SuppressWarnings("restriction")
 public class UtilityMethods {
 
+	//name
 	String name;
+	
+	//progress monitor
 	IProgressMonitor progressMonitor = new NullProgressMonitor();
+	
+	//get current workspace
 	IWorkspace workspace = ResourcesPlugin.getWorkspace();
+	
+	//get root of workspace
 	IWorkspaceRoot root = workspace.getRoot();
+	
 	IProject project;
 
 	public UtilityMethods(String theSelectedFilePath) {
+		//get name of the overall EPackage of a certain emfatic source
 		this.name = getNameOfEPackage(theSelectedFilePath);
 		project = root.getProject(name);
 	}
 
-	public IProject createPluginProject(String theSelectedFile) throws CoreException {
+	public IProject createPluginProject() throws CoreException {
 		if (!project.exists()) {
 			project.create(progressMonitor);
 		}
@@ -68,6 +77,139 @@ public class UtilityMethods {
 		desc.setNatureIds(new String[] { PDE.PLUGIN_NATURE });
 		project.setDescription(desc, progressMonitor);
 		return project;
+	}
+	
+	public void createThePluginXml(String theSelectedFilePath, String theDestinationIProjectFolder) throws Exception {
+		//get the source ecore metamodel
+		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
+
+		//target model is plain XML
+		PlainXmlModel targetModel = new PlainXmlModel();
+		StringProperties targetProperties = new StringProperties();
+		targetProperties.put(PlainXmlModel.PROPERTY_FILE,
+				theDestinationIProjectFolder + File.separator + "plugin.xml");
+		targetProperties.put(PlainXmlModel.PROPERTY_NAME, "Target");
+		targetProperties.put(PlainXmlModel.PROPERTY_READONLOAD, "false");
+		targetProperties.put(PlainXmlModel.PROPERTY_STOREONDISPOSAL, "true");
+		targetModel.load(targetProperties);
+
+		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel));
+		//execute pluginXMLGenerationM2M on source+target
+		doTheETLTransformation(allTheModels, "files/pluginXmlGenerationM2M.etl");
+	}
+	
+	public void createThebuildPropertiesFile(String theDestinationIProjectFolder) throws IOException {
+		BufferedWriter output = new BufferedWriter(
+				new FileWriter(theDestinationIProjectFolder + File.separator + "build.properties", false));
+		try {
+			output.write("bin.includes = META-INF/,\\\n" + "plugin.xml\n");
+			output.close();
+		} catch (IOException ex) {
+			System.out.println("Error writing to file...");
+		}
+	}
+	
+	public void createTheManifestFile(String theSelectedFilePath, String theDestinationIProjectFolder) throws IOException {
+		new File(theDestinationIProjectFolder + File.separator + "META-INF").mkdir();
+		BufferedWriter output = new BufferedWriter(new FileWriter(
+				theDestinationIProjectFolder + File.separator + "META-INF" + File.separator + "MANIFEST.MF",
+				false));
+		try {
+			output.write("Manifest-Version: 1.0\n" + "Bundle-ManifestVersion: 2\n" + "Bundle-Name: " + name + "\n"
+					+ "Bundle-SymbolicName: " + name + ";singleton:=true\n" + "Bundle-Version: 1.0.0.qualifier\n"
+					+ "Require-Bundle:"
+					+ " org.eclipse.ui,\n"
+					+ " org.eclipse.core.runtime,\n"
+					+ " org.eclipse.core.resources,\n"
+					+ " org.eclipse.emf.core,\n"
+					+ " org.eclipse.uml2.types,\n"
+					+ " org.eclipse.uml2.uml,\n"
+					+ " org.eclipse.papyrus.uml.diagram.common,\n"
+					+ " org.eclipse.papyrus.uml.extensionpoints,\n"
+					+ " org.eclipse.papyrus.uml.diagram.clazz,\n"
+					+ " org.eclipse.papyrus.infra.core,\n"
+					+ " org.eclipse.papyrus.infra.types,\n"
+					+ " org.eclipse.papyrus.infra.types.core,\n"
+					+ " org.eclipse.papyrus.infra.architecture,\n"
+					+ " org.eclipse.gmf.runtime.diagram.core\n");
+			output.close();
+		} catch (IOException ex) {
+			System.out.println("Error writing to file...");
+		}
+	}
+	
+	public void createTheProfileUmlFile(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
+
+		// The emfatic (ecore) source
+		EmfModel sourceModel = 	createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
+		// The ultimate goal: the UML profile
+		UmlModel targetModel = createAndLoadAUmlModel("http://www.eclipse.org/uml2/5.0.0/UML", theDestinationIProjectFolder + File.separator + "model.profile.uml", "Profile", "false", "true");
+		// The UML Metamodel
+		UmlModel umlMetaModel = createAndLoadAUmlModel("http://www.eclipse.org/emf/2002/Ecore", "pathmap://UML_METAMODELS/UML.metamodel.uml", "UMLM2", "true", "false");
+		// The UML Ecore Metamodel
+		EmfMetaModel umlEcoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UMLEcore", "true", "false");
+		// The ECore Metamodel
+		EmfMetaModel ECoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/emf/2002/Ecore", "EcoreM2", "true", "false");
+		// The Ecore Primitive Types
+		UmlModel ecorePrimitiveTypesModel = new UmlModel();
+		StringProperties ecorePrimitiveTypesModelProperties = new StringProperties();
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_MODEL_FILE,
+				"pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml");
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_NAME, "ECorePrimitiveTypes");
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_READONLOAD, "true");
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_STOREONDISPOSAL, "false");
+		ecorePrimitiveTypesModel.load(ecorePrimitiveTypesModelProperties, (IRelativePathResolver) null);
+		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umlMetaModel, umlMetaModel, umlEcoreMetaModel, ECoreMetaModel, ecorePrimitiveTypesModel));
+		doTheETLTransformation(allTheModels, "files/emf2umlprofile2Annotations.etl");
+		
+		// The emfatic (ecore) source
+		sourceModel = 	createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
+		// The UML Metamodel
+		umlMetaModel = createAndLoadAUmlModel("http://www.eclipse.org/emf/2002/Ecore", "pathmap://UML_METAMODELS/UML.metamodel.uml", "UMLM2", "true", "false");
+		// The UML Ecore Metamodel
+		umlEcoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UMLEcore", "true", "false");
+		// The ECore Metamodel
+		ECoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/emf/2002/Ecore", "EcoreM2", "true", "false");
+		// The Ecore Primitive Types
+		ecorePrimitiveTypesModel = new UmlModel();
+		ecorePrimitiveTypesModelProperties = new StringProperties();
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_MODEL_FILE,
+						"pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml");
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_NAME, "ECorePrimitiveTypes");
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_READONLOAD, "true");
+		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_STOREONDISPOSAL, "false");
+		ecorePrimitiveTypesModel.load(ecorePrimitiveTypesModelProperties, (IRelativePathResolver) null);
+		allTheModels.clear();
+		targetModel = createAndLoadAUmlModel("http://www.eclipse.org/uml2/5.0.0/UML", theDestinationIProjectFolder + File.separator + "model.profile.uml", "Profile", "true", "true");
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umlMetaModel, umlMetaModel, umlEcoreMetaModel, ECoreMetaModel, ecorePrimitiveTypesModel));
+		doTheUsersETLTransformation(allTheModels, "emf2umlprofile2Annotations.etl", theSelectedFileParentIProject);
+	}
+	
+	public void createTheModelProfileNotationFile(String theDestinationIProjectFolder) throws IOException {
+		BufferedWriter output = new BufferedWriter(
+				new FileWriter(theDestinationIProjectFolder + File.separator + "model.profile.notation", false));
+		try {
+			output.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+					+ "<xmi:XMI xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"/>\n");
+			output.close();
+		} catch (IOException ex) {
+			System.out.println("Error writing to file...");
+		}
+	}
+
+	public void createTheModelProfileDiFile(String theDestinationIProjectFolder) throws IOException {
+		BufferedWriter output = new BufferedWriter(
+				new FileWriter(theDestinationIProjectFolder + File.separator + "model.profile.di", false));
+		try {
+			output.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+					+ "<architecture:ArchitectureDescription xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\" "
+					+ "xmlns:architecture=\"http://www.eclipse.org/papyrus/infra/core/architecture\" contextId=\"org.eclipse.papyrus.uml.architecture.Profile\"/>");
+			output.close();
+		} catch (IOException ex) {
+			System.out.println("Error writing to file...");
+		}
 	}
 
 	public void createThePaletteConfiguration(String theSelectedFilePath, String theProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
@@ -228,7 +370,7 @@ public class UtilityMethods {
 	public void createTheElementTypeConfigurations(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
 		// Our transformation
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.1", theDestinationIProjectFolder + File.separator
+		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "false", "true");
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel));
@@ -241,142 +383,6 @@ public class UtilityMethods {
 		allTheModels.clear();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel));
 		doTheUsersETLTransformation(allTheModels, "elementTypesConfigurationsM2M.etl", theSelectedFileParentIProject);
-	}
-
-	public void createThePluginXml(String theSelectedFilePath, String theDestinationIProjectFolder) throws Exception {
-		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-
-		PlainXmlModel targetModel = new PlainXmlModel();
-		StringProperties targetProperties = new StringProperties();
-		targetProperties.put(PlainXmlModel.PROPERTY_FILE,
-				theDestinationIProjectFolder + File.separator + "plugin.xml");
-		targetProperties.put(PlainXmlModel.PROPERTY_NAME, "Target");
-		targetProperties.put(PlainXmlModel.PROPERTY_READONLOAD, "false");
-		targetProperties.put(PlainXmlModel.PROPERTY_STOREONDISPOSAL, "true");
-		targetModel.load(targetProperties);
-
-		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel));
-		doTheETLTransformation(allTheModels, "files/pluginXmlGenerationM2M.etl");
-	}
-
-	public void createTheManifestFile(String theSelectedFilePath, String theDestinationIProjectFolder) throws IOException {
-		new File(theDestinationIProjectFolder + File.separator + "META-INF").mkdir();
-		BufferedWriter output = new BufferedWriter(new FileWriter(
-				theDestinationIProjectFolder + File.separator + "META-INF" + File.separator + "MANIFEST.MF",
-				false));
-		try {
-			output.write("Manifest-Version: 1.0\n" + "Bundle-ManifestVersion: 2\n" + "Bundle-Name: " + name + "\n"
-					+ "Bundle-SymbolicName: " + name + ";singleton:=true\n" + "Bundle-Version: 1.0.0.qualifier\n"
-					+ "Require-Bundle: org.eclipse.papyrus.uml.diagram.common,\n"
-					+ " org.eclipse.papyrus.uml.extensionpoints,\n"
-					+ " org.eclipse.papyrus.uml.diagram.clazz;bundle-version=\"2.0.0\",\n"
-					+ " org.eclipse.ui,\n"
-					+ " org.eclipse.core.runtime,\n"
-					+ " org.eclipse.papyrus.infra.viewpoints.policy,\n"
-					+ " org.eclipse.papyrus.uml.tools.utils,\n"
-					+ " org.eclipse.papyrus.uml.diagram.common,\n"
-					+ " org.eclipse.uml2.uml,\n"
-					+ " org.eclipse.core.resources,\n"
-					+ " org.eclipse.papyrus.infra.viewpoints.policy,\n"
-					+ " org.eclipse.papyrus.infra.gmfdiag.common,\n"
-					+ " org.eclipse.papyrus.uml.diagram.composite,\n"
-					+ " org.eclipse.papyrus.infra.core.log,\n"
-					+ " org.eclipse.papyrus.uml.tools,\n"
-					+ " org.eclipse.papyrus.uml.diagram.communication,\n"
-					+ " org.eclipse.papyrus.uml.diagram.clazz,\n"
-					+ " org.eclipse.papyrus.uml.diagram.activity,\n"
-					+ " org.eclipse.gmf.tooling.runtime,\n"
-					+ " org.eclipse.papyrus.infra.core,\n"
-					+ " org.eclipse.papyrus.infra.types.core,\n"
-					+ " org.eclipse.gmf.runtime.diagram.core\n");
-			output.close();
-		} catch (IOException ex) {
-			System.out.println("Error writing to file...");
-		}
-	}
-
-	public void createTheProfileUmlFile(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
-
-		// The emfatic (ecore) source
-		EmfModel sourceModel = 	createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		// The ultimate goal: the UML profile
-		UmlModel targetModel = createAndLoadAUmlModel("http://www.eclipse.org/uml2/5.0.0/UML", theDestinationIProjectFolder + File.separator + "model.profile.uml", "Profile", "false", "true");
-		// The UML Metamodel
-		UmlModel umlMetaModel = createAndLoadAUmlModel("http://www.eclipse.org/emf/2002/Ecore", "pathmap://UML_METAMODELS/UML.metamodel.uml", "UMLM2", "true", "false");
-		// The UML Ecore Metamodel
-		EmfMetaModel umlEcoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UMLEcore", "true", "false");
-		// The ECore Metamodel
-		EmfMetaModel ECoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/emf/2002/Ecore", "EcoreM2", "true", "false");
-		// The Ecore Primitive Types
-		UmlModel ecorePrimitiveTypesModel = new UmlModel();
-		StringProperties ecorePrimitiveTypesModelProperties = new StringProperties();
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_MODEL_FILE,
-				"pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml");
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_NAME, "ECorePrimitiveTypes");
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_READONLOAD, "true");
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_STOREONDISPOSAL, "false");
-		ecorePrimitiveTypesModel.load(ecorePrimitiveTypesModelProperties, (IRelativePathResolver) null);
-		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umlMetaModel, umlMetaModel, umlEcoreMetaModel, ECoreMetaModel, ecorePrimitiveTypesModel));
-		doTheETLTransformation(allTheModels, "files/emf2umlprofile2Annotations.etl");
-		
-		// The emfatic (ecore) source
-		sourceModel = 	createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		// The UML Metamodel
-		umlMetaModel = createAndLoadAUmlModel("http://www.eclipse.org/emf/2002/Ecore", "pathmap://UML_METAMODELS/UML.metamodel.uml", "UMLM2", "true", "false");
-		// The UML Ecore Metamodel
-		umlEcoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UMLEcore", "true", "false");
-		// The ECore Metamodel
-		ECoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/emf/2002/Ecore", "EcoreM2", "true", "false");
-		// The Ecore Primitive Types
-		ecorePrimitiveTypesModel = new UmlModel();
-		ecorePrimitiveTypesModelProperties = new StringProperties();
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_MODEL_FILE,
-						"pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml");
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_NAME, "ECorePrimitiveTypes");
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_READONLOAD, "true");
-		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_STOREONDISPOSAL, "false");
-		ecorePrimitiveTypesModel.load(ecorePrimitiveTypesModelProperties, (IRelativePathResolver) null);
-		allTheModels.clear();
-		targetModel = createAndLoadAUmlModel("http://www.eclipse.org/uml2/5.0.0/UML", theDestinationIProjectFolder + File.separator + "model.profile.uml", "Profile", "true", "true");
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umlMetaModel, umlMetaModel, umlEcoreMetaModel, ECoreMetaModel, ecorePrimitiveTypesModel));
-		doTheUsersETLTransformation(allTheModels, "emf2umlprofile2Annotations.etl", theSelectedFileParentIProject);
-	}
-
-	public void createTheModelProfileNotationFile(String theDestinationIProjectFolder) throws IOException {
-		BufferedWriter output = new BufferedWriter(
-				new FileWriter(theDestinationIProjectFolder + File.separator + "model.profile.notation", false));
-		try {
-			output.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-					+ "<xmi:XMI xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"/>\n");
-			output.close();
-		} catch (IOException ex) {
-			System.out.println("Error writing to file...");
-		}
-	}
-
-	public void createTheModelProfileDiFile(String theDestinationIProjectFolder) throws IOException {
-		BufferedWriter output = new BufferedWriter(
-				new FileWriter(theDestinationIProjectFolder + File.separator + "model.profile.di", false));
-		try {
-			output.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-					+ "<xmi:XMI xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"/>\n");
-			output.close();
-		} catch (IOException ex) {
-			System.out.println("Error writing to file...");
-		}
-	}
-
-	public void createThebuildPropertiesFile(String theDestinationIProjectFolder) throws IOException {
-		BufferedWriter output = new BufferedWriter(
-				new FileWriter(theDestinationIProjectFolder + File.separator + "build.properties", false));
-		try {
-			output.write("bin.includes = META-INF/,\\\n" + "plugin.xml\n");
-			output.close();
-		} catch (IOException ex) {
-			System.out.println("Error writing to file...");
-		}
 	}
 
 	public void copyTheIcons(String theSelectedFilePath, String theSelectedFileParentFolder, String theDestinationIProjectFolder) throws IOException {
@@ -474,6 +480,8 @@ public class UtilityMethods {
 		return shapePaths;
 	}
 
+	
+	//get the name of the overall containing package
 	private String getNameOfEPackage(String theSelectedFilePath) {
 		// The emfatic (ecore) source
 		File f = new File(theSelectedFilePath);

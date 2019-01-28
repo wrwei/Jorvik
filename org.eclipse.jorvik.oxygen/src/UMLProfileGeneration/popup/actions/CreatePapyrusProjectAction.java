@@ -23,10 +23,18 @@ import UMLProfileGeneration.UtilityMethods;
 
 public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 
+	//the shell
 	private Shell shell;
+	
+	//the selected file path
 	private String theSelectedFilePath;
+	
+	//the selected file parent folder, the destination project folder
 	private String theSelectedFileParentFolder, theDestinationProjectFolder;
+	
+	//the selected file parent project
 	private IProject theSelectedFileParentIProject;
+	
 	
 	/**
 	 * Constructor for Action1.
@@ -39,10 +47,15 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 	 * @see IObjectActionDelegate#setActivePart(IAction, IWorkbenchPart)
 	 */
 	public void setActivePart(IAction action, IWorkbenchPart targetPart) {
+		//get current shell
 		shell = targetPart.getSite().getShell();
+		//get selected file
 		IStructuredSelection theSelectedFile = (IStructuredSelection) targetPart.getSite().getWorkbenchWindow().getSelectionService().getSelection();
+		//get first element
         Object firstElement = theSelectedFile.getFirstElement();
+        //get file
         IFile file = (IFile) Platform.getAdapterManager().getAdapter(firstElement,IFile.class);
+        //populate strings and parent iProject
         theSelectedFileParentFolder = file.getParent().getLocation().toOSString();
         theDestinationProjectFolder = file.getProject().getLocation().toOSString();
         theSelectedFilePath = file.getLocation().toOSString();
