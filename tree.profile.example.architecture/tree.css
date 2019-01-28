@@ -17,5 +17,5 @@ Compartment[kind="symbol"]  {
 }
 
 [appliedStereotypes~=Node] {
-	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationComponent.svg';
+	svgFile: 'platform:/plugin/tree.profile.example.architecture/shapes/ApplicationComponent.svg';
 }
