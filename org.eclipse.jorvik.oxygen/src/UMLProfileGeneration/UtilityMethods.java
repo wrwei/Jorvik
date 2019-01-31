@@ -372,8 +372,10 @@ public class UtilityMethods {
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "false", "true");
+		
+		EmfModel umltypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", "platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations", "UMLTypes", "true", "false");
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel));
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umltypes));
 		doTheETLTransformation(allTheModels, "files/elementTypesConfigurationsM2M.etl");
 
 		// User's transformation, if any
