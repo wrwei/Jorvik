@@ -374,6 +374,8 @@ public class UtilityMethods {
 				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "false", "true");
 		
 		EmfModel umltypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", "platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations", "UMLTypes", "true", "false");
+		EmfModel umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", "platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDI", "true", "false");
+
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umltypes));
 		doTheETLTransformation(allTheModels, "files/elementTypesConfigurationsM2M.etl");

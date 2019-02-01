@@ -19,8 +19,7 @@ guard : c.getEAnnotation("Node").isDefined()
 	stc1.identifier = ePackName + "." + c.name;
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	
-	var metamodelTypeConfig = new Target!MetamodelTypeConfiguration;
-	metamodelTypeConfig.href = "platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class";
+	var metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Class").first();
 	
 	var matcherConfig = new Target!StereotypeApplicationMatcherConfiguration;
 	matcherConfig.profileUri = ePackNSUri;
@@ -34,24 +33,48 @@ guard : c.getEAnnotation("Node").isDefined()
 	stc2.identifier = ePackName + "." + c.name + ".shape";
 	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	
-	var specialisationTypeConfig = new Target!SpecializationTypeConfiguration;
-	specialisationTypeConfig.href = "platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class";
-	
+	var specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Class_Shape").first();
 	stc2.specializedTypes.add(specialisationTypeConfig);
 	stc2.specializedTypes.add(stc1);
 }
 
 rule associationClass2Shape 
 transform c : Source!EClass 
-to stc1 : Target!SpecializationTypeConfiguration {
+to stc1 : Target!SpecializationTypeConfiguration, stc2 : Target!SpecializationTypeConfiguration{
 guard : c.getEAnnotation("Edge").isDefined()
 	var base = c.getEAnnotation("Edge").details.get("base").firstToUpperCase();
 	stc1.name = c.name + " edge";
-	stc1.hint = base + "_Edge";
+	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc1.identifier = ePackName + "." + c.name + "_Edge";
-	stc1.specializedTypesId.add(ePackName + "." + c.name);
-	stc1.specializedTypesId.add("org.eclipse.papyrus.umldi." + base + "_Edge");
-	theConfiguration.elementTypeConfigurations.add(stc1);
+	var metamodelTypeConfig = null;
+	if(base = "association") {
+		stc1.hint = "UML::Association";
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.AssociationBase").first();
+	}
+	else if(base == "dependency")
+	{
+		stc1.hint = "UML::Dependency";
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Dependency").first();
+	}
+	
+	stc1.specializedTypes.add(metamodelTypeConfig);
+	
+	
+	stc2.name = c.name + " shape";
+	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
+	stc2.identifier = ePackName + "." + c.name + ".shape";
+	var specialisationTypeConfig = null;
+	if(base = "association") {
+		stc2.hint = "Association_Edge";
+		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Association_Edge").first();
+	}
+	else if(base = "dependency"){
+		stc2.hint = "Dependency_Edge";
+		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Dependency_Edge").first();
+	}
+	
+	stc2.specializedTypes.add(specialisationTypeConfig);
+	stc2.specializedTypes.add(stc1);
 }
 
 rule refEdge2Tool
