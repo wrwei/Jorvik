@@ -1,4 +1,4 @@
-package UMLProfileGeneration.popup;
+package profile.generation.activator;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;

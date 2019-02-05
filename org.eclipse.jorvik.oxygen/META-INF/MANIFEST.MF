@@ -25,3 +25,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
 Automatic-Module-Name: org.eclipse.jorvik.oxygen
+Bundle-Activator: profile.generation.activator.Activator

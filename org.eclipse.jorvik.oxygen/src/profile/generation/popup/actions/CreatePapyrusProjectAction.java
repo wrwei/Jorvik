@@ -1,4 +1,4 @@
-package UMLProfileGeneration.popup.actions;
+package profile.generation.popup.actions;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
@@ -19,7 +19,7 @@ import org.eclipse.ui.IObjectActionDelegate;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.PlatformUI;
 
-import UMLProfileGeneration.UtilityMethods;
+import profile.generation.util.UtilityMethods;
 
 public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 

@@ -1,4 +1,4 @@
-package UMLProfileGeneration.views;
+package profile.generation.views;
 
 
 import org.eclipse.swt.widgets.Composite;

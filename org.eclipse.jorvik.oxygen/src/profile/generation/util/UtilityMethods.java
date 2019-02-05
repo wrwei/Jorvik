@@ -1,4 +1,4 @@
-package UMLProfileGeneration;
+package profile.generation.util;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -45,7 +45,7 @@ import org.eclipse.epsilon.eol.models.IRelativePathResolver;
 import org.eclipse.epsilon.etl.EtlModule;
 import org.eclipse.pde.internal.core.natures.PDE;
 
-import UMLProfileGeneration.popup.Activator;
+import profile.generation.activator.Activator;
 
 @SuppressWarnings("restriction")
 public class UtilityMethods {
@@ -164,6 +164,7 @@ public class UtilityMethods {
 		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_READONLOAD, "true");
 		ecorePrimitiveTypesModelProperties.put(UmlModel.PROPERTY_STOREONDISPOSAL, "false");
 		ecorePrimitiveTypesModel.load(ecorePrimitiveTypesModelProperties, (IRelativePathResolver) null);
+		
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umlMetaModel, umlMetaModel, umlEcoreMetaModel, ECoreMetaModel, ecorePrimitiveTypesModel));
 		doTheETLTransformation(allTheModels, "files/emf2umlprofile2Annotations.etl");
