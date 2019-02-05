@@ -89,8 +89,11 @@ public class UtilityMethods {
 		IProjectDescription desc = project.getDescription();
 		desc.setNatureIds(new String[] { PDE.PLUGIN_NATURE });
 		project.setDescription(desc, progressMonitor);
-		IFolder folder = project.getFolder("src");
-		folder.create(IResource.NONE, true, progressMonitor);
+		IFolder srcFolder = project.getFolder("src");
+		srcFolder.create(IResource.NONE, true, progressMonitor);
+		IFolder resourcesFolder = project.getFolder("resources");
+		resourcesFolder.create(IResource.NONE, true, progressMonitor);
+
 		return project;
 	}
 	
@@ -137,7 +140,7 @@ public class UtilityMethods {
 					+ " org.eclipse.ui,\n"
 					+ " org.eclipse.core.runtime,\n"
 					+ " org.eclipse.core.resources,\n"
-					+ " org.eclipse.emf.core,\n"
+					+ " org.eclipse.emf.ecore,\n"
 					+ " org.eclipse.uml2.types,\n"
 					+ " org.eclipse.uml2.uml,\n"
 					+ " org.eclipse.papyrus.uml.diagram.common,\n"
@@ -271,7 +274,12 @@ public class UtilityMethods {
 		//emf source
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		//target architecture model
-		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/core/architecture", theDestinationIProjectFolder + File.separator
+		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/core/architecture,"
+				+ "http://www.eclipse.org/emf/2002/Ecore, "
+				+ "http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2, "
+				+ "http://www.eclipse.org/papyrus/infra/gmfdiag/representation, "
+				+ "http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8, "
+				+ "http://www.eclipse.org/papyrus/infra/core/architecture/representation", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + name + ".architecture", "Architecture", "false", "true");
 		//element types model
 		EmfModel elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
@@ -284,12 +292,17 @@ public class UtilityMethods {
 
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, elementTypes, palette, umlMetamodel));
-		doTheETLTransformation(allTheModels, "files/architecture.eol");
+		doTheETLTransformation(allTheModels, "files/architecture_gen.eol");
 
 		// User's transformation, if any
 		sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/core/architecture", theDestinationIProjectFolder + File.separator
-				+ "resources" + File.separator + name + ".architecture", "Target", "false", "true");
+		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/core/architecture,"
+				+ "http://www.eclipse.org/emf/2002/Ecore, "
+				+ "http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2, "
+				+ "http://www.eclipse.org/papyrus/infra/gmfdiag/representation, "
+				+ "http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8, "
+				+ "http://www.eclipse.org/papyrus/infra/core/architecture/representation", theDestinationIProjectFolder + File.separator
+				+ "resources" + File.separator + name + ".architecture", "Architecture", "false", "true");
 		
 		elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
 				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
@@ -301,7 +314,7 @@ public class UtilityMethods {
 
 		allTheModels.clear();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, elementTypes, palette, umlMetamodel));
-		doTheUsersETLTransformation(allTheModels, "architectureM2M.eol", theSelectedFileParentIProject);
+		doTheUsersETLTransformation(allTheModels, "architecture_gen.eol", theSelectedFileParentIProject);
 	}
 	
 	public void createCreationCommand(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
@@ -337,7 +350,7 @@ public class UtilityMethods {
 		EglFileGeneratingTemplate template = (EglFileGeneratingTemplate) factory.load(EglFile);
 		template.process();
 		File target = new File(theDestinationIProjectFolder + File.separator + "resources" + File.separator + name
-				+ "diagram.css");
+				+ "Diagram.css");
 		target.createNewFile();
 		template.generate(target.toURI().toString());
 		
