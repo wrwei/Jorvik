@@ -74,45 +74,61 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 				public void run(IProgressMonitor monitor) {
 					SubMonitor subMonitor = SubMonitor.convert(monitor, 140);
 					try {
-						//tahh.createPluginProject(theSelectedFilePath);
-						subMonitor.setTaskName("Generating the Palette Configuration.");
-						tahh.createThePaletteConfiguration(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
-						subMonitor.split(10);
+						//generate plugin.xml
 						subMonitor.setTaskName("Generating the Plugin XML.");
 						tahh.createThePluginXml(theSelectedFilePath, theDestinationProjectFolder);
 						subMonitor.split(10);
+						
+						//generate the UML profile
 						subMonitor.setTaskName("Generating the UML Profile.");
 						tahh.createTheProfileUmlFile(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
 						subMonitor.split(30);
-						subMonitor.setTaskName("Generating the Project Manifest.");
-						tahh.createTheManifestFile(theSelectedFilePath, theDestinationProjectFolder);
-						subMonitor.split(10);
 						
-//						subMonitor.setTaskName("Generating the Diagram Configuration.");
-//						tahh.createTheDiagramConfiguration(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
-//						subMonitor.split(10);
-						subMonitor.setTaskName("Generating the Element Type Configuration.");
-						tahh.createTheElementTypeConfigurations(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
-						subMonitor.split(10);
-						subMonitor.setTaskName("Generating the CSS.");
-						tahh.createTheCSSFile(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
-						subMonitor.split(10);
-						subMonitor.setTaskName("Generating the Types Configuration.");
-						tahh.createTheTypesConfigurations(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
-						subMonitor.split(10);
-						subMonitor.setTaskName("Generating the UML 2 EMF ETS file.");
-						tahh.createTheUml2EmfETLFile(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
-						subMonitor.split(10);
+						//generate UML Notation
 						subMonitor.setTaskName("Generating Profile related files.");
 						tahh.createTheModelProfileNotationFile(theDestinationProjectFolder);
 						subMonitor.split(10);
+						
+						//generate UML DI
 						subMonitor.setTaskName("Generating Profile related files.");
 						tahh.createTheModelProfileDiFile(theDestinationProjectFolder);
 						subMonitor.split(10);
+						
+						//done element types configuration
+						subMonitor.setTaskName("Generating the Element Type Configuration.");
+						tahh.createTheElementTypeConfigurations(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
+						subMonitor.split(10);
+						
+						//generate the palette configuration
+						subMonitor.setTaskName("Generating the Palette Configuration.");
+						tahh.createThePaletteConfiguration(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
+						subMonitor.split(10);
+
+						//create the creation command
+						subMonitor.setTaskName("Creating Creation Command.");
+						tahh.createCreationCommand(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
+						subMonitor.split(10);
+						
+						//done
+						subMonitor.setTaskName("Generating the CSS.");
+						tahh.createTheCSSFile(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
+						subMonitor.split(10);
+
+						//done
+						subMonitor.setTaskName("Generating the Architecture Model.");
+						tahh.createTheArchitectureModel(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
+						subMonitor.split(10);
+
+						//
+						subMonitor.setTaskName("Generating the UML 2 EMF ETL file.");
+						tahh.createTheUml2EmfETLFile(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
+						subMonitor.split(10);
+						
+						//done
 						subMonitor.setTaskName("Generating Build Properties.");
 						tahh.createThebuildPropertiesFile(theDestinationProjectFolder);
-						subMonitor.setWorkRemaining(10);
 						subMonitor.split(10);
+						
 						//tahh.copyTheIcons(theSelectedFilePath, theParentFolder);
 						//tahh.copyTheShapes(theSelectedFilePath, theParentFolder);
 						tahh.refresh(theSelectedFileParentIProject);	
