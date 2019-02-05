@@ -233,7 +233,8 @@ public class UtilityMethods {
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		
 		//palette 
-		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8", theDestinationIProjectFolder + File.separator
+		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8, "
+				+ "http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + name + ".paletteconfiguration", "Target", "false", "true");
 		
 		//palette metamodel
@@ -249,9 +250,15 @@ public class UtilityMethods {
 		
 		// User's transformation, if any
 		sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		paletteConfigurationM2 = createAndLoadAnEmfMetaModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7", "PaletteConfigurationM2", "true", "false");
-		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7", theDestinationIProjectFolder + File.separator
-				+ "resources" + File.separator + name + ".paletteconfiguration", "Target", "true", "true");
+		//palette 
+		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8, "
+						+ "http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
+						+ "resources" + File.separator + name + ".paletteconfiguration", "Target", "false", "true");
+				
+		//palette metamodel
+		paletteConfigurationM2 = createAndLoadAnEmfMetaModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8", "PaletteConfigurationM2", "true", "false");
+		
+		//element types model
 		elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
 				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
 
@@ -399,13 +406,18 @@ public class UtilityMethods {
 
 	public void createTheElementTypeConfigurations(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
+		
+		ArrayList<String> metamodelURIs = new ArrayList<String>();
+		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2, "
+				+ "http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1, "
+				+ "http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "false", "true");
 		
 		EmfModel umltypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
 				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations", "UMLTypes", "true", "false");
+		
 		EmfModel umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
-				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDI", "true", "false");
+				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDITypes", "true", "false");
 
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umltypes, umlDITypes));
@@ -413,8 +425,10 @@ public class UtilityMethods {
 
 		// User's transformation, if any
 		sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.1", theDestinationIProjectFolder + File.separator
-				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "true", "true");
+		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2, "
+				+ "http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1, "
+				+ "http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1", theDestinationIProjectFolder + File.separator
+				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "false", "true");
 		umltypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
 				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations", "UMLTypes", "true", "false");
 		umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
@@ -579,7 +593,7 @@ public class UtilityMethods {
 				.getResource(theFile).toURI();
 		etlModule.parse(etlFile);
 		etlModule.execute();
-		etlModule.getContext().getModelRepository().dispose();
+		//etlModule.getContext().getModelRepository().dispose();
 	}
 	
 	private void doTheUsersETLTransformation(ArrayList<IModel> allTheModels, String theFile, IProject theSelectedFileParentIProject) throws Exception {

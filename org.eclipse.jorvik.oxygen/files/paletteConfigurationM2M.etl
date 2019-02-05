@@ -37,7 +37,8 @@ rule node2Tool
 		}
 		var theElementDescriptor = new Target!ElementDescriptor;
 		var specializationTypeConfig = ElementTypes!SpecializationTypeConfiguration.all().select(s|s.identifier = ePackName + "." + c.name + ".shape").first();
-		tc.elementDescriptors.add(specializationTypeConfig);
+		theElementDescriptor.elementType = specializationTypeConfig;
+		tc.elementDescriptors.add(theElementDescriptor);
 	}
 	
 rule edge2Tool
@@ -57,7 +58,8 @@ rule edge2Tool
 		}
 		var theElementDescriptor = new Target!ElementDescriptor;
 		var specializationTypeConfig = ElementTypes!SpecializationTypeConfiguration.all().select(s|s.identifier = ePackName + "." + c.name + ".edge.shape").first();
-		tc.elementDescriptors.add(specializationTypeConfig);
+		theElementDescriptor.elementType = specializationTypeConfig;
+		tc.elementDescriptors.add(theElementDescriptor);
 	}
 	
 rule refEdge2Tool
@@ -76,6 +78,7 @@ rule refEdge2Tool
 			tc.icon = theIconDescriptor;
 		}
 		var theElementDescriptor = new Target!ElementDescriptor;
-		var specializationTypeConfig = ElementTypes!SpecializationTypeConfiguration.all().select(s|s.identifier = ePackName + "." + c.name + ".edge.shape").first();
-		tc.elementDescriptors.add(specializationTypeConfig);
+		var specializationTypeConfig = ElementTypes!SpecializationTypeConfiguration.all().select(s|s.identifier = ePackName + "." + ref.name + ".edge.shape").first();
+		theElementDescriptor.elementType = specializationTypeConfig;
+		tc.elementDescriptors.add(theElementDescriptor);
 	}
