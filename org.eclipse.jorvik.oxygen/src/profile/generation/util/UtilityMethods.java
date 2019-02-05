@@ -1,5 +1,16 @@
 package profile.generation.util;
 
+/*******************************************************************************
+ * Copyright (c) 2019 The University of York.
+ * This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ * 
+ * Contributors:
+ *     Athanathias Zolotas - initial API and implementation
+ *     Ran Wei - Enhanced features and additional APIs
+ ******************************************************************************/
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
