@@ -1,0 +1,112 @@
+var ePackage = Source!EPackage.all().first;
+var ePackName = ePackage.name;
+var ePackNSUri = ePackage.nsURI;
+
+var architectureDomain = new Architecture!ArchitectureDomain;
+architectureDomain.name = ePackName + " Architecture Model";
+architectureDomain.id = ePackName + ".architecture";
+architectureDomain.description = "Architecture Model for " + ePackName;
+architectureDomain.qualifiedName = ePackName + ".architecture.qualified";
+
+//concern
+var concern = new Architecture!Concern;
+concern.name = ePackName + " Concern";
+concern.id = ePackName + ".concern";
+concern.description = ePackName + " Architecture Concern";
+concern.qualifiedName = ePackName + ".concern.qualified";
+
+//stakeholder
+var stakeHolder = new Architecture!StakeHolder;
+stakeHolder.name = ePackName + " Stakeholder";
+stakeHolder.id = ePackName + ".stakeholder";
+stakeHolder.description = ePackName + " Architecture Stakeholder";
+stakeHolder.qualifiedName = ePackName + ".stakeholder.qualified";
+
+//add concern to the stakeholder
+stakeHolder.concerns.add(concern);
+
+//add stakeholder to the domian
+architectureDomain.stakeholders.add(stakeHolder);
+//add concners to the domain
+architectureDomain.concerns.add(concern);
+
+//description language
+var descriptionLanguage = new Architecture!ArchitectureDescriptionLanguage;
+descriptionLanguage.name = ePackName + " Description Language";
+descriptionLanguage.id = ePackName + ".description.language";
+descriptionLanguage.description = "Description Language for " + ePackName;
+descriptionLanguage.qualifiedName = ePackName + ".description.language.qualified";
+descriptionLanguage.creationCommandClass = ePackName + ".architecture.CreationCommand";
+descriptionLanguage.elementTypes = getElementTypes();
+
+//add description language to the domain
+architectureDomain.contexts.add(descriptionLanguage);
+
+
+//papyrus diagram
+var papyrusDiagram = new Architecture!PapyrusDiagram;
+papyrusDiagram.name = ePackName + " Papyrus Diagram";
+papyrusDiagram.id = ePackName + ".papyrus.diagram";
+papyrusDiagram.description = "Papyrus Diagram for " + ePackName;
+papyrusDiagram.qualifiedName = ePackName + ".papyrus.diagram.qualified";
+
+//add concern
+papyrusDiagram.concerns.add(concern);
+papyrusDiagram.implementationID = "PapyrusUMLClassDiagram";
+papyrusDiagram.creationCommandClass = "org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand";
+papyrusDiagram.customStyle = getCustomStyle();
+
+//model rule
+var modelRule = new Architecture!ModelRule;
+modelRule.permit = true;
+modelRule.elementMultiplicity = 1;
+modelRule.multiplicity = -1;
+moduleRule.element = getUMLPackageClass();
+
+//owning rule
+var owningRule = new Architecture!OwningRule;
+owningRule.permit = true;
+owningRule.multiplicity = -1;
+owningRule.element = getUMLPackageClass();
+
+//child rule
+var childRule = new Architecture!ChildRule;
+childRule.permit = true;
+
+//add rules
+papyrusDiagram.modelRules.add(modelRule);
+papyrusDiagram.owningRules.add(modelRule);
+papyrusDiagram.childRules.add(modelRule);
+
+//add palette
+papyrusDiagram.palettes.add(Palette!PaletteConfiguration.allInstances().first());
+
+
+//view point
+var viewPoint = new Architecture!ArchitectureViewpoint;
+viewPoint.name = ePackName + " View Point";
+viewPoint.id = ePackName + ".viewpoint";
+viewPoint.description = "View Point for " + ePackName;
+viewPoint.qualifiedName = ePackName + ".viewpoint.qualified";
+viewPoint.concerns.add(concern);
+viewPoint.representationKinds.add(papyrusDiagram);
+
+//add viewpoint to the language
+descriptionLanguage.viewpoints.add(viewPoint);
+descriptionLanguage.representationKinds.add(papyrusDiagram);
+
+
+operation getElementTypes() {
+	var elementTypes = ElementTypes!ElementTypeSetConfiguration.allInstances().first();
+	return elementTypes;
+}
+
+operation getCustomStyle() {
+	var customStyle = "platform:/plugin/" + ePackName + "/resources/" + ePackName + "diagram.css";
+}
+
+@cache
+operation getUMLPackageClass() {
+	var ret = UML!EClass.allInstances().select(c|c.name = "Package").first();
+	return ret;
+}

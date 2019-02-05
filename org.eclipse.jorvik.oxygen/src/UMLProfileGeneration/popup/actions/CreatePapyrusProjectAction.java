@@ -87,9 +87,10 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 						subMonitor.setTaskName("Generating the Project Manifest.");
 						tahh.createTheManifestFile(theSelectedFilePath, theDestinationProjectFolder);
 						subMonitor.split(10);
-						subMonitor.setTaskName("Generating the Diagram Configuration.");
-						tahh.createTheDiagramConfiguration(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
-						subMonitor.split(10);
+						
+//						subMonitor.setTaskName("Generating the Diagram Configuration.");
+//						tahh.createTheDiagramConfiguration(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
+//						subMonitor.split(10);
 						subMonitor.setTaskName("Generating the Element Type Configuration.");
 						tahh.createTheElementTypeConfigurations(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
 						subMonitor.split(10);

@@ -4,14 +4,17 @@ pre {
 	theConfiguration.label = ePackName + " Palette";
 	theConfiguration.id = ePackName + "." + ePackName;
 	theConfiguration.requiredProfiles.add(ePackName);
+	
 	var theNodesDrawerConfiguration = new Target!DrawerConfiguration;
 	theNodesDrawerConfiguration.description = ePackName + " nodes";
 	theNodesDrawerConfiguration.id = ePackName + ".nodes";
 	theNodesDrawerConfiguration.label = ePackName + " nodes";
+	
 	var theEdgesDrawerConfiguration = new Target!DrawerConfiguration;
 	theEdgesDrawerConfiguration.id = ePackName + ".edges";
 	theEdgesDrawerConfiguration.description = ePackName + " edges";
 	theEdgesDrawerConfiguration.label = ePackName + " edges";
+	
 	theConfiguration.drawerConfigurations.add(theNodesDrawerConfiguration);
 	theConfiguration.drawerConfigurations.add(theEdgesDrawerConfiguration);
 }
@@ -23,18 +26,18 @@ rule node2Tool
 		tc.description = c.name + " node";
 		tc.label = c.name;
 		tc.id = c.name + "_node";
+		tc.kind = PaletteConfigurationM2!ToolKind#CreationTool;
 		theNodesDrawerConfiguration.ownedConfigurations.add(tc);
+		
 		if (c.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("icon").isDefined()) {
 			var theIconDescriptor = new Target!IconDescriptor;
 			theIconDescriptor.iconPath = c.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("icon");
 			theIconDescriptor.pluginId = ePackName;
 			tc.icon = theIconDescriptor;
 		}
-		//if (c.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("shape").isDefined()) {
-			var theElementDescriptor = new Target!ElementDescriptor;
-			theElementDescriptor.elementTypeId = ePackName + "." + c.name + "_Shape";
-			tc.elementDescriptors.add(theElementDescriptor);
-		//}
+		var theElementDescriptor = new Target!ElementDescriptor;
+		var specializationTypeConfig = ElementTypes!SpecializationTypeConfiguration.all().select(s|s.identifier = ePackName + "." + c.name + ".shape").first();
+		tc.elementDescriptors.add(specializationTypeConfig);
 	}
 	
 rule edge2Tool
@@ -53,8 +56,8 @@ rule edge2Tool
 			tc.icon = theIconDescriptor;
 		}
 		var theElementDescriptor = new Target!ElementDescriptor;
-		theElementDescriptor.elementTypeId = ePackName + "." + c.name + "_Edge";
-		tc.elementDescriptors.add(theElementDescriptor);
+		var specializationTypeConfig = ElementTypes!SpecializationTypeConfiguration.all().select(s|s.identifier = ePackName + "." + c.name + ".edge.shape").first();
+		tc.elementDescriptors.add(specializationTypeConfig);
 	}
 	
 rule refEdge2Tool
@@ -73,6 +76,6 @@ rule refEdge2Tool
 			tc.icon = theIconDescriptor;
 		}
 		var theElementDescriptor = new Target!ElementDescriptor;
-		theElementDescriptor.elementTypeId = ePackName + "." + ref.name + "_Edge";
-		tc.elementDescriptors.add(theElementDescriptor);
+		var specializationTypeConfig = ElementTypes!SpecializationTypeConfiguration.all().select(s|s.identifier = ePackName + "." + c.name + ".edge.shape").first();
+		tc.elementDescriptors.add(specializationTypeConfig);
 	}

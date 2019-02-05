@@ -12,8 +12,10 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
+import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
 import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
@@ -76,6 +78,8 @@ public class UtilityMethods {
 		IProjectDescription desc = project.getDescription();
 		desc.setNatureIds(new String[] { PDE.PLUGIN_NATURE });
 		project.setDescription(desc, progressMonitor);
+		IFolder folder = project.getFolder("src");
+		folder.create(IResource.NONE, true, progressMonitor);
 		return project;
 	}
 	
@@ -212,82 +216,93 @@ public class UtilityMethods {
 		}
 	}
 
-	public void createThePaletteConfiguration(String theSelectedFilePath, String theProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
-
-		// This is to generate the deprecated palette.xml. Please don't delete.
-		/*
-		 * EtlModule etlModule = new EtlModule(); EmfModel sourceModel = new
-		 * EmfModel();
-		 * 
-		 * StringProperties sourceProperties = new StringProperties();
-		 * sourceProperties.put(EmfModel.PROPERTY_METAMODEL_URI,
-		 * "http://www.eclipse.org/emf/2002/Ecore");
-		 * sourceProperties.put(EmfModel.PROPERTY_MODEL_FILE,
-		 * theSelectedFilePath); sourceProperties.put(EmfModel.PROPERTY_NAME,
-		 * "Source"); sourceProperties.put(EmfModel.PROPERTY_READONLOAD,
-		 * "true"); sourceProperties.put(EmfModel.PROPERTY_STOREONDISPOSAL,
-		 * "false"); sourceModel.load(sourceProperties, (IRelativePathResolver)
-		 * null);
-		 * 
-		 * PlainXmlModel targetModel = new PlainXmlModel(); StringProperties
-		 * targetProperties = new StringProperties();
-		 * targetProperties.put(PlainXmlModel.PROPERTY_FILE,
-		 * project.getLocation() + File.separator + "palette.xml");
-		 * targetProperties.put(PlainXmlModel.PROPERTY_NAME, "Target");
-		 * targetProperties.put(PlainXmlModel.PROPERTY_READONLOAD, "false");
-		 * targetProperties.put(PlainXmlModel.PROPERTY_STOREONDISPOSAL, "true");
-		 * targetModel.load(targetProperties);
-		 * 
-		 * etlModule.getContext().getModelRepository().addModel(sourceModel);
-		 * etlModule.getContext().getModelRepository().addModel(targetModel);
-		 * 
-		 * java.net.URI etlFile =
-		 * Activator.getDefault().getBundle().getResource(
-		 * "files/paletteGenerationM2M.etl").toURI(); etlModule.parse(etlFile);
-		 * etlModule.execute();
-		 * etlModule.getContext().getModelRepository().dispose();
-		 */
-
-		// Our transformation
+	public void createThePaletteConfiguration(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
+		//emf source
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		
-		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7", theProjectFolder + File.separator
+		//palette 
+		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + name + ".paletteconfiguration", "Target", "false", "true");
 		
-		EmfMetaModel paletteConfigurationM2 = createAndLoadAnEmfMetaModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7", "PaletteConfigurationM2", "true", "false");
+		//palette metamodel
+		EmfMetaModel paletteConfigurationM2 = createAndLoadAnEmfMetaModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8", "PaletteConfigurationM2", "true", "false");
 		
+		//element types model
+		EmfModel elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
+
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2));
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2, elementTypes));
 		doTheETLTransformation(allTheModels, "files/paletteConfigurationM2M.etl");
 		
 		// User's transformation, if any
 		sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		paletteConfigurationM2 = createAndLoadAnEmfMetaModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7", "PaletteConfigurationM2", "true", "false");
-		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7", theProjectFolder + File.separator
+		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + name + ".paletteconfiguration", "Target", "true", "true");
+		elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
+
 		allTheModels.clear();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2));
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2, elementTypes));
 		doTheUsersETLTransformation(allTheModels, "paletteConfigurationM2M.etl", theSelectedFileParentIProject);
 	}
-
-	public void createTheDiagramConfiguration(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
-		// Our transformation
+	
+	public void createTheArchitectureModel(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
+		//emf source
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/viewpoints/configuration", theDestinationIProjectFolder + File.separator
-				+ "resources" + File.separator + name + "diagrams.configuration", "Target", "false", "true");
-		EmfMetaModel umlEcoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UMLEcore", "true", "false");
+		//target architecture model
+		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/core/architecture", theDestinationIProjectFolder + File.separator
+				+ "resources" + File.separator + name + ".architecture", "Architecture", "false", "true");
+		//element types model
+		EmfModel elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
+		//palette model
+		EmfModel palette = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8", theDestinationIProjectFolder + File.separator
+				+ "resources" + File.separator + name + ".paletteconfiguration", "Palette", "true", "false");
+		//uml metamodel
+		EmfMetaModel umlMetamodel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UML", "true", "false");
+
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umlEcoreMetaModel));
-		doTheETLTransformation(allTheModels, "files/diagramsConfigurationM2M.etl");
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, elementTypes, palette, umlMetamodel));
+		doTheETLTransformation(allTheModels, "files/architecture.eol");
 
 		// User's transformation, if any
 		sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
-		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/viewpoints/configuration", theDestinationIProjectFolder + File.separator
-				+ "resources" + File.separator + name + "diagrams.configuration", "Target", "true", "true");
-		umlEcoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UMLEcore", "true", "false");
+		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/core/architecture", theDestinationIProjectFolder + File.separator
+				+ "resources" + File.separator + name + ".architecture", "Target", "false", "true");
+		
+		elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
+		
+		palette = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8", theDestinationIProjectFolder + File.separator
+				+ "resources" + File.separator + name + ".paletteconfiguration", "Palette", "true", "false");
+		
+		umlMetamodel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UML", "true", "false");
+
 		allTheModels.clear();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umlEcoreMetaModel));
-		doTheUsersETLTransformation(allTheModels, "diagramsConfigurationM2M.etl", theSelectedFileParentIProject);
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, elementTypes, palette, umlMetamodel));
+		doTheUsersETLTransformation(allTheModels, "architectureM2M.eol", theSelectedFileParentIProject);
+	}
+	
+	public void createCreationCommand(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
+		//emf source
+		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
+
+		//egl factory and module
+		EglFileGeneratingTemplateFactory factory = new EglFileGeneratingTemplateFactory();
+		EglTemplateFactoryModuleAdapter eglModule = new EglTemplateFactoryModuleAdapter(factory);
+
+		eglModule.getContext().getModelRepository().addModel(sourceModel);
+
+		java.net.URI EglFile = Activator.getDefault().getBundle().getResource("files/creationCommandGeneration.egl").toURI();
+
+		EglFileGeneratingTemplate template = (EglFileGeneratingTemplate) factory.load(EglFile);
+		template.process();
+		File target = new File(theDestinationIProjectFolder + File.separator + "src" + File.separator + name
+				+ "CreationCommand.java");
+		target.createNewFile();
+		template.generate(target.toURI().toString());
 	}
 
 	public void createTheCSSFile(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
@@ -331,6 +346,9 @@ public class UtilityMethods {
 			template.append(target.toURI().toString());
 	    }
 	}
+	
+	
+	
 
 	public void createTheUml2EmfETLFile(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
@@ -368,24 +386,30 @@ public class UtilityMethods {
 	}
 
 	public void createTheElementTypeConfigurations(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
-		// Our transformation
 		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		EmfModel targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "false", "true");
 		
-		EmfModel umltypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", "platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations", "UMLTypes", "true", "false");
-		EmfModel umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", "platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDI", "true", "false");
+		EmfModel umltypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations", "UMLTypes", "true", "false");
+		EmfModel umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDI", "true", "false");
 
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umltypes));
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umltypes, umlDITypes));
 		doTheETLTransformation(allTheModels, "files/elementTypesConfigurationsM2M.etl");
 
 		// User's transformation, if any
 		sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.1", theDestinationIProjectFolder + File.separator
 				+ "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "Target", "true", "true");
+		umltypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations", "UMLTypes", "true", "false");
+		umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDI", "true", "false");
+
 		allTheModels.clear();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel));
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, umltypes, umlDITypes));
 		doTheUsersETLTransformation(allTheModels, "elementTypesConfigurationsM2M.etl", theSelectedFileParentIProject);
 	}
 

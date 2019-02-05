@@ -1,5 +1,9 @@
-package tree.profile.example.architecture;
-
+[%
+var ePackage = Source!EPackage.all().first();
+var ePackName = ePackage.name.firstToUpperCase();
+var pathmap = "pathmap://resources/" + ePackName + "/";
+var nsuri = ePackage.nsURI;
+%]
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.papyrus.infra.architecture.commands.IModelCreationCommand;
@@ -11,13 +15,13 @@ import org.eclipse.uml2.uml.Profile;
 import org.eclipse.uml2.uml.UMLFactory;
 import org.eclipse.uml2.uml.resource.UMLResource;
 
-public class TreeCreationCommand extends ModelCreationCommandBase implements IModelCreationCommand {
+public class CreationCommand extends ModelCreationCommandBase implements IModelCreationCommand {
 
-	public static final String PROFILES_PATHMAP = "pathmap://MYTREE/"; //$NON-NLS-1$	
+	public static final String PROFILES_PATHMAP = "[%=pathmap%]";
 	
-	public static final String PROFILE_PATH = PROFILES_PATHMAP+"tree.profile.example.profile.uml"; //$NON-NLS-1$
+	public static final String PROFILE_PATH = PROFILES_PATHMAP+"[%=(ePackName + "/model.profile.uml")%]";
 
-	public static final String PROFILE_URI = "http://tree.example/1.0"; //$NON-NLS-1$
+	public static final String PROFILE_URI = "=[%=nsuri%]";
 
 	@Override
 	protected EObject createRootElement() {
@@ -47,3 +51,4 @@ public class TreeCreationCommand extends ModelCreationCommandBase implements IMo
 		}
 	}
 }
+

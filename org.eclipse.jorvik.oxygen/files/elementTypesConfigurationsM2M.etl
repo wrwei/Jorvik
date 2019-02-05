@@ -19,7 +19,7 @@ guard : c.getEAnnotation("Node").isDefined()
 	stc1.identifier = ePackName + "." + c.name;
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	
-	var metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Class").first();
+	var metamodelTypeConfig = getClassMetamodelTypeConfig();
 	
 	var matcherConfig = new Target!StereotypeApplicationMatcherConfiguration;
 	matcherConfig.profileUri = ePackNSUri;
@@ -33,9 +33,25 @@ guard : c.getEAnnotation("Node").isDefined()
 	stc2.identifier = ePackName + "." + c.name + ".shape";
 	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	
-	var specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Class_Shape").first();
+	var specialisationTypeConfig = getClassShapeSpecializedTypeConfig();
 	stc2.specializedTypes.add(specialisationTypeConfig);
 	stc2.specializedTypes.add(stc1);
+	
+	var adviceBindingsConfig = new Target!ApplyStereotypeAdviceConfiguration;
+	adviceBindingsConfig.identifier = ePackName + "." + c.name + ".advice";
+	adviceBindingsConfig.target = stc1;
+	
+	var stereotypesToApply = new Target!StereotypeToApply;
+	stereotypesToApply.requiredProfiles = ePackName;
+	stereotypesToApply.stereotypeQualifiedName = ePackName + "::" + c.name;
+	stereotypesToApply.updateName = true;
+	
+	adviceBindingsConfig.stereotypesToApply.add(stereotypesToApply);
+	
+	theConfiguration.adviceBindingsConfigurations.add(adviceBindingsConfig);
+	
+	theConfiguration.elementTypeConfigurations.add(stc1);
+	theConfiguration.elementTypeConfigurations.add(stc2);
 }
 
 rule associationClass2Shape 
@@ -47,11 +63,11 @@ guard : c.getEAnnotation("Edge").isDefined()
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc1.identifier = ePackName + "." + c.name + "_Edge";
 	var metamodelTypeConfig = null;
-	if(base = "association") {
+	if(base = "Association") {
 		stc1.hint = "UML::Association";
 		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.AssociationBase").first();
 	}
-	else if(base == "dependency")
+	else if(base == "Dependency")
 	{
 		stc1.hint = "UML::Dependency";
 		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Dependency").first();
@@ -59,33 +75,100 @@ guard : c.getEAnnotation("Edge").isDefined()
 	
 	stc1.specializedTypes.add(metamodelTypeConfig);
 	
-	
 	stc2.name = c.name + " shape";
 	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
-	stc2.identifier = ePackName + "." + c.name + ".shape";
+	stc2.identifier = ePackName + "." + c.name + ".edge.shape";
 	var specialisationTypeConfig = null;
-	if(base = "association") {
+	if(base = "Association") {
 		stc2.hint = "Association_Edge";
 		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Association_Edge").first();
 	}
-	else if(base = "dependency"){
+	else if(base = "Dependency"){
 		stc2.hint = "Dependency_Edge";
 		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Dependency_Edge").first();
 	}
 	
 	stc2.specializedTypes.add(specialisationTypeConfig);
 	stc2.specializedTypes.add(stc1);
+	
+	var adviceBindingsConfig = new Target!ApplyStereotypeAdviceConfiguration;
+	adviceBindingsConfig.identifier = ePackName + "." + c.name + ".advice";
+	adviceBindingsConfig.target = stc1;
+	
+	var stereotypesToApply = new Target!StereotypeToApply;
+	stereotypesToApply.requiredProfiles = ePackName;
+	stereotypesToApply.stereotypeQualifiedName = ePackName + "::" + c.name;
+	stereotypesToApply.updateName = true;
+	
+	adviceBindingsConfig.stereotypesToApply.add(stereotypesToApply);
+	
+	theConfiguration.adviceBindingsConfigurations.add(adviceBindingsConfig);
+	
+	theConfiguration.elementTypeConfigurations.add(stc1);
+	theConfiguration.elementTypeConfigurations.add(stc2);
 }
 
 rule refEdge2Tool
 transform ref : Source!EReference 
-to stc1 : Target!SpecializationTypeConfiguration {
+to stc1 : Target!SpecializationTypeConfiguration, stc2 : Target!SpecializationTypeConfiguration {
 guard : ref.getEAnnotation("Edge").isDefined()
 	var base = ref.getEAnnotation("Edge").details.get("base").firstToUpperCase();
 	stc1.name = ref.name + " edge";
-	stc1.hint = base + "_Edge";
+	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc1.identifier = ePackName + "." + ref.name + "_Edge";
-	stc1.specializedTypesId.add(ePackName + "." + ref.name);
-	stc1.specializedTypesId.add("org.eclipse.papyrus.umldi." + base + "_Edge");
+	var metamodelTypeConfig = null;
+	if(base = "association") {
+		stc1.hint = "UML::Association";
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.AssociationBase").first();
+	}
+	else if(base == "Dependency")
+	{
+		stc1.hint = "UML::Dependency";
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Dependency").first();
+	}
+	stc1.specializedTypes.add(metamodelTypeConfig);
+	
+	stc2.name = c.name + " shape";
+	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
+	stc2.identifier = ePackName + "." + c.name + ".edge.shape";
+	var specialisationTypeConfig = null;
+	if(base = "Association") {
+		stc2.hint = "Association_Edge";
+		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Association_Edge").first();
+	}
+	else if(base = "Dependency"){
+		stc2.hint = "Dependency_Edge";
+		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Dependency_Edge").first();
+	}
+	
+	stc2.specializedTypes.add(specialisationTypeConfig);
+	stc2.specializedTypes.add(stc1);
+	
+	var adviceBindingsConfig = new Target!ApplyStereotypeAdviceConfiguration;
+	adviceBindingsConfig.identifier = ePackName + "." + c.name + ".advice";
+	adviceBindingsConfig.target = stc1;
+	
+	var stereotypesToApply = new Target!StereotypeToApply;
+	stereotypesToApply.requiredProfiles = ePackName;
+	stereotypesToApply.stereotypeQualifiedName = ePackName + "::" + c.name;
+	stereotypesToApply.updateName = true;
+	
+	adviceBindingsConfig.stereotypesToApply.add(stereotypesToApply);
+	
+	theConfiguration.adviceBindingsConfigurations.add(adviceBindingsConfig);
+	
 	theConfiguration.elementTypeConfigurations.add(stc1);
+	theConfiguration.elementTypeConfigurations.add(stc2);
+}
+
+@cache
+operation getClassMetamodelTypeConfig () {
+	var metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Class").first();
+	return metamodelTypeConfig;
+}
+
+@cache
+operation getClassShapeSpecializedTypeConfig () {
+	var specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Class_Shape").first();
+	return specialisationTypeConfig;
 }
