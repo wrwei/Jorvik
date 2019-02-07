@@ -35,6 +35,6 @@ pre {
 	theArchitectureExtension.a_point = "org.eclipse.papyrus.infra.architecture.models";
 	thePlugin.appendChild(theArchitectureExtension);
 	var theModel = new Target!t_model;
-	theModel.a_path = ePackName + ".architecture";
+	theModel.a_path = "resources/" + ePackName + ".architecture";
 	theArchitectureExtension.appendChild(theModel);
 }

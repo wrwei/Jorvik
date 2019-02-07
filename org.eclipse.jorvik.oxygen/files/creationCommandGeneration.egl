@@ -4,6 +4,8 @@ var ePackName = ePackage.name.firstToUpperCase();
 var pathmap = "pathmap://resources/" + ePackName + "/";
 var nsuri = ePackage.nsURI;
 %]
+package util;
+
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.papyrus.infra.architecture.commands.IModelCreationCommand;
