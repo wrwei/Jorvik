@@ -325,18 +325,15 @@ public class UtilityMethods {
 		EglFileGeneratingTemplateFactory factory = new EglFileGeneratingTemplateFactory();
 		EglTemplateFactoryModuleAdapter eglModule = new EglTemplateFactoryModuleAdapter(factory);
 
+		eglModule.getContext().getModelRepository().addModel(sourceModel);
 
 		java.net.URI EglFile = Activator.getDefault().getBundle().getResource("files/creationCommandGeneration.egl").toURI();
 
 		EglFileGeneratingTemplate template = (EglFileGeneratingTemplate) factory.load(EglFile);
-		eglModule.getContext().getModelRepository().addModel(sourceModel);
-
 		template.process();
-
 		File target = new File(theDestinationIProjectFolder + File.separator + "src" + File.separator + name
 				+ "CreationCommand.java");
 		target.createNewFile();
-
 		template.generate(target.toURI().toString());
 	}
 
@@ -346,14 +343,12 @@ public class UtilityMethods {
 		EglFileGeneratingTemplateFactory factory = new EglFileGeneratingTemplateFactory();
 		EglTemplateFactoryModuleAdapter eglModule = new EglTemplateFactoryModuleAdapter(factory);
 
+		eglModule.getContext().getModelRepository().addModel(sourceModel);
 
 		java.net.URI EglFile = Activator.getDefault().getBundle().getResource("files/cssFileGeneration.egl").toURI();
 
 		EglFileGeneratingTemplate template = (EglFileGeneratingTemplate) factory.load(EglFile);
-		eglModule.getContext().getModelRepository().addModel(sourceModel);
-
 		template.process();
-
 		File target = new File(theDestinationIProjectFolder + File.separator + "resources" + File.separator + name
 				+ "Diagram.css");
 		target.createNewFile();
