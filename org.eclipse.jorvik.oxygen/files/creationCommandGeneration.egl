@@ -21,7 +21,7 @@ public class CreationCommand extends ModelCreationCommandBase implements IModelC
 
 	public static final String PROFILES_PATHMAP = "[%=pathmap%]";
 	
-	public static final String PROFILE_PATH = PROFILES_PATHMAP+"[%=(ePackName + "/model.profile.uml")%]";
+	public static final String PROFILE_PATH = PROFILES_PATHMAP+ "model.profile.uml";
 
 	public static final String PROFILE_URI = "=[%=nsuri%]";
 
@@ -35,9 +35,9 @@ public class CreationCommand extends ModelCreationCommandBase implements IModelC
 		super.initializeModel(owner);
 		Package packageOwner = (Package) owner;
 
-		Profile sysml = (Profile) PackageUtil.loadPackage(URI.createURI(PROFILE_PATH), owner.eResource().getResourceSet());
-		if (sysml != null) {
-			PackageUtil.applyProfile(packageOwner, sysml, true);
+		Profile profile = (Profile) PackageUtil.loadPackage(URI.createURI(PROFILE_PATH), owner.eResource().getResourceSet());
+		if (profile != null) {
+			PackageUtil.applyProfile(packageOwner, profile, true);
 		}
 
 		Profile standardUMLProfile = (Profile) PackageUtil.loadPackage(URI.createURI(UMLResource.STANDARD_PROFILE_URI), owner.eResource().getResourceSet());

@@ -182,14 +182,19 @@ public class UtilityMethods {
 
 		// The emfatic (ecore) source
 		EmfModel sourceModel = 	createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
+		
 		// The ultimate goal: the UML profile
 		UmlModel targetModel = createAndLoadAUmlModel("http://www.eclipse.org/uml2/5.0.0/UML", theDestinationIProjectFolder + File.separator + "model.profile.uml", "Profile", "false", "true");
+		
 		// The UML Metamodel
 		UmlModel umlMetaModel = createAndLoadAUmlModel("http://www.eclipse.org/emf/2002/Ecore", "pathmap://UML_METAMODELS/UML.metamodel.uml", "UMLM2", "true", "false");
+		
 		// The UML Ecore Metamodel
 		EmfMetaModel umlEcoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UMLEcore", "true", "false");
+		
 		// The ECore Metamodel
 		EmfMetaModel ECoreMetaModel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/emf/2002/Ecore", "EcoreM2", "true", "false");
+		
 		// The Ecore Primitive Types
 		UmlModel ecorePrimitiveTypesModel = new UmlModel();
 		StringProperties ecorePrimitiveTypesModelProperties = new StringProperties();

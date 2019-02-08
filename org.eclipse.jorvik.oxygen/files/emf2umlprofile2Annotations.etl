@@ -1,6 +1,8 @@
 pre {
-	var ePackName = Source!EPackage.all().first().name;
+	var ePackage = Source!EPackage.all().first();
+	var ePackName = ePackage.name;
 	var profile = new Profile!Profile;
+	profile.URI = ePackage.nsURI;
 	var alreadyCreatedImports = new Set();
 	var allTheNewClasses = new Set();
 	var ePackage = new Profile!EPackage;

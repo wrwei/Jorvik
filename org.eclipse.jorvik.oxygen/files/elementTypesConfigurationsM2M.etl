@@ -73,6 +73,12 @@ guard : c.getEAnnotation("Edge").isDefined()
 		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Dependency").first();
 	}
 	
+	var matcherConfig = new Target!StereotypeApplicationMatcherConfiguration;
+	matcherConfig.profileUri = ePackNSUri;
+	matcherConfig.stereotypesQualifiedNames.add(ePackName + "::" + c.name);
+	stc1.matcherConfiguration = matcherConfig;
+	
+	
 	stc1.specializedTypes.add(metamodelTypeConfig);
 	
 	stc2.name = c.name + " shape";
@@ -126,6 +132,12 @@ guard : ref.getEAnnotation("Edge").isDefined()
 		stc1.hint = "UML::Dependency";
 		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Dependency").first();
 	}
+	
+	var matcherConfig = new Target!StereotypeApplicationMatcherConfiguration;
+	matcherConfig.profileUri = ePackNSUri;
+	matcherConfig.stereotypesQualifiedNames.add(ePackName + "::" + ref.name);
+	stc1.matcherConfiguration = matcherConfig;
+	
 	
 	stc1.specializedTypes.add(metamodelTypeConfig);
 	

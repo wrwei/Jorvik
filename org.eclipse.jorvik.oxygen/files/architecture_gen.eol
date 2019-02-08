@@ -37,7 +37,7 @@ descriptionLanguage.name = ePackName + " Description Language";
 descriptionLanguage.id = ePackName + ".description.language";
 descriptionLanguage.description = "Description Language for " + ePackName;
 //descriptionLanguage.qualifiedName = ePackName + ".description.language.qualified";
-descriptionLanguage.creationCommandClass = ePackName + ".architecture.CreationCommand";
+descriptionLanguage.creationCommandClass = "util.CreationCommand";
 descriptionLanguage.elementTypes.add(getElementTypes());
 descriptionLanguage.metamodel = getUMLEpackage();
 
@@ -108,7 +108,8 @@ operation getElementTypes() {
 }
 
 operation getCustomStyle() {
-	var customStyle = "platform:/plugin/" + ePackName + "/resources/" + ePackName + "diagram.css";
+	var customStyle = "platform:/plugin/" + ePackName + "/resources/" + ePackName + "Diagram.css";
+	return customStyle;
 }
 
 @cache
