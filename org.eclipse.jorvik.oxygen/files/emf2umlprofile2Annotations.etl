@@ -293,8 +293,10 @@ operation calculateTheBodyOfTheCheckNavigabilityConstraint(s,c) {
 	var source;
 	var target;
 	if (c.isTypeOf(EcoreM2!EClass)) {
-		source = c.eAnnotations.selectOne(ean|ean.source.equals("Edge")).details.get("source");
-		target = c.eAnnotations.selectOne(ean|ean.source.equals("Edge")).details.get("target");
+		source = c.eReferences.selectOne(er|er.name= c.eAnnotations.selectOne(ean|ean.source.equals("Edge")).details.get("source")).eType.name;
+		target = c.eReferences.selectOne(er|er.name= c.eAnnotations.selectOne(ean|ean.source.equals("Edge")).details.get("target")).eType.name;
+		//source = c.eAnnotations.selectOne(ean|ean.source.equals("Edge")).details.get("source");
+		//target = c.eAnnotations.selectOne(ean|ean.source.equals("Edge")).details.get("target");
 	} else if (c.isTypeOf(EcoreM2!EReference)) {
 		source = c.eContainingClass.name;
 		target = c.etype.name;

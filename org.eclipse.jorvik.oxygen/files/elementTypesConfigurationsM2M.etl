@@ -28,7 +28,7 @@ guard : c.getEAnnotation("Node").isDefined()
 	stc1.specializedTypes.add(metamodelTypeConfig);
 	stc1.matcherConfiguration = matcherConfig;
 	
-	stc2.name = c.name + " shape";
+	stc2.name = c.name + "Shape";
 	stc2.hint = "Class_Shape";
 	stc2.identifier = ePackName + "." + c.name + ".shape";
 	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
@@ -59,7 +59,7 @@ transform c : Source!EClass
 to stc1 : Target!SpecializationTypeConfiguration, stc2 : Target!SpecializationTypeConfiguration{
 guard : c.getEAnnotation("Edge").isDefined()
 	var base = c.getEAnnotation("Edge").details.get("base").firstToUpperCase();
-	stc1.name = c.name + " edge";
+	stc1.name = c.name + "Edge";
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc1.identifier = ePackName + "." + c.name + "_Edge";
 	var metamodelTypeConfig = null;
@@ -81,7 +81,7 @@ guard : c.getEAnnotation("Edge").isDefined()
 	
 	stc1.specializedTypes.add(metamodelTypeConfig);
 	
-	stc2.name = c.name + " shape";
+	stc2.name = c.name + "Shape";
 	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc2.identifier = ePackName + "." + c.name + ".edge.shape";
 	var specialisationTypeConfig = null;
@@ -119,7 +119,7 @@ transform ref : Source!EReference
 to stc1 : Target!SpecializationTypeConfiguration, stc2 : Target!SpecializationTypeConfiguration {
 guard : ref.getEAnnotation("Edge").isDefined()
 	var base = ref.getEAnnotation("Edge").details.get("base").firstToUpperCase();
-	stc1.name = ref.name + " edge";
+	stc1.name = ref.name + "Edge";
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc1.identifier = ePackName + "." + ref.name + "_Edge";
 	var metamodelTypeConfig = null;
@@ -141,7 +141,7 @@ guard : ref.getEAnnotation("Edge").isDefined()
 	
 	stc1.specializedTypes.add(metamodelTypeConfig);
 	
-	stc2.name = ref.name + " shape";
+	stc2.name = ref.name + "Shape";
 	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc2.identifier = ePackName + "." + ref.name + ".edge.shape";
 	var specialisationTypeConfig = null;

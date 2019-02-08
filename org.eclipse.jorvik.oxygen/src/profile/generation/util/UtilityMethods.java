@@ -318,8 +318,7 @@ public class UtilityMethods {
 				+ "resources" + File.separator + name + ".paletteconfiguration", "Palette", "true", "false");
 		
 		//uml metamodel
-		EmfModel umlMetamodel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", 
-				"platform:/plugin/org.eclipse.uml2.uml/model/UML.ecore", "UML", "true", "false");
+		EmfMetaModel umlMetamodel = createAndLoadAnEmfMetaModel("http://www.eclipse.org/uml2/5.0.0/UML", "UML", "true", "false");
 
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
 		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, elementTypes, palette, umlMetamodel));
