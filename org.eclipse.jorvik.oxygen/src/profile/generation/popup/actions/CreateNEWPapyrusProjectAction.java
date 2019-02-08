@@ -1,5 +1,7 @@
 package profile.generation.popup.actions;
 
+import java.util.ArrayList;
+
 /*******************************************************************************
  * Copyright (c) 2019 The University of York.
  * This program and the accompanying materials
@@ -13,17 +15,28 @@ package profile.generation.popup.actions;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
+import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.SubMonitor;
+import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.epsilon.common.dt.util.LogUtil;
 import org.eclipse.epsilon.emc.emf.CachedResourceSet;
+import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.dialogs.ProgressMonitorDialog;
 import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.jface.wizard.WizardDialog;
+import org.eclipse.pde.core.plugin.IPluginModelBase;
+import org.eclipse.pde.core.plugin.PluginRegistry;
+import org.eclipse.pde.internal.core.ClasspathComputer;
+import org.eclipse.pde.internal.ui.PDEPlugin;
+import org.eclipse.pde.internal.ui.wizards.tools.UpdateBuildpathWizard;
+import org.eclipse.pde.internal.ui.wizards.tools.UpdateClasspathJob;
+import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IActionDelegate;
 import org.eclipse.ui.IObjectActionDelegate;
@@ -164,6 +177,15 @@ public class CreateNEWPapyrusProjectAction implements IObjectActionDelegate {
 						subMonitor.split(30);
 						
 						tahh.refresh(theDestinationIProject);
+						
+						
+						IPluginModelBase model = PluginRegistry.findModel(theDestinationIProject);
+						final IPluginModelBase[] modelArray = {model};
+
+						UpdateClasspathJob j = new UpdateClasspathJob(modelArray);
+						j.doUpdateClasspath(monitor, modelArray);
+
+
 					} catch (Exception ex) {
 						LogUtil.log(ex);
 						PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
