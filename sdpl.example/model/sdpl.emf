@@ -1,0 +1,28 @@
+@namespace(uri="sdpl", prefix="sdpl")
+@Diagram(name="SDPL")
+package Process;
+
+@Node(base="Class")
+class Step {
+	attr String stepID;
+	ref Step[1] next;
+}
+
+@Node(base="Class")
+class Tool {
+	attr String name;
+}
+
+@Node(base="Class")
+class Person {
+	attr String name;
+	@Edge(base="Association")
+	ref Tool[*] familiarWith;
+}
+
+@Edge(base="Association", source="src", target="tar")
+class Role{
+	attr String name;
+	ref Step[1] src;
+	ref Person[1] tar;
+}
