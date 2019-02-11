@@ -1,0 +1,87 @@
+@namespace(uri="bugzilla", prefix="bugzilla")
+@Diagram(label="Bugzilla", icon="icons/application-diagram-16.png")
+package bugzilla;
+
+  class BugzillaRoot {
+    attr int version;
+    attr int urlbase;
+    attr int maintainer;
+    attr int exporter;
+    val Bug[+] bugs;
+  }
+
+  @Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Bug {
+     ref BugzillaRoot[1] bug_bugzillaRoot;
+     attr String error;
+     attr int bug_id;
+     attr String exporter;
+     attr String urlbase;
+     attr String bug_status;
+     attr String resolution;
+     attr String product;
+     attr int priority;
+     attr int version;
+     attr int rep_platform;
+     attr String assigned_to;
+     attr int delta_ts;
+     attr String component;
+     attr String reporter;
+     attr int target_milestone;
+     attr int bug_severity;
+     attr String creation_ts;
+     attr String qa_contact;
+     attr String status_whiteboard;
+     attr String op_sys;
+     attr String bug_file_loc;
+     attr String short_desc;
+     @Edge(base="Association", icon="icons/association-16.png")
+     val Keywords[*] keywords;
+     @Edge(base="Association", icon="icons/association-16.png")
+     val Dependson[*] dependson;
+     @Edge(base="Association", icon="icons/association-16.png")
+     val Blocks[*] blocks;
+     @Edge(base="Association", icon="icons/association-16.png")
+     val Cc[*] cc;
+     @Edge(base="Association", icon="icons/association-16.png")
+     val LongDesc[*] long_desc;
+     @Edge(base="Association", icon="icons/association-16.png")
+     val Attachment[*] attachment;
+  }
+
+  abstract class StringElt {
+     attr String value;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Keywords extends StringElt {
+  }
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Dependson extends StringElt {
+  }
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Blocks extends StringElt {
+  }
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Cc extends StringElt {
+  }
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class LongDesc {
+     attr Boolean isPrivate;
+     attr String who;
+     attr int bug_when;
+     attr String thetext;
+  }
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Attachment {
+     attr Boolean isObsolete;
+     attr Boolean isPatch;
+     attr Boolean isPrivate;
+     attr int theId;
+     attr int date;
+     attr String desc;
+     attr String theType;
+     attr String data;
+  }
+
+

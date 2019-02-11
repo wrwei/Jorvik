@@ -1,0 +1,59 @@
+@namespace(uri="Chess", prefix="Chess")
+package chess;
+
+class ChessGame {
+  val Round[*] rounds;
+}
+
+enum Piece {
+  KING = 0;
+  ROOK = 1;
+  QUEEN = 2;
+  PAWN = 3;
+  KNIGHT = 4;
+  BISHOP = 5;
+}
+
+
+enum Player {
+  WHITE = 0;
+  BLACK = 1;
+}
+
+class NonEmptySquare extends Square {
+  attr Piece piece;
+  attr Player player;
+}
+
+abstract class Square {
+}
+
+class Move {
+  attr int fromRow;
+  attr String fromColumn;
+  attr int toRow;
+  attr String toColumn;
+  attr MoveType[1] moveType;
+  attr Piece piece;
+  attr Event event;
+}
+
+class EmptySquare extends Square {
+}
+
+enum MoveType {
+  MOVE = 0;
+  CAPTURE = 1;
+}
+
+class Round {
+  val Move[0..2] moves;
+  attr String[1] number;
+}
+
+enum Event {
+  CHESS = 0;
+  CHESSMATE = 1;
+  CHECK = 2;
+}
+

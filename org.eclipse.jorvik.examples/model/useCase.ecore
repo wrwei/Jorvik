@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="UseCase" nsURI="usecase" nsPrefix="usecase">
+  <eAnnotations source="Diagram">
+    <details key="label" value="Usecase"/>
+    <details key="icon" value="icons/application-diagram-16.png"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="UsecaseRoot">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="UNamedElements" upperBound="-1"
+        eType="#//NamedElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="UExtends" upperBound="-1"
+        eType="#//Extend" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="UIncludes" upperBound="-1"
+        eType="#//Include" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="UUsecaseContainers" upperBound="-1"
+        eType="#//UseCaseContainer" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="names" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//NamedElement">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UseCase" eSuperTypes="#//NamedElement">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="includes" upperBound="-1"
+        eType="#//Include" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="theExtend" upperBound="-1"
+        eType="#//Extend" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Extend">
+    <eAnnotations source="Edge">
+      <details key="base" value="Association"/>
+      <details key="source" value="source"/>
+      <details key="target" value="extensions"/>
+      <details key="icon" value="icons/association-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//UseCase"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extensions" lowerBound="1"
+        eType="#//UseCase"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Include">
+    <eAnnotations source="Edge">
+      <details key="base" value="Association"/>
+      <details key="source" value="source"/>
+      <details key="target" value="includingCases"/>
+      <details key="icon" value="icons/association-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//UseCase"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="includingCases" lowerBound="1"
+        eType="#//UseCase"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UseCaseContainer">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedElements" upperBound="-1"
+        eType="#//NamedElement" containment="true">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BehavioredClassifier">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Association" eSuperTypes="#//NamedElement">
+    <eAnnotations source="Edge">
+      <details key="base" value="Association"/>
+      <details key="source" value="actors"/>
+      <details key="target" value="useCases"/>
+      <details key="icon" value="icons/association-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actors" lowerBound="1"
+        eType="#//Actor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="useCases" lowerBound="1"
+        eType="#//UseCase"/>
+  </eClassifiers>
+</ecore:EPackage>

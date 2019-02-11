@@ -1,0 +1,45 @@
+@namespace(uri="profesor", prefix="profesor")
+@Diagram(label="Professor", icon="icons/application-diagram-16.png")
+package profesor;
+
+class ProfesorRoot {
+	val Departamento[+] profDepartments;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Departamento {
+  attr String nombre;
+  attr int cargaMaximaSemanal;
+  attr int cargaMaximaDiaria;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Profesor[1] director;
+  @Edge(base="Association", icon="icons/association-16.png")
+  val Profesor[*] profesores;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Profesor {
+  attr String nomina;
+  attr String nombre;
+  attr boolean clasesSeguidas;
+  attr String cip;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Departamento[1] deprt;
+  @Edge(base="Association", icon="icons/association-16.png")
+  val Intervalo[*] horarios;
+  @Edge(base="Association", icon="icons/association-16.png")
+  val Discapacidad[*] restricciones;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Intervalo {
+  attr int fin;
+  attr int inicio;
+  attr String dia;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Discapacidad {
+  attr String nombre;
+}
+

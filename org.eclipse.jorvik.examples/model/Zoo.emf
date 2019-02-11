@@ -1,0 +1,58 @@
+@namespace(uri="Zoo", prefix="Zoo")
+@Diagram(label="Zoo", icon="icons/application-diagram-16.png")
+package Zoo;
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Zoo {
+	attr String name;
+	attr String address;
+	attr String owner;
+	attr String phone;
+	@Edge(base="Association", icon="icons/association-16.png")
+	val Person[*] personel;
+	@Edge(base="Association", icon="icons/association-16.png")
+	val Animal[*] animals;
+}
+
+abstract class Person {
+	attr String name;
+	attr int salary;
+	attr int workingHours;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Tamer extends Person {
+	attr int level;
+}
+
+@Node(base="Actor", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Doctor extends Person {
+	attr int expertise;
+	attr String vetHospitalName;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Fan extends Person {
+}
+
+abstract class Animal {
+	attr String name;
+	attr int legs;
+	attr String sex;
+	ref Animal[0..1] partner;
+	@Edge(base="Association", icon="icons/association-16.png")
+	ref Tamer[1] responsiblePerson;
+	@Edge(base="Association", icon="icons/association-16.png")
+	ref Fan[*] fans;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Tiger extends Animal {
+	attr String tigerType;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Lion extends Animal {
+
+}
+

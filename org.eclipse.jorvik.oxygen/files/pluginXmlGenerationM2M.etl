@@ -17,7 +17,7 @@ pre {
 	var theProfile = new Target!t_profile;
 	theProfile.a_description = ePackName + " Profile";
 	theProfile.a_name = ePackName + " Profile";
-	theProfile.a_path = "pathmap://resources/" + ePackName + "/model.profile.uml";
+	theProfile.a_path = "pathmap://resources/" + ePackName.toLowerCase() + "/model.profile.uml";
 	theProfile.a_provider = "Epsilon";
 	theUMLProfileExtention.appendChild(theProfile);
 	
@@ -26,8 +26,8 @@ pre {
 	theUriMappingExtension.a_point = "org.eclipse.emf.ecore.uri_mapping";
 	thePlugin.appendChild(theUriMappingExtension);
 	var theMapping = new Target!t_mapping;
-	theMapping.a_source = "pathmap://resources/" + ePackName + "/";
-	theMapping.a_target = "platform:/plugin/" + ePackName + "/";
+	theMapping.a_source = "pathmap://resources/" + ePackName.toLowerCase() + "/";
+	theMapping.a_target = "platform:/plugin/org.papyrus." + ePackName.toLowerCase() + "/";
 	theUriMappingExtension.appendChild(theMapping);
 	
 	//generate architecture model extension
@@ -35,6 +35,6 @@ pre {
 	theArchitectureExtension.a_point = "org.eclipse.papyrus.infra.architecture.models";
 	thePlugin.appendChild(theArchitectureExtension);
 	var theModel = new Target!t_model;
-	theModel.a_path = "resources/" + ePackName + ".architecture";
+	theModel.a_path = "resources/" + ePackName.toLowerCase() + ".architecture";
 	theArchitectureExtension.appendChild(theModel);
 }

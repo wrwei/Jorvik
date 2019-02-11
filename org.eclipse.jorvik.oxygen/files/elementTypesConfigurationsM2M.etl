@@ -15,11 +15,11 @@ guard : c.getEAnnotation("Node").isDefined()
 	var base = c.getEAnnotation("Node").details.get("base").firstToUpperCase();
 	
 	stc1.name = c.name;
-	stc1.hint = "UML::Class";
+	stc1.hint = "UML::" + base;
 	stc1.identifier = ePackName + "." + c.name;
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	
-	var metamodelTypeConfig = getClassMetamodelTypeConfig();
+	var metamodelTypeConfig = getClassMetamodelTypeConfig(base);
 	
 	var matcherConfig = new Target!StereotypeApplicationMatcherConfiguration;
 	matcherConfig.profileUri = ePackNSUri;
@@ -29,11 +29,11 @@ guard : c.getEAnnotation("Node").isDefined()
 	stc1.matcherConfiguration = matcherConfig;
 	
 	stc2.name = c.name + "Shape";
-	stc2.hint = "Class_Shape";
+	stc2.hint =  "Class_Shape";
 	stc2.identifier = ePackName + "." + c.name + ".shape";
 	stc2.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	
-	var specialisationTypeConfig = getClassShapeSpecializedTypeConfig();
+	var specialisationTypeConfig = getClassShapeSpecializedTypeConfig(base);
 	stc2.specializedTypes.add(specialisationTypeConfig);
 	stc2.specializedTypes.add(stc1);
 
@@ -175,13 +175,16 @@ guard : ref.getEAnnotation("Edge").isDefined()
 }
 
 @cache
-operation getClassMetamodelTypeConfig () {
-	var metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Class").first();
+operation getClassMetamodelTypeConfig (c: String) {
+	if(c = "Association") {
+		c = "AssociationBase";
+	}
+	var metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml." + c ).first();
 	return metamodelTypeConfig;
 }
 
 @cache
-operation getClassShapeSpecializedTypeConfig () {
+operation getClassShapeSpecializedTypeConfig (c: String) {
 	var specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Class_Shape").first();
 	return specialisationTypeConfig;
 }

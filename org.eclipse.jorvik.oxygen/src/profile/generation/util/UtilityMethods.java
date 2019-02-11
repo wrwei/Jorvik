@@ -71,6 +71,8 @@ public class UtilityMethods {
 	//name
 	String name;
 	
+	String project_name;
+	
 	//progress monitor
 	IProgressMonitor progressMonitor = new NullProgressMonitor();
 	
@@ -84,8 +86,10 @@ public class UtilityMethods {
 
 	public UtilityMethods(String theSelectedFilePath) {
 		//get name of the overall EPackage of a certain emfatic source
-		this.name = getNameOfEPackage(theSelectedFilePath);
-		project = root.getProject(name);
+		String _name = getNameOfEPackage(theSelectedFilePath);
+		project_name = "org.papyrus." + _name.toLowerCase();
+		this.name = _name.toLowerCase();
+		project = root.getProject(project_name);
 	}
 
 	public IProject createPluginProject() throws CoreException {
@@ -155,8 +159,8 @@ public class UtilityMethods {
 				theDestinationIProjectFolder + File.separator + "META-INF" + File.separator + "MANIFEST.MF",
 				false));
 		try {
-			output.write("Manifest-Version: 1.0\n" + "Bundle-ManifestVersion: 2\n" + "Bundle-Name: " + name + "\n"
-					+ "Bundle-SymbolicName: " + name + ";singleton:=true\n" + "Bundle-Version: 1.0.0.qualifier\n"
+			output.write("Manifest-Version: 1.0\n" + "Bundle-ManifestVersion: 2\n" + "Bundle-Name: " + project_name + "\n"
+					+ "Bundle-SymbolicName: " + project_name + ";singleton:=true\n" + "Bundle-Version: 1.0.0.qualifier\n"
 					+ "Require-Bundle:"
 					+ " org.eclipse.ui,\n"
 					+ " org.eclipse.core.runtime,\n"

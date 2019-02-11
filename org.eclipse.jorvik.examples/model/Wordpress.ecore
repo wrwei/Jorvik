@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="wordpress" nsURI="wordpressmetamodel" nsPrefix="wordpressmetamodel">
+  <eAnnotations source="Diagram">
+    <details key="label" value="Wordpress"/>
+    <details key="icon" value="icons/application-diagram-16.png"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Website">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contents" upperBound="-1"
+        eType="#//Content" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comments" upperBound="-1"
+        eType="#//Comment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
+        eType="#//Category" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mediaFiles" upperBound="-1"
+        eType="#//Media" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tags" upperBound="-1" eType="#//Tag"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="templates" upperBound="-1"
+        eType="#//Template" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
+        eType="#//Node" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="links" upperBound="-1"
+        eType="#//Link" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="users" upperBound="-1"
+        eType="#//User" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="widgets" upperBound="-1"
+        eType="#//Widget" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="widgetAreas" upperBound="-1"
+        eType="#//WidgetArea" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="menus" upperBound="-1"
+        eType="#//Menu" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="menuItems" upperBound="-1"
+        eType="#//MenuItem" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalLinks" upperBound="-1"
+        eType="#//ExternalLink" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="themes" upperBound="-1"
+        eType="#//Theme" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Post" eSuperTypes="#//Content">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stickFrontPage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="postCategory" upperBound="-1"
+        eType="#//Category">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="postMedia" upperBound="-1"
+        eType="#//Media">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="postTag" upperBound="-1"
+        eType="#//Tag">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="postLink" eType="#//Link">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="format" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="postComment" upperBound="-1"
+        eType="#//Comment">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="postUser" eType="#//User">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Category">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categoryPost" upperBound="-1"
+        eType="#//Post">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Category">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Media">
+    <eAnnotations source="Node">
+      <details key="base" value="Artifact"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="aligment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formatSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dimensions" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mediaUser" eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mediaNode" upperBound="-1"
+        eType="#//Node"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tag">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tagPost" upperBound="-1"
+        eType="#//Post">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Link">
+    <eAnnotations source="Node">
+      <details key="base" value="Association"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="theLinkCategory" upperBound="-1"
+        eType="#//LinkCategory">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="target" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LinkCategory" eSuperTypes="#//Category">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categoryLink" upperBound="-1"
+        eType="#//Link"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NavigationNode" eSuperTypes="#//Node">
+    <eAnnotations source="Node">
+      <details key="base" value="Node"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//NavigationNode">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pageTemplate" lowerBound="1"
+        eType="#//Template"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pageComment" upperBound="-1"
+        eType="#//Comment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pageUser" eType="#//User"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Template">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="templateWidget" upperBound="-1"
+        eType="#//WidgetArea" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comment">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="commentPost" upperBound="-1"
+        eType="#//Post">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="commentPage" eType="#//NavigationNode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="commentUser" eType="#//User">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Comment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="commentContent" eType="#//Content">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="User">
+    <eAnnotations source="Node">
+      <details key="base" value="Actor"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WidgetArea">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="areaWidget" upperBound="-1"
+        eType="#//Widget" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Widget">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="theWidgetArea" eType="#//WidgetArea">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="active" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="widgetMenu" eType="#//Menu"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Menu">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="menuWidget" eType="#//Widget"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MenuItem">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="menuItemPage" eType="#//NavigationNode">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MenuItemExternal" eType="#//ExternalLink">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="navigationLabel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalLink">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Theme">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="themeWidgetArea" upperBound="-1"
+        eType="#//WidgetArea" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Node">
+    <eAnnotations source="Node">
+      <details key="base" value="Node"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodeMedia" upperBound="-1"
+        eType="#//Media"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Content">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentComment" upperBound="-1"
+        eType="#//Comment"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Page" eSuperTypes="#//Content">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Page">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+</ecore:EPackage>

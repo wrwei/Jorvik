@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="profesor" nsURI="profesor" nsPrefix="profesor">
+  <eAnnotations source="Diagram">
+    <details key="label" value="Professor"/>
+    <details key="icon" value="icons/application-diagram-16.png"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="ProfesorRoot">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="profDepartments" lowerBound="1"
+        upperBound="-1" eType="#//Departamento" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Departamento">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cargaMaximaSemanal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cargaMaximaDiaria" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="director" lowerBound="1"
+        eType="#//Profesor">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="profesores" upperBound="-1"
+        eType="#//Profesor" containment="true">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Profesor">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nomina" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clasesSeguidas" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cip" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deprt" lowerBound="1" eType="#//Departamento">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="horarios" upperBound="-1"
+        eType="#//Intervalo" containment="true">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="restricciones" upperBound="-1"
+        eType="#//Discapacidad" containment="true">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Intervalo">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fin" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inicio" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dia" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Discapacidad">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

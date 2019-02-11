@@ -108,7 +108,7 @@ operation getElementTypes() {
 }
 
 operation getCustomStyle() {
-	var customStyle = "platform:/plugin/" + ePackName + "/resources/" + ePackName + "Diagram.css";
+	var customStyle = "platform:/plugin/org.papyrus." + ePackName.toLowerCase() + "/resources/" + ePackName.toLowerCase() + "Diagram.css";
 	return customStyle;
 }
 
