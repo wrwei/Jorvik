@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="com.example.tree.elementTypes" identifier="example.tree.elementTypes" name="tree" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" 
+xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" 
+xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" 
+xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" 
+xmi:id="com.example.tree.elementTypes" identifier="example.tree.elementTypes" name="tree" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="com.example.tree.Edge.id" identifier="example.tree.Edge" name="Edge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_C2fWAx_KEemwT888A0Ae8Q" profileUri="http://tree.example/1.0">
       <stereotypesQualifiedNames>tree::Edge</stereotypesQualifiedNames>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="will.wei_1547814408812">
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" 
+xmlns:xmi="http://www.omg.org/XMI" 
+xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" 
+xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="will.wei_1547814408812">
   <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="Default_1547814408812" label="Default">
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="node" label="Node" kind="CreationTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
