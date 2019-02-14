@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" 
-xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" 
-xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" 
-xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 
-pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Profile xmi:id="__qSg8BsBEem84eqi83O6FA" name="tree" URI="http://tree.example/1.0" metaclassReference="_BsQYsBsCEem84eqi83O6FA _EtMaIBsCEem84eqi83O6FA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G_EWIBsCEem84eqi83O6FA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_HIZmsC-aEemCX-w1aXrBXA" name="tree" nsURI="http://tree.example/1.0" nsPrefix="tree">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HIa00i-aEemCX-w1aXrBXA" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HIa00y-aEemCX-w1aXrBXA" key="Version" value="0.0.7"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HIa01C-aEemCX-w1aXrBXA" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HIa01S-aEemCX-w1aXrBXA" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HIa01i-aEemCX-w1aXrBXA" key="Date" value="2019-02-13"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HIa01y-aEemCX-w1aXrBXA" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_HIZmsS-aEemCX-w1aXrBXA" name="Node">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HIZmsi-aEemCX-w1aXrBXA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CCa18BsCEem84eqi83O6FA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_HIZmsy-aEemCX-w1aXrBXA" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_HIZmtS-aEemCX-w1aXrBXA" name="Edge">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HIZmti-aEemCX-w1aXrBXA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_FBeoEBsCEem84eqi83O6FA"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_HIZmty-aEemCX-w1aXrBXA" name="base_Association" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
       <contents xmi:type="ecore:EPackage" xmi:id="_TLUCEB9LEemwT888A0Ae8Q" name="tree" nsURI="http://tree.example/1.0" nsPrefix="tree">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TLVQMR9LEemwT888A0Ae8Q" source="PapyrusVersion">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TLVQMh9LEemwT888A0Ae8Q" key="Version" value="0.0.6"/>
@@ -161,6 +177,13 @@ pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
     </packagedElement>
     <packagedElement xmi:type="uml:Extension" xmi:id="_F9eWQBsCEem84eqi83O6FA" name="E_Edge_Association8" memberEnd="_F9e9UBsCEem84eqi83O6FA _F9fkYBsCEem84eqi83O6FA">
       <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_F9e9UBsCEem84eqi83O6FA" name="extension_Edge" type="_FBeoEBsCEem84eqi83O6FA" aggregation="composite" association="_F9eWQBsCEem84eqi83O6FA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_C0dsUC-aEemCX-w1aXrBXA" memberEnd="_C0oEYC-aEemCX-w1aXrBXA _C0rHsC-aEemCX-w1aXrBXA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C0mPMC-aEemCX-w1aXrBXA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C0m2QC-aEemCX-w1aXrBXA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_C0oEYC-aEemCX-w1aXrBXA" name="node" type="_CCa18BsCEem84eqi83O6FA" association="_C0dsUC-aEemCX-w1aXrBXA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_C0rHsC-aEemCX-w1aXrBXA" name="edge" type="_FBeoEBsCEem84eqi83O6FA" association="_C0dsUC-aEemCX-w1aXrBXA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sGAesB9DEemSqdxvM-sMhA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sGEJEB9DEemSqdxvM-sMhA" source="http://www.eclipse.org/uml2/2.0.0/UML">

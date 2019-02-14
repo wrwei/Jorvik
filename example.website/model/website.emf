@@ -1,0 +1,34 @@
+@namespace(uri="http://website/1.0", prefix="website")
+@Diagram(name="WebSite")
+package website;
+
+@Node(base="Class")
+class Web {
+	attr String name;
+	attr String title;
+	attr String description;
+	attr String keywords;
+	@Edge(base="Association")
+	ref Webpage[*] pages;
+}
+
+@Node(base="Class")
+class Webpage {
+	attr String name;
+	attr String title;
+	attr String description;
+	@Edge(base="Association")
+	val Category[*] category;
+}
+
+@Node(base="Class")
+class Category {
+	attr String name;
+	@Edge(base="Association")
+	ref Article[*] article;
+}
+
+@Node(base="Class")
+class Article {
+	attr String name;
+}
