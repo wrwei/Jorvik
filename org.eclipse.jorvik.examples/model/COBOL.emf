@@ -1,0 +1,106 @@
+@namespace(uri="cobol", prefix="cobol")
+@Diagram(label="COBOL", icon="icons/application-diagram-16.png")
+package cobol;
+
+class COBOLRoot {
+	val COBOLElement[*] CBLElements;
+	val COBOLClassifier[*] CBLClassifiers;
+	val COBOLElementInitialValue[*] CBLInitialValue;
+	val COBOLSourceText[*] CBLSourceText;
+	val COBOL88ElementValue[*] CBLElementValues;
+}
+  
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLElement {
+  	attr String level;
+    attr Boolean refined;
+    attr String name;
+    @Edge(base="Association", icon="icons/association-16.png")
+    ref COBOLClassifier[1] sharedType;
+    @Edge(base="Association", icon="icons/association-16.png")
+    ref COBOLComposedType[*] group;
+    @Edge(base="Association", icon="icons/association-16.png")
+    ref COBOLElementInitialValue[*] initial;
+    @Edge(base="Association", icon="icons/association-16.png")
+    val COBOL88Element[*] contains;
+    @Edge(base="Association", icon="icons/association-16.png")
+    ref COBOLSourceText[1] source;
+    @Edge(base="Association", icon="icons/association-16.png")
+    val COBOLFixedLengthArray[*] array;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLClassifier {
+     attr Boolean typeded;
+     attr String name;
+     @Edge(base="Association", icon="icons/association-16.png")
+     ref COBOLElement[*] typedElements;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLSimpleType extends COBOLClassifier {
+      attr String usageValue;
+      attr String pictureString;
+      attr Boolean usage;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLComposedType extends COBOLClassifier {
+     @Edge(base="Association", icon="icons/association-16.png")
+     val COBOLElement[*] elements;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLElementInitialValue {
+      attr String[1] initVal;
+      attr String valueKind;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOL88Element {
+     attr String name;
+     @Edge(base="Association", icon="icons/association-16.png")
+     val COBOL88ElementValue[+] has;
+  }
+  
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOL88ElementValue {
+      attr String lowerLimit;
+      attr String upperLimit;
+      attr Boolean range;
+  }
+  
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLRedefiningElement extends COBOLElement {
+     @Edge(base="Association", icon="icons/association-16.png")
+     ref COBOLElement[1] redefines;
+  }
+  
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOL66Element {
+     attr String name;
+     @Edge(base="Association", icon="icons/association-16.png")
+     ref COBOLElement[1] end;
+     @Edge(base="Association", icon="icons/association-16.png")
+     ref COBOLElement[1] start;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLSourceText {
+      attr String source;
+      attr String fileName;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLFixedLengthArray {
+      attr Integer maxUpper;
+  }
+
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class COBOLVariableLengthArray extends COBOLFixedLengthArray {
+     attr Integer minUpper;
+     @Edge(base="Association", icon="icons/association-16.png")
+     ref COBOLElement[1] dependingOn;
+  }
+
+

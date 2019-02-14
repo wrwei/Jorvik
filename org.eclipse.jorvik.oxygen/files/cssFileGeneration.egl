@@ -49,7 +49,7 @@ for (stereo in allClassStereotypes) {
 if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("shape").isDefined()) {
 %]
 [appliedStereotypes~=[%=stereo.name%]] {
-	svgFile: 'platform:/plugin/[%=ePackName%]/[%=stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("shape")%]';
+	svgFile: 'platform:/plugin/org.papyrus.[%=ePackName.toLowerCase()%]/[%=stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("shape")%]';
 	/*
 	floatingLabelOffsetWidth:+23;
     floatingLabelOffsetHeight:+80;

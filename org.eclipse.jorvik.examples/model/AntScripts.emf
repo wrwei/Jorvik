@@ -1,0 +1,76 @@
+@namespace(uri="ant", prefix="ant")
+@Diagram(label="Ant Scripts", icon="icons/application-diagram-16.png")
+package AntScripts;
+
+class AntRoot {
+	val Project[+] AntProjects;
+	val Property[+] AntProperties;
+	val Target[+] AntTargets;
+	val Attribute[+] AntAttributes;
+	val Task[+] AntTasks;
+	val TaskParameter[+] AntTaskParams;
+}
+  abstract class NamedElement {
+    attr String[1] name;
+  }
+
+  abstract class DescribableElement {
+    attr String description;
+  }
+
+  abstract class CommentableElement {
+    attr String comment;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Project extends NamedElement, DescribableElement, CommentableElement {
+	@Edge(base="Association", icon="icons/association-16.png")
+    val Property[*] properties;
+    @Edge(base="Association", icon="icons/association-16.png")
+    val Target[*] targets;
+    !ordered ref Target defaultTarget;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Property {
+    attr String name;
+    attr String value;
+    attr String location;
+    attr String refid;
+    attr String resource;
+    attr String file;
+    attr String url;
+    attr String environment;
+    attr String classpath;
+    attr String classpathref;
+    attr String prefix;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Target extends NamedElement, DescribableElement, CommentableElement {
+    attr String if;
+    attr String unless;
+    @Edge(base="Association", icon="icons/association-16.png")
+    val Task[*] tasks;
+    @Edge(base="Association", icon="icons/association-16.png")
+    ref Target[*] depends;
+  }
+
+  abstract class TaskElement extends NamedElement, CommentableElement {
+    val Attribute[*] attributes;
+    val TaskElement[*] elements;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Attribute extends NamedElement {
+    attr String[1] value;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Task extends TaskElement {
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class TaskParameter extends TaskElement {
+  }
+

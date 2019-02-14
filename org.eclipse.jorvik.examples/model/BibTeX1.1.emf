@@ -1,0 +1,96 @@
+@namespace(uri="bibtex", prefix="bibtex")
+@Diagram(label="BibTeX", icon="icons/application-diagram-16.png")
+package bibTeX;
+  
+  @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class BibTeXFile {
+	@Edge(base="Association", icon="icons/association-16.png")
+    val BibTeXEntry[*] entries;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Author {
+    attr String[1] author;
+  }
+
+  abstract class BibTeXEntry {
+    attr String[1] theId;
+  }
+
+  abstract class AuthoredEntry extends BibTeXEntry {
+  	@Edge(base="Association", icon="icons/association-16.png")
+      val Author[+] authors;
+  }
+
+  abstract class DatedEntry extends BibTeXEntry {
+    attr String[1] year;
+  }
+
+  abstract class TitledEntry extends BibTeXEntry {
+    attr String[1] title;
+  }
+
+  abstract class BookTitledEntry extends BibTeXEntry {
+    attr String[1] booktitle;
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Article extends AuthoredEntry, DatedEntry, TitledEntry {
+    attr String[1] journal;
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class TechReport extends AuthoredEntry, DatedEntry, TitledEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Unpublished extends AuthoredEntry, TitledEntry {
+    attr String[1] note;
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Manual extends TitledEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Proceedings extends DatedEntry, TitledEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class InProceedings extends Proceedings, AuthoredEntry, BookTitledEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Booklet extends DatedEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Book extends AuthoredEntry, DatedEntry, TitledEntry {
+    attr String[1] publisher;
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class InCollection extends Book, BookTitledEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class InBook extends Book {
+    attr Integer[1] chapter;
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Misc extends BibTeXEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  abstract class ThesisEntry extends AuthoredEntry, DatedEntry, TitledEntry {
+  	attr String[1] school;
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class PhDThesis extends ThesisEntry {
+  }
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class MasterThesis extends ThesisEntry {
+  }

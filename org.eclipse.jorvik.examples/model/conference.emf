@@ -1,0 +1,57 @@
+@namespace(uri="conference", prefix="conference")
+@Diagram(label="Conference", icon="icons/application-diagram-16.png")
+package conference;
+
+class ConferenceRoot {
+	val Conference[*] conferences;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Conference {
+  attr String name;
+  @Edge(base="Association", icon="icons/association-16.png")
+  val ConferenceElement[*] elements;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Participant[+] organizers;
+  @Edge(base="Association", icon="icons/association-16.png")
+  val Participant[+] speakers;
+}
+
+abstract class ConferenceElement {
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Track extends ConferenceElement {
+    @Edge(base="Association", icon="icons/association-16.png")
+    val Slot[*] slots;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Slot extends TimedElement {
+   @Edge(base="Association", icon="icons/association-16.png")
+ 
+  val Talk[1] talk;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Talk extends Conference{
+ 
+   @Edge(base="Association", icon="icons/association-16.png")
+  ref Participant[1] presenter;
+}
+
+@Node(base="Actor", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Participant {
+  attr String country;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Lunch extends ConferenceElement, TimedElement {
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class TimedElement {
+  attr int hour;
+  attr int minute;
+}
+

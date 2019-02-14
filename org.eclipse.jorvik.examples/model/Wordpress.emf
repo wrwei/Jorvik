@@ -1,0 +1,181 @@
+@namespace(uri="wordpressmetamodel", prefix="wordpressmetamodel")
+@Diagram(label="Wordpress", icon="icons/application-diagram-16.png")
+package wordpress;
+
+class Website {
+	val Content[*] contents;
+	val Comment[*] comments;
+	val Category[*] categories;
+	val Media[*] mediaFiles;
+	val Tag[*] tags;
+	val Template[*] templates;
+	val Node[*] nodes;
+	val Link[*] links;
+	val User[*] users;
+	val Widget[*] widgets;
+	val WidgetArea[*] widgetAreas;
+	val Menu[*] menus;
+	val MenuItem[*] menuItems;
+	val ExternalLink[*] externalLinks;
+	val Theme[*] themes;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Post extends Content {
+  attr String stickFrontPage;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Category[*] postCategory;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Media[*] postMedia;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Tag[*] postTag;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Link postLink;
+  attr String format;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Comment[*] postComment;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref User postUser;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Category {
+  attr String name;
+  attr String description;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Post[*] categoryPost;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Category parent;
+}
+
+@Node(base="Artifact", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Media {
+  attr String title;
+  attr String description;
+  attr int aligment;
+  attr int formatSize;
+  attr int dimensions;
+  ref User mediaUser;
+  ref Node[*] mediaNode;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Tag {
+  attr String name;
+  attr String description;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Post[*] tagPost;
+}
+
+@Node(base="Association", icon="icons/application-component-16.png")
+class Link {
+  attr String url;
+  attr String name;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref LinkCategory[*] theLinkCategory;
+  attr int target;
+  attr String visible;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class LinkCategory extends Category {
+  ref Link[*] categoryLink;
+}
+
+@Node(base="Node", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class NavigationNode extends Node {
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref NavigationNode parent;
+  ref Template[1] pageTemplate;
+  attr int order;
+  ref Comment[*] pageComment;
+  ref User pageUser;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Template {
+  val WidgetArea[*] templateWidget;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Comment {
+  attr String text;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Post[*] commentPost;
+  ref NavigationNode commentPage;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref User commentUser;
+  ref Comment parent;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Content commentContent;
+}
+
+@Node(base="Actor", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class User {
+  attr String name;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class WidgetArea {
+  val Widget[*] areaWidget;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Widget {
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref WidgetArea theWidgetArea;
+  attr String active;
+  ref Menu widgetMenu;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Menu {
+  ref Widget menuWidget;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class MenuItem {
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref NavigationNode menuItemPage;
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref ExternalLink MenuItemExternal;
+  attr String navigationLabel;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class ExternalLink {
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Theme {
+  attr String name;
+  val WidgetArea[*] themeWidgetArea;
+}
+
+@Node(base="Node", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Node {
+  attr String title;
+  attr String date;
+  attr String text;
+  attr int status;
+  attr int visibility;
+  ref Media[*] nodeMedia;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Content {
+  attr String title;
+  attr String date;
+  attr String text;
+  attr int visibility;
+  attr int status;
+  ref Comment[*] contentComment;
+}
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class Page extends Content {
+  @Edge(base="Association", icon="icons/association-16.png")
+  ref Page parent;
+  attr int order;
+}
+

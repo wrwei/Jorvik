@@ -432,7 +432,8 @@ operation populateWithAttributes(newClass,s,c) {
 		var attrProperty = new Profile!Property;
 		attrProperty.name = feat.name;
 		attrProperty.type = ECorePrimitiveTypes!PrimitiveType.all().selectOne(c|c.name.equals(feat.etype.name));
-		attrProperty.`default` = feat.defaultValueLiteral;
+		//it is not mandatory to populate the default value, the line of code below does not work.
+		//attrProperty.`default` = feat.defaultValueLiteral;
 		s.ownedAttribute.add(attrProperty);
 		// Creation of attribute at the UML EAnnotation
 		var attr = new Profile!EAttribute;

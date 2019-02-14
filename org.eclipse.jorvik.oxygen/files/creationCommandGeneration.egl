@@ -1,6 +1,6 @@
 [%
 var ePackage = Source!EPackage.all().first();
-var ePackName = ePackage.name.firstToUpperCase();
+var ePackName = ePackage.name.toLowerCase();
 var pathmap = "pathmap://resources/" + ePackName + "/";
 var nsuri = ePackage.nsURI;
 %]

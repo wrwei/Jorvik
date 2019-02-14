@@ -1,0 +1,54 @@
+@namespace(uri="usecase", prefix="usecase")
+@Diagram(label="Usecase", icon="icons/application-diagram-16.png")
+package UseCase;
+
+class UsecaseRoot {
+	val NamedElement[*] UNamedElements;
+	val Extend[*] UExtends;
+	val Include[*] UIncludes;
+	val UseCaseContainer[*] UUsecaseContainers;
+}
+
+  abstract class NamedElement {
+    attr String names;
+  }
+  
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class Actor extends NamedElement {
+  }
+
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class UseCase extends NamedElement {
+    val Include[*] includes;
+    val Extend[*] theExtend;
+  }
+
+@Edge(base="Association", source="source", target="extensions", icon="icons/association-16.png")
+  class Extend {
+  	ref UseCase[1] source;
+    ref UseCase[1] extensions;
+  }
+
+@Edge(base="Association", source="source", target="includingCases", icon="icons/association-16.png")
+  class Include {
+   	ref UseCase[1] source;
+     ref UseCase[1] includingCases;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class UseCaseContainer {
+    @Edge(base="Association", icon="icons/association-16.png")
+        val NamedElement[*] ownedElements;
+  }
+
+@Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+  class BehavioredClassifier {
+  }
+
+@Edge(base="Association", source="actors", target="useCases", icon="icons/association-16.png")
+  class Association extends NamedElement {
+    ref Actor[1] actors;
+    ref UseCase[1] useCases;
+  }
+
