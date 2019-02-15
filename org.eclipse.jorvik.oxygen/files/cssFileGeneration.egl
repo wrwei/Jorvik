@@ -3,6 +3,9 @@ var ePackName = Source!EPackage.all().first().name;
 var allNodeStereotypes = Source!EClass.all().select(c|c.getEAnnotation("Node").isDefined() or c.getEAnnotation("Edge").isDefined());
 var allClassStereotypes = Source!EClass.all().select(c|c.getEAnnotation("Node").isDefined());
 var allAssociationStereotypes = Source!EClass.all().select(a|a.getEAnnotation("Edge").isDefined());
+var allAssociationSteriotypesForRefs = Source!EReference.all().select(a|a.getEAnnotation("Edge").isDefined());
+allAssociationStereotypes.addAll(allAssociationSteriotypesForRefs);
+
 for (stereo in allClassStereotypes) {
 %]
 [appliedStereotypes~=[%=stereo.name%]][% if (hasMore){%], 
@@ -54,8 +57,23 @@ if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("sh
 	floatingLabelOffsetWidth:+23;
     floatingLabelOffsetHeight:+80;
 	displayName:false;
+	
 	*/
 }
+[%
+}
+
+if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("fontHeight").isDefined()) { %]
+		[appliedStereotypes~=[%=stereo.name%]] {
+			fontHeight: [%=stereo.getEAnnotation("Node").details.get("fontHeight")%];
+		}
+	[%
+}
+	
+if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("fontColor").isDefined()) { %]
+	[appliedStereotypes~=[%=stereo.name%]] {
+		fontColor: [%=stereo.getEAnnotation("Node").details.get("fontColor")%];
+	}
 [%
 }
 }
@@ -67,18 +85,34 @@ for (assoc in allAssociationStereotypes) { %]
 if (allAssociationStereotypes.notEmpty()) {
 %]
  { 
+ 	/*
 	routing:Rectilinear;
 	roundedBendpointsRadius:10;
+	*/
 }
 [%
 }
 
 for (assoc in allAssociationStereotypes) {
+	"Hi!".println();
 	if (assoc.getEAnnotation("Edge").details.get("lineStyle").isDefined()) { %]
 		[appliedStereotypes~=[%=assoc.name%]] {
 			lineStyle: [%=assoc.getEAnnotation("Edge").details.get("lineStyle")%];
 		}
 	[%
+	} 
+	if (assoc.getEAnnotation("Edge").details.get("fontHeight").isDefined()) { %]
+		[appliedStereotypes~=[%=assoc.name%]] {
+			fontHeight: [%=assoc.getEAnnotation("Edge").details.get("fontHeight")%];
+		}
+	[%
+	} 
+	if (assoc.getEAnnotation("Edge").details.get("fontColor").isDefined()) { %]
+		[appliedStereotypes~=[%=assoc.name%]] {
+			fontColor: [%=assoc.getEAnnotation("Edge").details.get("fontColor")%];
+		}
+	[%
 	}
+	
 }
 %]
