@@ -1,0 +1,29 @@
+rule WebUML2WebEMF
+	transform s: UMLwebsite!Web
+	to t: EMFwebsite!Web {
+		t.name = s.name;
+		t.title = s.title;
+		t.description = s.description;
+		t.keywords = s.keywords;
+		t.pages ::= s.pages;
+	}
+rule WebpageUML2WebpageEMF
+	transform s: UMLwebsite!Webpage
+	to t: EMFwebsite!Webpage {
+		t.name = s.name;
+		t.title = s.title;
+		t.description = s.description;
+		t.category ::= s.category;
+	}
+rule CategoryUML2CategoryEMF
+	transform s: UMLwebsite!Category
+	to t: EMFwebsite!Category {
+		t.name = s.name;
+		t.article ::= s.article;
+	}
+rule ArticleUML2ArticleEMF
+	transform s: UMLwebsite!Article
+	to t: EMFwebsite!Article {
+		t.name = s.name;
+	}
+

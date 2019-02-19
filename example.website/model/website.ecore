@@ -7,6 +7,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Web">
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
+      <details key="shape" value="shapes/web.svg"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -22,6 +23,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Webpage">
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
+      <details key="shape" value="shapes/webpage.svg"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -36,6 +38,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Category">
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
+      <details key="shape" value="shapes/category.svg"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="article" upperBound="-1"
@@ -48,6 +51,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Article">
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
+      <details key="shape" value="shapes/article.svg"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
