@@ -76,6 +76,13 @@ if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("fo
 	}
 [%
 }
+
+if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("bold").isDefined()) { %]
+	[appliedStereotypes~=[%=stereo.name%]] {
+		bold: [%=stereo.getEAnnotation("Node").details.get("bold")%];
+	}
+[%
+}
 }
 
 for (assoc in allAssociationStereotypes) { %]
@@ -110,6 +117,12 @@ for (assoc in allAssociationStereotypes) {
 	if (assoc.getEAnnotation("Edge").details.get("fontColor").isDefined()) { %]
 		[appliedStereotypes~=[%=assoc.name%]] {
 			fontColor: [%=assoc.getEAnnotation("Edge").details.get("fontColor")%];
+		}
+	[%
+	}
+	if (assoc.getEAnnotation("Edge").details.get("bold").isDefined()) { %]
+		[appliedStereotypes~=[%=assoc.name%]] {
+			bold: [%=assoc.getEAnnotation("Edge").details.get("bold")%];
 		}
 	[%
 	}
