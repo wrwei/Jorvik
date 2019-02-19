@@ -1,0 +1,45 @@
+context EClass {
+
+	constraint NodeAnnotationHasBaseClass {
+	
+	guard : self.getEAnnotation("Node").isDefined()
+	check : self.getEAnnotation("Node").details.get("base").isDefined()
+	message : 'Base element is not defined for class ' + self.name + '.'
+	
+	}
+	
+	constraint EdgeAnnotationHasBaseClass {
+	
+	guard : self.getEAnnotation("Edge").isDefined()
+	check : self.getEAnnotation("Edge").details.get("base").isDefined()
+	message : 'Base element is not defined for class ' + self.name + '.'
+	
+	}
+	
+	constraint EdgeAnnotationHasSource {
+	
+	guard : self.getEAnnotation("Edge").isDefined()
+	check : self.getEAnnotation("Edge").details.get("source").isDefined()
+	message : 'Source element is not defined for class ' + self.name + '.'
+	
+	}
+	
+	constraint EdgeAnnotationHasTarget {
+	
+	guard : self.getEAnnotation("Edge").isDefined()
+	check : self.getEAnnotation("Edge").details.get("target").isDefined()
+	message : 'Target element is not defined for class ' + self.name + '.'
+	
+	}
+	}
+	
+	context EReference {
+	
+	constraint EdgeAnnotationRefHasBaseClass {
+	
+	guard : self.getEAnnotation("Edge").isDefined()
+	check : self.getEAnnotation("Edge").details.get("base").isDefined()
+	message : 'Base element is not defined for reference ' + self.name + '.'
+	
+	}
+}

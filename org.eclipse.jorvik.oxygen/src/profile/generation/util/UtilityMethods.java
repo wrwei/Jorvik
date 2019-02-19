@@ -55,6 +55,7 @@ import org.eclipse.epsilon.eol.exceptions.models.EolModelLoadingException;
 import org.eclipse.epsilon.eol.models.IModel;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
 import org.eclipse.epsilon.etl.EtlModule;
+import org.eclipse.epsilon.evl.EvlModule;
 import org.eclipse.jdt.core.IClasspathEntry;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IPackageFragment;
@@ -91,6 +92,17 @@ public class UtilityMethods {
 		this.name = _name.toLowerCase();
 		project = root.getProject(project_name);
 	}
+	
+	public String checkAnnotatedEcore(String theSelectedFilePath, IProject theSelectedFileParentIProject) throws Exception {
+		//emf source
+		EmfModel sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
+		
+		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
+		allTheModels.addAll(Arrays.asList(sourceModel));
+		String ret = performEVLTransformation(allTheModels, "files/checkAnnotatedEcore.evl");
+		return ret;
+	}
+	
 
 	public IProject createPluginProject() throws CoreException {
 		if (!project.exists()) {
@@ -642,6 +654,23 @@ public class UtilityMethods {
 		etlModule.parse(etlFile);
 		etlModule.execute();
 		etlModule.getContext().getModelRepository().dispose();
+	}
+	
+	private String performEVLTransformation(ArrayList<IModel> allTheModels, String theFile) throws Exception {
+		String ret = null;
+		EvlModule evlModule = new EvlModule();
+		for (IModel theModel : allTheModels) {
+			evlModule.getContext().getModelRepository().addModel(theModel);
+		}
+		java.net.URI evlFile = Activator.getDefault().getBundle()
+				.getResource(theFile).toURI();
+		evlModule.parse(evlFile);
+		evlModule.execute();
+		if (evlModule.getContext().getUnsatisfiedConstraints().size() > 0) {
+			ret = evlModule.getContext().getUnsatisfiedConstraints().toString();
+		}
+		evlModule.getContext().getModelRepository().dispose();
+		return ret;
 	}
 	
 	private void doEOLTransformation(ArrayList<IModel> allTheModels, String theFile) throws Exception {

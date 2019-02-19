@@ -2,6 +2,30 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Profile xmi:id="_Y3hZsPi5EeiJRprSWVk0Uw" name="srml" URI="http://mySimpleRML/1.0" metaclassReference="_bvivsPi5EeiJRprSWVk0Uw _e_67UPi5EeiJRprSWVk0Uw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gGp54fi5EeiJRprSWVk0Uw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_ROUAEDD1Eemu2vEZ5kKw0w" name="simpleRML" nsURI="http://mySimpleRML/1.0" nsPrefix="simpleRML">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ROUAETD1Eemu2vEZ5kKw0w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ROUAEjD1Eemu2vEZ5kKw0w" key="originalName" value="srml"/>
+        </eAnnotations>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ROYRgTD1Eemu2vEZ5kKw0w" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ROYRgjD1Eemu2vEZ5kKw0w" key="Version" value="0.0.5"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ROYRgzD1Eemu2vEZ5kKw0w" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ROYRhDD1Eemu2vEZ5kKw0w" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ROYRhTD1Eemu2vEZ5kKw0w" key="Date" value="2019-02-15"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ROYRhjD1Eemu2vEZ5kKw0w" key="Author" value=""/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ROUAEzD1Eemu2vEZ5kKw0w" name="Requirement">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ROUAFDD1Eemu2vEZ5kKw0w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cZ7JcPi5EeiJRprSWVk0Uw"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ROUAFTD1Eemu2vEZ5kKw0w" name="base_Class" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_ROUAFzD1Eemu2vEZ5kKw0w" name="Refinement">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ROUAGDD1Eemu2vEZ5kKw0w" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_dj1-4Pi5EeiJRprSWVk0Uw"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ROUAGTD1Eemu2vEZ5kKw0w" name="base_Dependency" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
       <contents xmi:type="ecore:EPackage" xmi:id="_vTLocBi4EemqkMIVw-iJNg" name="simpleRML" nsURI="http://mySimpleRML/1.0" nsPrefix="simpleRML">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vTLocRi4EemqkMIVw-iJNg" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vTLochi4EemqkMIVw-iJNg" key="originalName" value="srml"/>

@@ -7,6 +7,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Step">
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
+      <details key="shape" value="shapes/step.svg"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="stepID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="#//Step"/>
@@ -14,12 +15,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="Tool">
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
+      <details key="shape" value="shapes/tool.svg"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Person">
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
+      <details key="shape" value="shapes/per.svg"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="familiarWith" upperBound="-1"

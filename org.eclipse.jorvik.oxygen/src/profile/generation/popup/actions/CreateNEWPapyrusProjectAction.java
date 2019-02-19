@@ -97,8 +97,19 @@ public class CreateNEWPapyrusProjectAction implements IObjectActionDelegate {
 		try {
 			 IRunnableWithProgress op = new IRunnableWithProgress() {
 				public void run(IProgressMonitor monitor) {
+					boolean verbose = false;
+					String errorMessage = null;
+
 					SubMonitor subMonitor = SubMonitor.convert(monitor, 200);
 					try {
+						
+						subMonitor.setTaskName("Validating Annotated Ecore.");
+						errorMessage = tahh.checkAnnotatedEcore(theSelectedFilePath, theSelectedFileParentIProject);
+						if (errorMessage != null) {
+							verbose = true;
+							throw new Exception(errorMessage);
+						}
+						subMonitor.split(10);
 						
 						//create the project, with an src folder
 						theDestinationIProject = tahh.createPluginProject();
@@ -188,13 +199,26 @@ public class CreateNEWPapyrusProjectAction implements IObjectActionDelegate {
 
 					} catch (Exception ex) {
 						LogUtil.log(ex);
-						PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
-							public void run() {
-								MessageDialog.openError(shell, "Error",
-										"An error has occured. Please see the Error Log.");
-							}
+						if (verbose) {
+							String msg = errorMessage;
+							PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
+								public void run() {
+									MessageDialog.openError(shell, "Error",
+											msg);
+								}
 
-						});
+							});
+						}
+						else {
+							PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
+								public void run() {
+									MessageDialog.openError(shell, "Error",
+											"An error has occured. Please see the Error Log.");
+								}
+
+							});
+						}
+						
 					} finally {
 						CachedResourceSet.getCache().clear();
 					}

@@ -2,18 +2,18 @@
 @Diagram(name="SDPL")
 package Process;
 
-@Node(base="Class")
+@Node(base="Class", shape="shapes/step.svg")
 class Step {
 	attr String stepID;
 	ref Step[1] next;
 }
 
-@Node(base="Class")
+@Node(base="Class", shape="shapes/tool.svg")
 class Tool {
 	attr String name;
 }
 
-@Node(base="Class")
+@Node(base="Class", shape="shapes/per.svg")
 class Person {
 	attr String name;
 	@Edge(base="Association")
@@ -26,3 +26,4 @@ class Role{
 	ref Step[1] src;
 	ref Person[1] tar;
 }
+
