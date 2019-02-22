@@ -6,8 +6,8 @@ context EPackage {
 	constraint DiagramAnnotationHasName {
 			
 		guard : self.getEAnnotation("Diagram").isDefined()
-		check : self.getEAnnotation("Diagram").details.get("name").isDefined()
-		message : 'Diagram annotation does not have a name detail.'
+		check : self.getEAnnotation("Diagram").details.get("label").isDefined()
+		message : 'Diagram annotation does not have a label detail.'
 	
 	}
 }
@@ -89,17 +89,17 @@ context EClass {
 	
 	constraint EdgeAnnotationHasAcceptableDetails {
 		guard : self.getEAnnotation("Edge").isDefined()
-		check : self.getEAnnotation("Edge").details.keySet().excludingAll(Sequence{"base", "source", "target", "fontHeight", "bold", "lineStyle"}).isEmpty()
+		check : self.getEAnnotation("Edge").details.keySet().excludingAll(Sequence{"base", "source", "target", "fontHeight", "bold", "lineStyle", "icon"}).isEmpty()
 		
-		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, source, target, fontHeight, bold and/or lineStyle."
+		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, icon, source, target, fontHeight, bold and/or lineStyle."
 		
 	}
 	
 	constraint NodeAnnotationHasAcceptableDetails {
 		guard : self.getEAnnotation("Node").isDefined()
-		check : self.getEAnnotation("Node").details.keySet().excludingAll(Sequence{"base", "fontHeight", "bold"}).isEmpty()
+		check : self.getEAnnotation("Node").details.keySet().excludingAll(Sequence{"base", "shape", "icon", "fontHeight", "bold"}).isEmpty()
 		
-		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, fontHeight and/or bold."
+		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, icon, shape, fontHeight and/or bold."
 		
 	}
 }
@@ -142,9 +142,9 @@ context EReference {
 	
 	constraint EdgeAnnotationHasAcceptableDetails {
 		guard : self.getEAnnotation("Edge").isDefined()
-		check : self.getEAnnotation("Edge").details.keySet().excludingAll(Sequence{"base", "source", "target", "fontHeight", "bold", "lineStyle"}).isEmpty()
+		check : self.getEAnnotation("Edge").details.keySet().excludingAll(Sequence{"base", "icon", "shape", "source", "target", "fontHeight", "bold", "lineStyle"}).isEmpty()
 		
-		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, source, target, fontHeight, bold and/or lineStyle."
+		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, icon, shape, source, target, fontHeight, bold and/or lineStyle."
 		
 	}
 }

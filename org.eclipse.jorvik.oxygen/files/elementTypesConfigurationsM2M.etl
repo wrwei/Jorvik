@@ -62,15 +62,14 @@ guard : c.getEAnnotation("Edge").isDefined()
 	stc1.name = c.name + "Edge";
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc1.identifier = ePackName + "." + c.name + "_Edge";
-	var metamodelTypeConfig = null;
-	if(base = "Association") {
-		stc1.hint = "UML::Association";
-		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.AssociationBase").first();
+	var metamodelTypeConfig = null;		
+	stc1.hint = "UML::" + base;
+	if(base = "Association" or base = "InformationFlow") {
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml." + base +"Base").first();
 	}
-	else if(base == "Dependency")
+	else 
 	{
-		stc1.hint = "UML::Dependency";
-		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Dependency").first();
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml." + base).first();
 	}
 	
 	var matcherConfig = new Target!StereotypeApplicationMatcherConfiguration;
@@ -78,6 +77,10 @@ guard : c.getEAnnotation("Edge").isDefined()
 	matcherConfig.stereotypesQualifiedNames.add(ePackName + "::" + c.name);
 	stc1.matcherConfiguration = matcherConfig;
 	
+	if(metamodelTypeConfig == null)
+	{
+		base.errln();
+	}
 	
 	stc1.specializedTypes.add(metamodelTypeConfig);
 	
@@ -89,9 +92,13 @@ guard : c.getEAnnotation("Edge").isDefined()
 		stc2.hint = "Association_Edge";
 		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Association_Edge").first();
 	}
-	else if(base = "Dependency"){
-		stc2.hint = "Dependency_Edge";
-		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Dependency_Edge").first();
+	else {
+		stc2.hint = base + "_Edge";
+		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi."+ base +"_Edge").first();
+	}
+	
+	if(specialisationTypeConfig = null) {
+		base.errln();
 	}
 	
 	stc2.specializedTypes.add(specialisationTypeConfig);
@@ -123,14 +130,14 @@ guard : ref.getEAnnotation("Edge").isDefined()
 	stc1.kind = "org.eclipse.gmf.runtime.emf.type.core.IHintedType";
 	stc1.identifier = ePackName + "." + ref.name + "_Edge";
 	var metamodelTypeConfig = null;
-	if(base = "Association") {
-		stc1.hint = "UML::Association";
-		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.AssociationBase").first();
+	stc1.hint = "UML::" + base;
+	
+	if(base = "Association" or base = "InformationFlow") {
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml."+base+"Base").first();
 	}
-	else if(base == "Dependency")
+	else 
 	{
-		stc1.hint = "UML::Dependency";
-		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml.Dependency").first();
+		metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml." + base).first();
 	}
 	
 	var matcherConfig = new Target!StereotypeApplicationMatcherConfiguration;
@@ -149,9 +156,9 @@ guard : ref.getEAnnotation("Edge").isDefined()
 		stc2.hint = "Association_Edge";
 		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Association_Edge").first();
 	}
-	else if(base = "Dependency"){
-		stc2.hint = "Dependency_Edge";
-		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi.Dependency_Edge").first();
+	else {
+		stc2.hint = base + "_Edge";
+		specialisationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.umldi." + base + "_Edge").first();
 	}
 	
 	stc2.specializedTypes.add(specialisationTypeConfig);
@@ -176,8 +183,8 @@ guard : ref.getEAnnotation("Edge").isDefined()
 
 @cache
 operation getClassMetamodelTypeConfig (c: String) {
-	if(c = "Association") {
-		c = "AssociationBase";
+	if(c = "Association" or c = "InformationFlow") {
+		c = c + "Base";
 	}
 	var metamodelTypeConfig = UMLTypes!MetamodelTypeConfiguration.allInstances().select(mtc|mtc.identifier = "org.eclipse.papyrus.uml." + c ).first();
 	return metamodelTypeConfig;

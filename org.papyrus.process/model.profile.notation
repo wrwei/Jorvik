@@ -10,14 +10,6 @@
     <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OD0HATQ3EemBkOmftjkSEQ" x="580" y="60"/>
   </children>
-  <children xmi:type="notation:Shape" xmi:id="_OEPk0DQ3EemBkOmftjkSEQ" type="StereotypeComment">
-    <styles xmi:type="notation:TitleStyle" xmi:id="_OEPk0TQ3EemBkOmftjkSEQ"/>
-    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OEPk0zQ3EemBkOmftjkSEQ" name="BASE_ELEMENT">
-      <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
-    </styles>
-    <element xsi:nil="true"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OEPk0jQ3EemBkOmftjkSEQ" x="200"/>
-  </children>
   <children xmi:type="notation:Shape" xmi:id="_OUTaEDQ3EemBkOmftjkSEQ" type="Class_MetaclassShape">
     <children xmi:type="notation:DecorationNode" xmi:id="_OUUBIDQ3EemBkOmftjkSEQ" type="Class_MetaclassNameLabel"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_OUXEcDQ3EemBkOmftjkSEQ" type="StereotypeLabel">
@@ -27,14 +19,6 @@
     </children>
     <element xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OUTaETQ3EemBkOmftjkSEQ" x="180"/>
-  </children>
-  <children xmi:type="notation:Shape" xmi:id="_OUaHwDQ3EemBkOmftjkSEQ" type="StereotypeComment">
-    <styles xmi:type="notation:TitleStyle" xmi:id="_OUaHwTQ3EemBkOmftjkSEQ"/>
-    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OUaHwzQ3EemBkOmftjkSEQ" name="BASE_ELEMENT">
-      <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
-    </styles>
-    <element xsi:nil="true"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OUaHwjQ3EemBkOmftjkSEQ" x="200"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_QAP-gDQ3EemBkOmftjkSEQ" type="Stereotype_Shape">
     <children xmi:type="notation:DecorationNode" xmi:id="_QAQlkDQ3EemBkOmftjkSEQ" type="Stereotype_NameLabel"/>
@@ -127,7 +111,7 @@
     <owner xmi:type="uml:Profile" href="model.profile.uml#_Coi9kDQ3EemBkOmftjkSEQ"/>
   </styles>
   <element xmi:type="uml:Profile" href="model.profile.uml#_Coi9kDQ3EemBkOmftjkSEQ"/>
-  <edges xmi:type="notation:Connector" xmi:id="_OEPk1DQ3EemBkOmftjkSEQ" type="StereotypeCommentLink" source="_OD0HADQ3EemBkOmftjkSEQ" target="_OEPk0DQ3EemBkOmftjkSEQ">
+  <edges xmi:type="notation:Connector" xmi:id="_OEPk1DQ3EemBkOmftjkSEQ" type="StereotypeCommentLink" source="_OD0HADQ3EemBkOmftjkSEQ">
     <styles xmi:type="notation:FontStyle" xmi:id="_OEPk1TQ3EemBkOmftjkSEQ"/>
     <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OEQL4DQ3EemBkOmftjkSEQ" name="BASE_ELEMENT">
       <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
@@ -137,7 +121,7 @@
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OEPk1zQ3EemBkOmftjkSEQ"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OEPk2DQ3EemBkOmftjkSEQ"/>
   </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_OUaHxDQ3EemBkOmftjkSEQ" type="StereotypeCommentLink" source="_OUTaEDQ3EemBkOmftjkSEQ" target="_OUaHwDQ3EemBkOmftjkSEQ">
+  <edges xmi:type="notation:Connector" xmi:id="_OUaHxDQ3EemBkOmftjkSEQ" type="StereotypeCommentLink" source="_OUTaEDQ3EemBkOmftjkSEQ">
     <styles xmi:type="notation:FontStyle" xmi:id="_OUaHxTQ3EemBkOmftjkSEQ"/>
     <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OUaHyTQ3EemBkOmftjkSEQ" name="BASE_ELEMENT">
       <eObjectValue xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
