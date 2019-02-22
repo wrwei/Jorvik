@@ -1,5 +1,5 @@
 @namespace(uri="archimate-motivation", prefix="archimate-motivation")
-@Diagram(label="Archimate Motivation", icon="icons/motivation-diagram-16.png")
+@Diagram(name="Archimate Motivation", icon="icons/motivation-diagram-16.png")
 package ArchimateMotivation;
 
 abstract class NodeElement {

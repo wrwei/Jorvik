@@ -1,5 +1,5 @@
 @namespace(uri="archimate-technology", prefix="archimate-technology")
-@Diagram(label="Archimate Technology", icon="icons/technology-diagram-16.png")
+@Diagram(name="Archimate Technology", icon="icons/technology-diagram-16.png")
 package ArchimateTechnology;
 
 abstract class NodeElement {

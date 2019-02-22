@@ -1,5 +1,5 @@
 @namespace(uri="archimate-implementation-migration", prefix="archimate-implementation-migration")
-@Diagram(label="Archimate Implementation And Migration", icon="icons/implementation-and-migration-diagram-16.png")
+@Diagram(name="Archimate Implementation And Migration", icon="icons/implementation-and-migration-diagram-16.png")
 package ArchimateImplementationAndMigration;
 
 abstract class NodeElement {

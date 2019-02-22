@@ -2,7 +2,7 @@
 @Diagram(name="WebSite")
 package website;
 
-@Node(base="Class", shape="shapes/web.svg")
+@Node(base="Class", shape="shapes/web.svg", bold="true")
 class Web {
 	attr String name;
 	attr String title;
@@ -12,7 +12,7 @@ class Web {
 	ref Webpage[*] pages;
 }
 
-@Node(base="Class", shape="shapes/webpage.svg")
+@Node(base="Class", shape="shapes/webpage.svg", bold="true")
 class Webpage {
 	attr String name;
 	attr String title;
@@ -21,14 +21,14 @@ class Webpage {
 	val Category[*] category;
 }
 
-@Node(base="Class", shape="shapes/category.svg")
+@Node(base="Class", shape="shapes/category.svg", bold="true")
 class Category {
 	attr String name;
 	@Edge(base="Association")
 	ref Article[*] article;
 }
 
-@Node(base="Class", shape="shapes/article.svg")
+@Node(base="Class", shape="shapes/article.svg", bold="true")
 class Article {
 	attr String name;
 }

@@ -3,39 +3,39 @@
   <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="website.nodes" label="website nodes" description="website nodes">
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Web_node" label="Web" description="Web node" kind="CreationTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ClqF4TNsEemBkOmftjkSEQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ARvdQjazEemNRqQIo_cpGw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Webpage_node" label="Webpage" description="Webpage node" kind="CreationTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ClqF4zNsEemBkOmftjkSEQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ARvdRDazEemNRqQIo_cpGw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Category_node" label="Category" description="Category node" kind="CreationTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ClqF5TNsEemBkOmftjkSEQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ARvdRjazEemNRqQIo_cpGw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Article_node" label="Article" description="Article node" kind="CreationTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ClqF5zNsEemBkOmftjkSEQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ARvdSDazEemNRqQIo_cpGw"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
   <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="website.edges" label="website edges" description="website edges">
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="pages_edge" label="pages" description="pages edge" kind="ConnectionTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_Clqs8TNsEemBkOmftjkSEQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ARwEUTazEemNRqQIo_cpGw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="category_edge" label="category" description="category edge" kind="ConnectionTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_Clqs8zNsEemBkOmftjkSEQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ARwEUzazEemNRqQIo_cpGw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="article_edge" label="article" description="article edge" kind="ConnectionTool">
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ClrUATNsEemBkOmftjkSEQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_ARwEVTazEemNRqQIo_cpGw"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>

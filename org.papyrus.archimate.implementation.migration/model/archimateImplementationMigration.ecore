@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ArchimateImplementationAndMigration" nsURI="archimate-implementation-migration"
     nsPrefix="archimate-implementation-migration">
   <eAnnotations source="Diagram">
-    <details key="label" value="Archimate Implementation And Migration"/>
+    <details key="name" value="Archimate Implementation And Migration"/>
     <details key="icon" value="icons/implementation-and-migration-diagram-16.png"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="NodeElement" abstract="true"/>

@@ -47,6 +47,9 @@ Compartment[kind="symbol"]  {
 	
 	*/
 }
+	[appliedStereotypes~=Web] {
+		bold: true;
+	}
 [appliedStereotypes~=Webpage] {
 	svgFile: 'platform:/plugin/org.papyrus.website/shapes/webpage.svg';
 	/*
@@ -56,6 +59,9 @@ Compartment[kind="symbol"]  {
 	
 	*/
 }
+	[appliedStereotypes~=Webpage] {
+		bold: true;
+	}
 [appliedStereotypes~=Category] {
 	svgFile: 'platform:/plugin/org.papyrus.website/shapes/category.svg';
 	/*
@@ -65,6 +71,9 @@ Compartment[kind="symbol"]  {
 	
 	*/
 }
+	[appliedStereotypes~=Category] {
+		bold: true;
+	}
 [appliedStereotypes~=Article] {
 	svgFile: 'platform:/plugin/org.papyrus.website/shapes/article.svg';
 	/*
@@ -74,6 +83,9 @@ Compartment[kind="symbol"]  {
 	
 	*/
 }
+	[appliedStereotypes~=Article] {
+		bold: true;
+	}
 [appliedStereotypes~=pages], 
 [appliedStereotypes~=category], 
 [appliedStereotypes~=article] { 

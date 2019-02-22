@@ -1,5 +1,5 @@
 @namespace(uri="archimate-business", prefix="archimate-business")
-@Diagram(label="Archimate Business", icon="icons/business-diagram-16.png")
+@Diagram(name="Archimate Business", icon="icons/business-diagram-16.png")
 package ArchimateBusiness;
 
 abstract class NodeElement {	

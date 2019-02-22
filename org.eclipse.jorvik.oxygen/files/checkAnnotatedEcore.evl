@@ -6,8 +6,8 @@ context EPackage {
 	constraint DiagramAnnotationHasName {
 			
 		guard : self.getEAnnotation("Diagram").isDefined()
-		check : self.getEAnnotation("Diagram").details.get("label").isDefined()
-		message : 'Diagram annotation does not have a label detail.'
+		check : self.getEAnnotation("Diagram").details.get("name").isDefined()
+		message : 'Diagram annotation does not have a name detail.'
 	
 	}
 }
