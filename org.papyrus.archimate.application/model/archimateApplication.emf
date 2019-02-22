@@ -1,0 +1,90 @@
+@namespace(uri="archimate-application", prefix="archimate-application")
+@Diagram(label="Archimate Application", icon="icons/application-diagram-16.png")
+package ArchimateApplication;
+
+abstract class NodeElement {
+}
+
+@Node(base="Component", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
+class ApplicationComponent extends NodeElement {
+}
+
+@Node(base="Collaboration", shape="shapes/ApplicationCollaboration.svg", icon="icons/application-collaboration-16.png")
+class ApplicationCollaboration extends NodeElement {	
+}
+
+@Node(base="Interface", shape="shapes/ApplicationInterface.svg", icon="icons/application-interface-16.png")
+class ApplicationInterface extends NodeElement {	
+}
+
+@Node(base="Collaboration", shape="shapes/ApplicationFunction.svg", icon="icons/application-function-16.png")
+class ApplicationFunction extends NodeElement {	
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/ApplicationInteraction.svg", icon="icons/application-interaction-16.png")
+class ApplicationInteraction extends NodeElement {	
+}
+
+@Node(base="UseCase", shape="shapes/ApplicationService.svg", icon="icons/application-service-16.png")
+class ApplicationService extends NodeElement {	
+}
+
+@Node(base="Class", shape="shapes/DataObject.svg", icon="icons/data-object-16.png")
+class DataObject extends NodeElement {	
+}
+
+@Node(base="Class", shape="shapes/Grouping.svg", icon="icons/grouping-16.png")
+class Grouping extends NodeElement {	
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/Junction.svg", icon="icons/junction-16.png")
+class Junction extends NodeElement {
+}
+
+abstract class Relationship {
+	ref NodeElement[1] source;
+	ref NodeElement[1] target;
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/association-16.png")
+class Association extends Relationship {
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/aggregation-16.png")
+class Aggregation extends Relationship {
+}
+
+@Edge(base="Realization", source="source", target="target", icon="icons/realization-16.png")
+class Realization extends Relationship {
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/access-16.png")
+class Access extends Relationship {	
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/used-by-16.png")
+class UsedBy extends Relationship {	
+}
+
+@Edge(base="Dependency", source="source", target="target", icon="icons/assignment-16.png")
+class Assignment extends Relationship {	
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/composition-16.png")
+class Composition extends Relationship {	
+}
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/flow-16.png")
+class Flow extends Relationship {
+}
+
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/triggering-16.png")
+class Triggering extends Relationship {
+}
+
+
+
+@Edge(base="Generalization", source="source", target="target", icon="icons/specialization-16.png")
+class Specialization extends Relationship {
+}

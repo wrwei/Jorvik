@@ -1,0 +1,85 @@
+rule NodeUML2NodeEMF
+	transform s: UMLArchimateTechnology!Node
+	to t: EMFArchimateTechnology!Node {
+	}
+rule DeviceUML2DeviceEMF
+	transform s: UMLArchimateTechnology!Device
+	to t: EMFArchimateTechnology!Device {
+	}
+rule NetworkUML2NetworkEMF
+	transform s: UMLArchimateTechnology!Network
+	to t: EMFArchimateTechnology!Network {
+	}
+rule CommunicationPathUML2CommunicationPathEMF
+	transform s: UMLArchimateTechnology!CommunicationPath
+	to t: EMFArchimateTechnology!CommunicationPath {
+	}
+rule InfrastructureInterfaceUML2InfrastructureInterfaceEMF
+	transform s: UMLArchimateTechnology!InfrastructureInterface
+	to t: EMFArchimateTechnology!InfrastructureInterface {
+	}
+rule SystemSoftwareUML2SystemSoftwareEMF
+	transform s: UMLArchimateTechnology!SystemSoftware
+	to t: EMFArchimateTechnology!SystemSoftware {
+	}
+rule InfrastructureFunctionUML2InfrastructureFunctionEMF
+	transform s: UMLArchimateTechnology!InfrastructureFunction
+	to t: EMFArchimateTechnology!InfrastructureFunction {
+	}
+rule InfrastructureServiceUML2InfrastructureServiceEMF
+	transform s: UMLArchimateTechnology!InfrastructureService
+	to t: EMFArchimateTechnology!InfrastructureService {
+	}
+rule ArtifactUML2ArtifactEMF
+	transform s: UMLArchimateTechnology!Artifact
+	to t: EMFArchimateTechnology!Artifact {
+	}
+rule GroupingUML2GroupingEMF
+	transform s: UMLArchimateTechnology!Grouping
+	to t: EMFArchimateTechnology!Grouping {
+	}
+rule JunctionUML2JunctionEMF
+	transform s: UMLArchimateTechnology!Junction
+	to t: EMFArchimateTechnology!Junction {
+	}
+rule AssociationUML2AssociationEMF
+	transform s: UMLArchimateTechnology!Association
+	to t: EMFArchimateTechnology!Association {
+	}
+rule AccessUML2AccessEMF
+	transform s: UMLArchimateTechnology!Access
+	to t: EMFArchimateTechnology!Access {
+	}
+rule UsedByUML2UsedByEMF
+	transform s: UMLArchimateTechnology!UsedBy
+	to t: EMFArchimateTechnology!UsedBy {
+	}
+rule RealizationUML2RealizationEMF
+	transform s: UMLArchimateTechnology!Realization
+	to t: EMFArchimateTechnology!Realization {
+	}
+rule AssignmentUML2AssignmentEMF
+	transform s: UMLArchimateTechnology!Assignment
+	to t: EMFArchimateTechnology!Assignment {
+	}
+rule AggregationUML2AggregationEMF
+	transform s: UMLArchimateTechnology!Aggregation
+	to t: EMFArchimateTechnology!Aggregation {
+	}
+rule CompositionUML2CompositionEMF
+	transform s: UMLArchimateTechnology!Composition
+	to t: EMFArchimateTechnology!Composition {
+	}
+rule FlowUML2FlowEMF
+	transform s: UMLArchimateTechnology!Flow
+	to t: EMFArchimateTechnology!Flow {
+	}
+rule TriggeringUML2TriggeringEMF
+	transform s: UMLArchimateTechnology!Triggering
+	to t: EMFArchimateTechnology!Triggering {
+	}
+rule SpecializationUML2SpecializationEMF
+	transform s: UMLArchimateTechnology!Specialization
+	to t: EMFArchimateTechnology!Specialization {
+	}
+

@@ -1,0 +1,124 @@
+@namespace(uri="archimate-implementation-migration", prefix="archimate-implementation-migration")
+@Diagram(label="Archimate Implementation And Migration", icon="icons/implementation-and-migration-diagram-16.png")
+package ArchimateImplementationAndMigration;
+
+abstract class NodeElement {
+}
+
+@Node(base="Actor", shape="shapes/BusinessActor.svg", icon="icons/business-actor-16.png")
+class BusinessActor extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/BusinessRole.svg", icon="icons/business-role-16.png")
+class BusinessRole extends NodeElement {
+}
+
+@Node(base="Collaboration", shape="shapes/BusinessCollaboration.svg", icon="icons/business-collaboration-16.png")
+class BusinessCollaboration extends NodeElement {
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/BusinessInterface.svg", icon="icons/business-interface-16.png")
+class BusinessInterface extends NodeElement {
+}
+
+@Node(base="Node", shape="shapes/Location.svg", icon="icons/location-16.png")
+class Location extends NodeElement {
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/BusinessProcess.svg", icon="icons/business-process-16.png")
+class BusinessProcess extends NodeElement {
+}
+
+@Node(base="Collaboration", shape="shapes/BusinessFunction.svg", icon="icons/business-function-16.png")
+class BusinessFunction extends NodeElement {
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/BusinessInteraction.svg", icon="icons/business-interaction-16.png")
+class BusinessInteraction extends NodeElement {
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/BusinessEvent.svg", icon="icons/business-event-16.png")
+class BusinessEvent extends NodeElement {
+}
+
+@Node(base="UseCase", shape="shapes/BusinessService.svg", icon="icons/business-service-16.png")
+class BusinessService extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/BusinessObject.svg", icon="icons/business-object-16.png")
+class BusinessObject extends NodeElement {
+}
+
+@Node(base="Artifact", shape="shapes/Representation.svg", icon="icons/representation-16.png")
+class Representation extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Meaning.svg", icon="icons/meaning-16.png")
+class Meaning extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Value.svg", icon="icons/value-16.png")
+class Value extends NodeElement {
+}
+
+@Node(base="Artifact", shape="shapes/Product.svg", icon="icons/product-16.png")
+class Product extends NodeElement {
+}
+
+@Node(base="Artifact", shape="shapes/Contract.svg", icon="icons/contract-16.png")
+class Contract extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Grouping.svg", icon="icons/grouping-16.png")
+class Grouping extends NodeElement {	
+}
+@Node(base="OpaqueBehavior", shape="shapes/Junction.svg", icon="icons/junction-16.png")
+class Junction extends Relationship {	
+}
+
+abstract class Relationship {
+	ref NodeElement[1] source;
+	ref NodeElement[1] target;
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/association-16.png")
+class Association extends Relationship {
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/access-16.png")
+class Access extends Relationship {
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/used-by-16.png")
+class UsedBy extends Relationship {
+}
+
+@Edge(base="Realization", source="source", target="target", icon="icons/realization-16.png")
+class Realization extends Relationship {
+}
+
+@Edge(base="Dependency", source="source", target="target", icon="icons/assignment-16.png")
+class Assignment extends Relationship {
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/aggregation-16.png")
+class Aggregation extends Relationship {	
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/composition-16.png")
+class Composition extends Relationship {	
+}
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/flow-16.png")
+class Flow extends Relationship {	
+}
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/triggering-16.png")
+class Triggering extends Relationship {	
+}
+
+
+
+@Edge(base="Generalization", source="source", target="target", icon="icons/specialization-16.png")
+class Specialization extends Relationship {	
+}

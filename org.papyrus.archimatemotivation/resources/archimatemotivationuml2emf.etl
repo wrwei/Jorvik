@@ -1,0 +1,45 @@
+rule StakeholderUML2StakeholderEMF
+	transform s: UMLArchimateMotivation!Stakeholder
+	to t: EMFArchimateMotivation!Stakeholder {
+	}
+rule DriverUML2DriverEMF
+	transform s: UMLArchimateMotivation!Driver
+	to t: EMFArchimateMotivation!Driver {
+	}
+rule AssessmentUML2AssessmentEMF
+	transform s: UMLArchimateMotivation!Assessment
+	to t: EMFArchimateMotivation!Assessment {
+	}
+rule GoalUML2GoalEMF
+	transform s: UMLArchimateMotivation!Goal
+	to t: EMFArchimateMotivation!Goal {
+	}
+rule RequirementUML2RequirementEMF
+	transform s: UMLArchimateMotivation!Requirement
+	to t: EMFArchimateMotivation!Requirement {
+	}
+rule ConstraintUML2ConstraintEMF
+	transform s: UMLArchimateMotivation!Constraint
+	to t: EMFArchimateMotivation!Constraint {
+	}
+rule PrincipleUML2PrincipleEMF
+	transform s: UMLArchimateMotivation!Principle
+	to t: EMFArchimateMotivation!Principle {
+	}
+rule AssociationUML2AssociationEMF
+	transform s: UMLArchimateMotivation!Association
+	to t: EMFArchimateMotivation!Association {
+	}
+rule AggregationUML2AggregationEMF
+	transform s: UMLArchimateMotivation!Aggregation
+	to t: EMFArchimateMotivation!Aggregation {
+	}
+rule RealizationUML2RealizationEMF
+	transform s: UMLArchimateMotivation!Realization
+	to t: EMFArchimateMotivation!Realization {
+	}
+rule InfluenceUML2InfluenceEMF
+	transform s: UMLArchimateMotivation!Influence
+	to t: EMFArchimateMotivation!Influence {
+	}
+

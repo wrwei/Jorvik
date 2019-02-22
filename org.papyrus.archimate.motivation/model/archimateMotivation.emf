@@ -1,0 +1,55 @@
+@namespace(uri="archimate-motivation", prefix="archimate-motivation")
+@Diagram(label="Archimate Motivation", icon="icons/motivation-diagram-16.png")
+package ArchimateMotivation;
+
+abstract class NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Stakeholder.svg", icon="icons/stakeholder-16.png")
+class Stakeholder extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Driver.svg", icon="icons/driver-16.png")
+class Driver extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Assessment.svg", icon="icons/assessment-16.png")
+class Assessment extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Goal.svg", icon="icons/goal-16.png")
+class Goal extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Requirement.svg", icon="icons/requirement-16.png")
+class Requirement extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Constraint.svg", icon="icons/constraint-16.png")
+class Constraint extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Principle.svg", icon="icons/principle-16.png")
+class Principle extends NodeElement {
+}
+
+abstract class Relationship {
+	ref NodeElement[1] source;
+	ref NodeElement[1] target;
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/association-16.png")
+class Association extends Relationship {
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/aggregation-16.png")
+class Aggregation extends Relationship {
+}
+
+@Edge(base="Realization", source="source", target="target", icon="icons/realization-16.png")
+class Realization extends Relationship {
+}
+
+@Edge(base="Dependency", source="source", target="target", icon="icons/influence-16.png")
+class Influence extends Relationship {
+}

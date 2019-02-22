@@ -1,0 +1,161 @@
+[appliedStereotypes~=Node], 
+[appliedStereotypes~=Device], 
+[appliedStereotypes~=Network], 
+[appliedStereotypes~=CommunicationPath], 
+[appliedStereotypes~=InfrastructureInterface], 
+[appliedStereotypes~=SystemSoftware], 
+[appliedStereotypes~=InfrastructureFunction], 
+[appliedStereotypes~=InfrastructureService], 
+[appliedStereotypes~=Artifact], 
+[appliedStereotypes~=Grouping], 
+[appliedStereotypes~=Junction] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	bold:true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=Node] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/Node.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Device] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/Device.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Network] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/Network.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=CommunicationPath] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/CommunicationPath.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=InfrastructureInterface] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/InfrastructureInterface.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=SystemSoftware] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/SystemSoftware.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=InfrastructureFunction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/InfrastructureFunction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=InfrastructureService] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/InfrastructureService.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Artifact] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/Artifact.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Grouping] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/Grouping.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Junction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatetechnology/shapes/Junction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Association], 
+[appliedStereotypes~=Access], 
+[appliedStereotypes~=UsedBy], 
+[appliedStereotypes~=Realization], 
+[appliedStereotypes~=Assignment], 
+[appliedStereotypes~=Aggregation], 
+[appliedStereotypes~=Composition], 
+[appliedStereotypes~=Flow], 
+[appliedStereotypes~=Triggering], 
+[appliedStereotypes~=Specialization] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

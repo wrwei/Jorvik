@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+  <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+    <profile description="ArchimateImplementationAndMigration Profile" name="ArchimateImplementationAndMigration Profile" path="pathmap://resources/archimateimplementationandmigration/model.profile.uml" provider="Epsilon"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.uri_mapping">
+    <mapping source="pathmap://resources/archimateimplementationandmigration/" target="platform:/plugin/org.papyrus.archimateimplementationandmigration/"/>
+  </extension>
+  <extension point="org.eclipse.papyrus.infra.architecture.models">
+    <model path="resources/archimateimplementationandmigration.architecture"/>
+  </extension>
+</plugin>

@@ -1,0 +1,77 @@
+rule ApplicationComponentUML2ApplicationComponentEMF
+	transform s: UMLArchimateApplication!ApplicationComponent
+	to t: EMFArchimateApplication!ApplicationComponent {
+	}
+rule ApplicationCollaborationUML2ApplicationCollaborationEMF
+	transform s: UMLArchimateApplication!ApplicationCollaboration
+	to t: EMFArchimateApplication!ApplicationCollaboration {
+	}
+rule ApplicationInterfaceUML2ApplicationInterfaceEMF
+	transform s: UMLArchimateApplication!ApplicationInterface
+	to t: EMFArchimateApplication!ApplicationInterface {
+	}
+rule ApplicationFunctionUML2ApplicationFunctionEMF
+	transform s: UMLArchimateApplication!ApplicationFunction
+	to t: EMFArchimateApplication!ApplicationFunction {
+	}
+rule ApplicationInteractionUML2ApplicationInteractionEMF
+	transform s: UMLArchimateApplication!ApplicationInteraction
+	to t: EMFArchimateApplication!ApplicationInteraction {
+	}
+rule ApplicationServiceUML2ApplicationServiceEMF
+	transform s: UMLArchimateApplication!ApplicationService
+	to t: EMFArchimateApplication!ApplicationService {
+	}
+rule DataObjectUML2DataObjectEMF
+	transform s: UMLArchimateApplication!DataObject
+	to t: EMFArchimateApplication!DataObject {
+	}
+rule GroupingUML2GroupingEMF
+	transform s: UMLArchimateApplication!Grouping
+	to t: EMFArchimateApplication!Grouping {
+	}
+rule JunctionUML2JunctionEMF
+	transform s: UMLArchimateApplication!Junction
+	to t: EMFArchimateApplication!Junction {
+	}
+rule AssociationUML2AssociationEMF
+	transform s: UMLArchimateApplication!Association
+	to t: EMFArchimateApplication!Association {
+	}
+rule AggregationUML2AggregationEMF
+	transform s: UMLArchimateApplication!Aggregation
+	to t: EMFArchimateApplication!Aggregation {
+	}
+rule RealizationUML2RealizationEMF
+	transform s: UMLArchimateApplication!Realization
+	to t: EMFArchimateApplication!Realization {
+	}
+rule AccessUML2AccessEMF
+	transform s: UMLArchimateApplication!Access
+	to t: EMFArchimateApplication!Access {
+	}
+rule UsedByUML2UsedByEMF
+	transform s: UMLArchimateApplication!UsedBy
+	to t: EMFArchimateApplication!UsedBy {
+	}
+rule AssignmentUML2AssignmentEMF
+	transform s: UMLArchimateApplication!Assignment
+	to t: EMFArchimateApplication!Assignment {
+	}
+rule CompositionUML2CompositionEMF
+	transform s: UMLArchimateApplication!Composition
+	to t: EMFArchimateApplication!Composition {
+	}
+rule FlowUML2FlowEMF
+	transform s: UMLArchimateApplication!Flow
+	to t: EMFArchimateApplication!Flow {
+	}
+rule TriggeringUML2TriggeringEMF
+	transform s: UMLArchimateApplication!Triggering
+	to t: EMFArchimateApplication!Triggering {
+	}
+rule SpecializationUML2SpecializationEMF
+	transform s: UMLArchimateApplication!Specialization
+	to t: EMFArchimateApplication!Specialization {
+	}
+

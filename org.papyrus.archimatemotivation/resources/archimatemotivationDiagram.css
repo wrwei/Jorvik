@@ -1,0 +1,115 @@
+[appliedStereotypes~=Stakeholder], 
+[appliedStereotypes~=Driver], 
+[appliedStereotypes~=Assessment], 
+[appliedStereotypes~=Goal], 
+[appliedStereotypes~=Requirement], 
+[appliedStereotypes~=Constraint], 
+[appliedStereotypes~=Principle] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	bold:true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=Stakeholder] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatemotivation/shapes/Stakeholder.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Driver] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatemotivation/shapes/Driver.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Assessment] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatemotivation/shapes/Assessment.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Goal] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatemotivation/shapes/Goal.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Requirement] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatemotivation/shapes/Requirement.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Constraint] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatemotivation/shapes/Constraint.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Principle] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatemotivation/shapes/Principle.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Association], 
+[appliedStereotypes~=Aggregation], 
+[appliedStereotypes~=Realization], 
+[appliedStereotypes~=Influence] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

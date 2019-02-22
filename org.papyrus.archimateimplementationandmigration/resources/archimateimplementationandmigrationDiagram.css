@@ -1,0 +1,231 @@
+[appliedStereotypes~=BusinessActor], 
+[appliedStereotypes~=BusinessRole], 
+[appliedStereotypes~=BusinessCollaboration], 
+[appliedStereotypes~=BusinessInterface], 
+[appliedStereotypes~=Location], 
+[appliedStereotypes~=BusinessProcess], 
+[appliedStereotypes~=BusinessFunction], 
+[appliedStereotypes~=BusinessInteraction], 
+[appliedStereotypes~=BusinessEvent], 
+[appliedStereotypes~=BusinessService], 
+[appliedStereotypes~=BusinessObject], 
+[appliedStereotypes~=Representation], 
+[appliedStereotypes~=Meaning], 
+[appliedStereotypes~=Value], 
+[appliedStereotypes~=Product], 
+[appliedStereotypes~=Contract], 
+[appliedStereotypes~=Grouping], 
+[appliedStereotypes~=Junction] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	bold:true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=BusinessActor] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessActor.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessRole] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessRole.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessCollaboration] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessCollaboration.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessInterface] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessInterface.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Location] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Location.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessProcess] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessProcess.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessFunction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessFunction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessInteraction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessInteraction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessEvent] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessEvent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessService] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessService.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BusinessObject] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/BusinessObject.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Representation] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Representation.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Meaning] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Meaning.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Value] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Value.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Product] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Product.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Contract] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Contract.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Grouping] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Grouping.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Junction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateimplementationandmigration/shapes/Junction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Association], 
+[appliedStereotypes~=Access], 
+[appliedStereotypes~=UsedBy], 
+[appliedStereotypes~=Realization], 
+[appliedStereotypes~=Assignment], 
+[appliedStereotypes~=Aggregation], 
+[appliedStereotypes~=Composition], 
+[appliedStereotypes~=Flow], 
+[appliedStereotypes~=Triggering], 
+[appliedStereotypes~=Specialization] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

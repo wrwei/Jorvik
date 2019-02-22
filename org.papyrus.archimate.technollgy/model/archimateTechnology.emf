@@ -1,0 +1,95 @@
+@namespace(uri="archimate-technology", prefix="archimate-technology")
+@Diagram(label="Archimate Technology", icon="icons/technology-diagram-16.png")
+package ArchimateTechnology;
+
+abstract class NodeElement {
+}
+
+@Node(base="Node", shape="shapes/Node.svg", icon="icons/node-16.png")
+class Node extends NodeElement {
+}
+
+@Node(base="Device", shape="shapes/Device.svg", icon="icons/device-16.png")
+class Device extends NodeElement {
+}
+
+@Node(base="CommunicationPath", shape="shapes/Network.svg", icon="icons/network-16.png")
+class Network extends NodeElement {
+}
+
+@Node(base="CommunicationPath", shape="shapes/CommunicationPath.svg", icon="icons/communication-path-16.png")
+class CommunicationPath extends NodeElement {
+}
+
+@Node(base="Interface", shape="shapes/InfrastructureInterface.svg", icon="icons/infrastructure-interface-16.png")
+class InfrastructureInterface extends NodeElement {
+}
+
+@Node(base="ExecutionEnvironment", shape="shapes/SystemSoftware.svg", icon="icons/system-software-16.png")
+class SystemSoftware extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/InfrastructureFunction.svg", icon="icons/infrastructure-function-16.png")
+class InfrastructureFunction extends NodeElement {
+}
+
+@Node(base="Collaboration", shape="shapes/InfrastructureService.svg", icon="icons/infrastructure-service-16.png")
+class InfrastructureService extends NodeElement {
+}
+
+@Node(base="Artifact", shape="shapes/Artifact.svg", icon="icons/artifact-16.png")
+class Artifact extends NodeElement {
+}
+
+@Node(base="Class", shape="shapes/Grouping.svg", icon="icons/grouping-16.png")
+class Grouping extends NodeElement {	
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/Junction.svg", icon="icons/junction-16.png")
+class Junction extends Relationship {
+}
+
+abstract class Relationship {
+	ref NodeElement[1] source;
+	ref NodeElement[1] target;
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/association-16.png")
+class Association extends Relationship {
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/access-16.png")
+class Access extends Relationship {
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/used-by-16.png")
+class UsedBy extends Relationship {
+}
+
+@Edge(base="Realization", source="source", target="target", icon="icons/realization-16.png")
+class Realization extends Relationship {
+}
+
+@Edge(base="Dependency", source="source", target="target", icon="icons/assignment-16.png")
+class Assignment extends Relationship {
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/aggregation-16.png")
+class Aggregation extends Relationship {
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/composition-16.png")
+class Composition extends Relationship {
+}
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/flow-16.png")
+class Flow extends Relationship {
+}
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/triggering-16.png")
+class Triggering extends Relationship {
+}
+
+@Edge(base="Generalization", source="source", target="target", icon="icons/specialization-16.png")
+class Specialization extends Relationship {
+}

@@ -1,0 +1,78 @@
+@namespace(uri="archimate-business", prefix="archimate-business")
+@Diagram(label="Archimate Business", icon="icons/business-diagram-16.png")
+package ArchimateBusiness;
+
+abstract class NodeElement {	
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/WorkPackage.svg", icon="icons/work-package-16.png")
+class WorkPackage extends NodeElement {	
+}
+
+@Node(base="Artifact", shape="shapes/Deliverable.svg", icon="icons/deliverable-16.png")
+class Deliverable extends NodeElement {	
+}
+
+@Node(base="Class", shape="shapes/Plateau.svg", icon="icons/plateau-16.png")
+class Plateau extends NodeElement {	
+}
+
+@Node(base="Artifact", shape="shapes/Gap.svg", icon="icons/gap-16.png")
+class Gap extends NodeElement {	
+}
+
+@Node(base="Class", shape="shapes/Grouping.svg", icon="icons/grouping-16.png")
+class Grouping extends NodeElement {	
+}
+
+@Node(base="OpaqueBehavior", shape="shapes/Junction.svg", icon="icons/junction-16.png")
+class Junction extends Relationship {	
+}
+
+abstract class Relationship {
+	ref NodeElement[1] source;
+	ref NodeElement[1] target;
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/association-16.png")
+class Association extends Relationship {	
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/access-16.png")
+class Access extends Relationship {
+	
+}
+
+@Edge(base="Usage", source="source", target="target", icon="icons/used-by-16.png")
+class UsedBy extends Relationship {	
+}
+
+@Edge(base="Realization", source="source", target="target", icon="icons/realization-16.png")
+class Realization extends Relationship {	
+}
+
+@Edge(base="Dependency", source="source", target="target", icon="icons/assignment-16.png")
+class Assignment extends Relationship {	
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/aggregation-16.png")
+class Aggregation extends Relationship {	
+}
+
+@Edge(base="Association", source="source", target="target", icon="icons/composition-16.png")
+class Composition extends Relationship {	
+}
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/flow-16.png")
+class Flow extends Relationship {	
+}
+
+@Edge(base="InformationFlow", source="source", target="target", icon="icons/triggering-16.png")
+class Triggering extends Relationship {	
+}
+
+
+
+@Edge(base="Generalization", source="source", target="target", icon="icons/specialization-16.png")
+class Specialization extends Relationship {	
+}

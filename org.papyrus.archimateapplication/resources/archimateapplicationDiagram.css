@@ -1,0 +1,141 @@
+[appliedStereotypes~=ApplicationComponent], 
+[appliedStereotypes~=ApplicationCollaboration], 
+[appliedStereotypes~=ApplicationInterface], 
+[appliedStereotypes~=ApplicationFunction], 
+[appliedStereotypes~=ApplicationInteraction], 
+[appliedStereotypes~=ApplicationService], 
+[appliedStereotypes~=DataObject], 
+[appliedStereotypes~=Grouping], 
+[appliedStereotypes~=Junction] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	bold:true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=ApplicationComponent] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=ApplicationCollaboration] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/ApplicationCollaboration.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=ApplicationInterface] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/ApplicationInterface.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=ApplicationFunction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/ApplicationFunction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=ApplicationInteraction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/ApplicationInteraction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=ApplicationService] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/ApplicationService.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=DataObject] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/DataObject.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Grouping] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/Grouping.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Junction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimateapplication/shapes/Junction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Association], 
+[appliedStereotypes~=Aggregation], 
+[appliedStereotypes~=Realization], 
+[appliedStereotypes~=Access], 
+[appliedStereotypes~=UsedBy], 
+[appliedStereotypes~=Assignment], 
+[appliedStereotypes~=Composition], 
+[appliedStereotypes~=Flow], 
+[appliedStereotypes~=Triggering], 
+[appliedStereotypes~=Specialization] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

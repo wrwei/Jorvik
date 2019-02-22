@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="_Q1P9wDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.elementTypes" name="ArchimateTechnology shape element nodes and edges" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk0DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Node" name="Node" hint="UML::Node" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1UPMDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Node</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Node"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk0TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Node.shape" name="NodeShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk0DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk0jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Device" name="Device" hint="UML::Device" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1WrcDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Device</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Device"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk0zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Device.shape" name="DeviceShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk0jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk1DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Network" name="Network" hint="UML::CommunicationPath" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1YgoDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Network</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.CommunicationPath"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk1TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Network.shape" name="NetworkShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk1DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk1jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.CommunicationPath" name="CommunicationPath" hint="UML::CommunicationPath" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1aV0DaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::CommunicationPath</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.CommunicationPath"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk1zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.CommunicationPath.shape" name="CommunicationPathShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk1jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk2DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureInterface" name="InfrastructureInterface" hint="UML::Interface" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1bj8DaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::InfrastructureInterface</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Interface"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk2TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureInterface.shape" name="InfrastructureInterfaceShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk2DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk2jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.SystemSoftware" name="SystemSoftware" hint="UML::ExecutionEnvironment" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1dZIDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::SystemSoftware</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.ExecutionEnvironment"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk2zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.SystemSoftware.shape" name="SystemSoftwareShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk2jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk3DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureFunction" name="InfrastructureFunction" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1enQDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::InfrastructureFunction</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk3TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureFunction.shape" name="InfrastructureFunctionShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk3DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk3jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureService" name="InfrastructureService" hint="UML::Collaboration" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1gccDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::InfrastructureService</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Collaboration"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk3zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureService.shape" name="InfrastructureServiceShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk3jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk4DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Artifact" name="Artifact" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1hqkDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Artifact</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk4TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Artifact.shape" name="ArtifactShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk4DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk4jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Grouping" name="Grouping" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1i4sDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Grouping</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Qk4zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Grouping.shape" name="GroupingShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Qk4jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1RL4DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Junction" name="Junction" hint="UML::OpaqueBehavior" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1kt4DaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Junction</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.OpaqueBehavior"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1RL4TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Junction.shape" name="JunctionShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1RL4DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry8DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Association_Edge" name="AssociationEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1l8ADaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Association</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry8TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Association.edge.shape" name="AssociationShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry8DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry8jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Access_Edge" name="AccessEdge" hint="UML::Usage" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1nxMDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Access</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Usage"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry8zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Access.edge.shape" name="AccessShape" hint="Usage_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Usage_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry8jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry9DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.UsedBy_Edge" name="UsedByEdge" hint="UML::Usage" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1o_UDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::UsedBy</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Usage"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry9TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.UsedBy.edge.shape" name="UsedByShape" hint="Usage_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Usage_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry9DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry9jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Realization_Edge" name="RealizationEdge" hint="UML::Realization" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1q0gDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Realization</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Realization"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry9zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Realization.edge.shape" name="RealizationShape" hint="Realization_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Realization_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry9jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry-DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Assignment_Edge" name="AssignmentEdge" hint="UML::Dependency" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1tQwDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Assignment</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Dependency"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry-TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Assignment.edge.shape" name="AssignmentShape" hint="Dependency_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry-DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry-jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Aggregation_Edge" name="AggregationEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1wUEDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Aggregation</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry-zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Aggregation.edge.shape" name="AggregationShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry-jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry_DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Composition_Edge" name="CompositionEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q1ywUDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Composition</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry_TaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Composition.edge.shape" name="CompositionShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry_DaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry_jaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Flow_Edge" name="FlowEdge" hint="UML::InformationFlow" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q10lgDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Flow</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.InformationFlowBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1Ry_zaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Flow.edge.shape" name="FlowShape" hint="InformationFlow_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.InformationFlow_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1Ry_jaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1RzADaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Triggering_Edge" name="TriggeringEdge" hint="UML::InformationFlow" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q12asDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Triggering</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.InformationFlowBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1RzATaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Triggering.edge.shape" name="TriggeringShape" hint="InformationFlow_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.InformationFlow_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1RzADaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1SaADaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Specialization_Edge" name="SpecializationEdge" hint="UML::Generalization" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_Q16sIDaxEemNRqQIo_cpGw" profileUri="archimate-technology">
+      <stereotypesQualifiedNames>ArchimateTechnology::Specialization</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Generalization"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_Q1SaATaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Specialization.edge.shape" name="SpecializationShape" hint="Generalization_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Generalization_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_Q1SaADaxEemNRqQIo_cpGw"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1WEYDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Node.advice" target="_Q1Qk0DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1WEYTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Node" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1X5kDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Device.advice" target="_Q1Qk0jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1X5kTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Device" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1ZHsDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Network.advice" target="_Q1Qk1DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1ZHsTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Network" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1a84DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.CommunicationPath.advice" target="_Q1Qk1jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1a84TaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::CommunicationPath" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1cyEDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureInterface.advice" target="_Q1Qk2DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1cyETaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::InfrastructureInterface" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1eAMDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.SystemSoftware.advice" target="_Q1Qk2jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1eAMTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::SystemSoftware" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1f1YDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureFunction.advice" target="_Q1Qk3DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1f1YTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::InfrastructureFunction" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1hDgDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.InfrastructureService.advice" target="_Q1Qk3jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1hDgTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::InfrastructureService" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1iRoDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Artifact.advice" target="_Q1Qk4DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1iRoTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Artifact" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1kG0DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Grouping.advice" target="_Q1Qk4jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1kG0TaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Grouping" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1lU8DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Junction.advice" target="_Q1RL4DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1lU8TaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Junction" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1nKIDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Association.advice" target="_Q1Ry8DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1nKITaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Association" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1oYQDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Access.advice" target="_Q1Ry8jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1oYQTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Access" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1qNcDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.UsedBy.advice" target="_Q1Ry9DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1qNcTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::UsedBy" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1sCoDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Realization.advice" target="_Q1Ry9jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1sCoTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Realization" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1ue4DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Assignment.advice" target="_Q1Ry-DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1ue4TaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Assignment" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1yJQDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Aggregation.advice" target="_Q1Ry-jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1yJQTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Aggregation" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1zXYDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Composition.advice" target="_Q1Ry_DaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q1zXYTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Composition" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q11zoDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Flow.advice" target="_Q1Ry_jaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q11zoTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Flow" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q1428DaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Triggering.advice" target="_Q1RzADaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q15eADaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Triggering" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_Q18hUDaxEemNRqQIo_cpGw" identifier="ArchimateTechnology.Specialization.advice" target="_Q1SaADaxEemNRqQIo_cpGw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_Q18hUTaxEemNRqQIo_cpGw" stereotypeQualifiedName="ArchimateTechnology::Specialization" updateName="true">
+      <requiredProfiles>ArchimateTechnology</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

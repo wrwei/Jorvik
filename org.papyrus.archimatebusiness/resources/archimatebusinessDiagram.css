@@ -1,0 +1,111 @@
+[appliedStereotypes~=WorkPackage], 
+[appliedStereotypes~=Deliverable], 
+[appliedStereotypes~=Plateau], 
+[appliedStereotypes~=Gap], 
+[appliedStereotypes~=Grouping], 
+[appliedStereotypes~=Junction] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	bold:true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=WorkPackage] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatebusiness/shapes/WorkPackage.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Deliverable] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatebusiness/shapes/Deliverable.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Plateau] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatebusiness/shapes/Plateau.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Gap] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatebusiness/shapes/Gap.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Grouping] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatebusiness/shapes/Grouping.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Junction] {
+	svgFile: 'platform:/plugin/org.papyrus.archimatebusiness/shapes/Junction.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Association], 
+[appliedStereotypes~=Access], 
+[appliedStereotypes~=UsedBy], 
+[appliedStereotypes~=Realization], 
+[appliedStereotypes~=Assignment], 
+[appliedStereotypes~=Aggregation], 
+[appliedStereotypes~=Composition], 
+[appliedStereotypes~=Flow], 
+[appliedStereotypes~=Triggering], 
+[appliedStereotypes~=Specialization] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

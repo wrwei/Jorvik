@@ -1,0 +1,65 @@
+rule WorkPackageUML2WorkPackageEMF
+	transform s: UMLArchimateBusiness!WorkPackage
+	to t: EMFArchimateBusiness!WorkPackage {
+	}
+rule DeliverableUML2DeliverableEMF
+	transform s: UMLArchimateBusiness!Deliverable
+	to t: EMFArchimateBusiness!Deliverable {
+	}
+rule PlateauUML2PlateauEMF
+	transform s: UMLArchimateBusiness!Plateau
+	to t: EMFArchimateBusiness!Plateau {
+	}
+rule GapUML2GapEMF
+	transform s: UMLArchimateBusiness!Gap
+	to t: EMFArchimateBusiness!Gap {
+	}
+rule GroupingUML2GroupingEMF
+	transform s: UMLArchimateBusiness!Grouping
+	to t: EMFArchimateBusiness!Grouping {
+	}
+rule JunctionUML2JunctionEMF
+	transform s: UMLArchimateBusiness!Junction
+	to t: EMFArchimateBusiness!Junction {
+	}
+rule AssociationUML2AssociationEMF
+	transform s: UMLArchimateBusiness!Association
+	to t: EMFArchimateBusiness!Association {
+	}
+rule AccessUML2AccessEMF
+	transform s: UMLArchimateBusiness!Access
+	to t: EMFArchimateBusiness!Access {
+	}
+rule UsedByUML2UsedByEMF
+	transform s: UMLArchimateBusiness!UsedBy
+	to t: EMFArchimateBusiness!UsedBy {
+	}
+rule RealizationUML2RealizationEMF
+	transform s: UMLArchimateBusiness!Realization
+	to t: EMFArchimateBusiness!Realization {
+	}
+rule AssignmentUML2AssignmentEMF
+	transform s: UMLArchimateBusiness!Assignment
+	to t: EMFArchimateBusiness!Assignment {
+	}
+rule AggregationUML2AggregationEMF
+	transform s: UMLArchimateBusiness!Aggregation
+	to t: EMFArchimateBusiness!Aggregation {
+	}
+rule CompositionUML2CompositionEMF
+	transform s: UMLArchimateBusiness!Composition
+	to t: EMFArchimateBusiness!Composition {
+	}
+rule FlowUML2FlowEMF
+	transform s: UMLArchimateBusiness!Flow
+	to t: EMFArchimateBusiness!Flow {
+	}
+rule TriggeringUML2TriggeringEMF
+	transform s: UMLArchimateBusiness!Triggering
+	to t: EMFArchimateBusiness!Triggering {
+	}
+rule SpecializationUML2SpecializationEMF
+	transform s: UMLArchimateBusiness!Specialization
+	to t: EMFArchimateBusiness!Specialization {
+	}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_Q3icwDaxEemNRqQIo_cpGw" id="ArchimateTechnology.architecture" name="ArchimateTechnology Architecture Model" description="Architecture Model for ArchimateTechnology">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_Q3icwjaxEemNRqQIo_cpGw" id="ArchimateTechnology.stakeholder" name="ArchimateTechnology Stakeholder" description="ArchimateTechnology Architecture Stakeholder" concerns="_Q3icwTaxEemNRqQIo_cpGw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_Q3icwTaxEemNRqQIo_cpGw" id="ArchimateTechnology.concern" name="ArchimateTechnology Concern" description="ArchimateTechnology Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_Q3jD0DaxEemNRqQIo_cpGw" id="ArchimateTechnology.description.language" name="ArchimateTechnology Description Language" description="Description Language for ArchimateTechnology" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_Q3y7cDaxEemNRqQIo_cpGw" id="ArchimateTechnology.viewpoint" name="ArchimateTechnology View Point" description="View Point for ArchimateTechnology" concerns="_Q3icwTaxEemNRqQIo_cpGw" representationKinds="_Q3mHIDaxEemNRqQIo_cpGw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_Q1P9wDaxEemNRqQIo_cpGw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_Q3mHIDaxEemNRqQIo_cpGw" id="ArchimateTechnology.papyrus.diagram" name="ArchimateTechnology Papyrus Diagram" description="Papyrus Diagram for ArchimateTechnology" concerns="_Q3icwTaxEemNRqQIo_cpGw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.archimatetechnology/resources/archimatetechnologyDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_Q3mHITaxEemNRqQIo_cpGw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_Q3uC8DaxEemNRqQIo_cpGw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_Q3yUYDaxEemNRqQIo_cpGw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="archimatetechnology.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

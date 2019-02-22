@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+  <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+    <profile description="ArchimateApplication Profile" name="ArchimateApplication Profile" path="pathmap://resources/archimateapplication/model.profile.uml" provider="Epsilon"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.uri_mapping">
+    <mapping source="pathmap://resources/archimateapplication/" target="platform:/plugin/org.papyrus.archimateapplication/"/>
+  </extension>
+  <extension point="org.eclipse.papyrus.infra.architecture.models">
+    <model path="resources/archimateapplication.architecture"/>
+  </extension>
+</plugin>

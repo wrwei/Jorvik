@@ -1,0 +1,113 @@
+rule BusinessActorUML2BusinessActorEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessActor
+	to t: EMFArchimateImplementationAndMigration!BusinessActor {
+	}
+rule BusinessRoleUML2BusinessRoleEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessRole
+	to t: EMFArchimateImplementationAndMigration!BusinessRole {
+	}
+rule BusinessCollaborationUML2BusinessCollaborationEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessCollaboration
+	to t: EMFArchimateImplementationAndMigration!BusinessCollaboration {
+	}
+rule BusinessInterfaceUML2BusinessInterfaceEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessInterface
+	to t: EMFArchimateImplementationAndMigration!BusinessInterface {
+	}
+rule LocationUML2LocationEMF
+	transform s: UMLArchimateImplementationAndMigration!Location
+	to t: EMFArchimateImplementationAndMigration!Location {
+	}
+rule BusinessProcessUML2BusinessProcessEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessProcess
+	to t: EMFArchimateImplementationAndMigration!BusinessProcess {
+	}
+rule BusinessFunctionUML2BusinessFunctionEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessFunction
+	to t: EMFArchimateImplementationAndMigration!BusinessFunction {
+	}
+rule BusinessInteractionUML2BusinessInteractionEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessInteraction
+	to t: EMFArchimateImplementationAndMigration!BusinessInteraction {
+	}
+rule BusinessEventUML2BusinessEventEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessEvent
+	to t: EMFArchimateImplementationAndMigration!BusinessEvent {
+	}
+rule BusinessServiceUML2BusinessServiceEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessService
+	to t: EMFArchimateImplementationAndMigration!BusinessService {
+	}
+rule BusinessObjectUML2BusinessObjectEMF
+	transform s: UMLArchimateImplementationAndMigration!BusinessObject
+	to t: EMFArchimateImplementationAndMigration!BusinessObject {
+	}
+rule RepresentationUML2RepresentationEMF
+	transform s: UMLArchimateImplementationAndMigration!Representation
+	to t: EMFArchimateImplementationAndMigration!Representation {
+	}
+rule MeaningUML2MeaningEMF
+	transform s: UMLArchimateImplementationAndMigration!Meaning
+	to t: EMFArchimateImplementationAndMigration!Meaning {
+	}
+rule ValueUML2ValueEMF
+	transform s: UMLArchimateImplementationAndMigration!Value
+	to t: EMFArchimateImplementationAndMigration!Value {
+	}
+rule ProductUML2ProductEMF
+	transform s: UMLArchimateImplementationAndMigration!Product
+	to t: EMFArchimateImplementationAndMigration!Product {
+	}
+rule ContractUML2ContractEMF
+	transform s: UMLArchimateImplementationAndMigration!Contract
+	to t: EMFArchimateImplementationAndMigration!Contract {
+	}
+rule GroupingUML2GroupingEMF
+	transform s: UMLArchimateImplementationAndMigration!Grouping
+	to t: EMFArchimateImplementationAndMigration!Grouping {
+	}
+rule JunctionUML2JunctionEMF
+	transform s: UMLArchimateImplementationAndMigration!Junction
+	to t: EMFArchimateImplementationAndMigration!Junction {
+	}
+rule AssociationUML2AssociationEMF
+	transform s: UMLArchimateImplementationAndMigration!Association
+	to t: EMFArchimateImplementationAndMigration!Association {
+	}
+rule AccessUML2AccessEMF
+	transform s: UMLArchimateImplementationAndMigration!Access
+	to t: EMFArchimateImplementationAndMigration!Access {
+	}
+rule UsedByUML2UsedByEMF
+	transform s: UMLArchimateImplementationAndMigration!UsedBy
+	to t: EMFArchimateImplementationAndMigration!UsedBy {
+	}
+rule RealizationUML2RealizationEMF
+	transform s: UMLArchimateImplementationAndMigration!Realization
+	to t: EMFArchimateImplementationAndMigration!Realization {
+	}
+rule AssignmentUML2AssignmentEMF
+	transform s: UMLArchimateImplementationAndMigration!Assignment
+	to t: EMFArchimateImplementationAndMigration!Assignment {
+	}
+rule AggregationUML2AggregationEMF
+	transform s: UMLArchimateImplementationAndMigration!Aggregation
+	to t: EMFArchimateImplementationAndMigration!Aggregation {
+	}
+rule CompositionUML2CompositionEMF
+	transform s: UMLArchimateImplementationAndMigration!Composition
+	to t: EMFArchimateImplementationAndMigration!Composition {
+	}
+rule FlowUML2FlowEMF
+	transform s: UMLArchimateImplementationAndMigration!Flow
+	to t: EMFArchimateImplementationAndMigration!Flow {
+	}
+rule TriggeringUML2TriggeringEMF
+	transform s: UMLArchimateImplementationAndMigration!Triggering
+	to t: EMFArchimateImplementationAndMigration!Triggering {
+	}
+rule SpecializationUML2SpecializationEMF
+	transform s: UMLArchimateImplementationAndMigration!Specialization
+	to t: EMFArchimateImplementationAndMigration!Specialization {
+	}
+
