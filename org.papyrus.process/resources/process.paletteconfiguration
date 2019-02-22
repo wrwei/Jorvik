@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="Process.Process" label="Process Palette">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="Process.nodes" label="Process nodes" description="Process nodes">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Step_node" label="Step" description="Step node" kind="CreationTool">
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.papyrus.process/resources/diagramshapes.elementtypesconfigurations#_CwG-ITQ3EemBkOmftjkSEQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Tool_node" label="Tool" description="Tool node" kind="CreationTool">
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.papyrus.process/resources/diagramshapes.elementtypesconfigurations#_CwG-IzQ3EemBkOmftjkSEQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Person_node" label="Person" description="Person node" kind="CreationTool">
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.papyrus.process/resources/diagramshapes.elementtypesconfigurations#_CwG-JTQ3EemBkOmftjkSEQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="Process.edges" label="Process edges" description="Process edges">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Role_edge" label="Role" description="Role edge" kind="ConnectionTool">
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.papyrus.process/resources/diagramshapes.elementtypesconfigurations#_CwG-JzQ3EemBkOmftjkSEQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="familiarWith_edge" label="familiarWith" description="familiarWith edge" kind="ConnectionTool">
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.papyrus.process/resources/diagramshapes.elementtypesconfigurations#_CwHlMTQ3EemBkOmftjkSEQ"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <requiredProfiles>Process</requiredProfiles>
+</paletteconfiguration:PaletteConfiguration>

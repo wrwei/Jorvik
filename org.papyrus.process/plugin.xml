@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+  <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+    <profile description="Process Profile" name="Process Profile" path="pathmap://resources/process/model.profile.uml" provider="Epsilon"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.uri_mapping">
+    <mapping source="pathmap://resources/process/" target="platform:/plugin/org.papyrus.process/"/>
+  </extension>
+  <extension point="org.eclipse.papyrus.infra.architecture.models">
+    <model path="resources/process.architecture"/>
+  </extension>
+</plugin>

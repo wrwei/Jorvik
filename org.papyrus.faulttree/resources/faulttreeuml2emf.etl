@@ -1,0 +1,37 @@
+rule ConnectorUML2ConnectorEMF
+	transform s: UMLfaultTree!Connector
+	to t: EMFfaultTree!Connector {
+		t.source ::= s.source;
+		t.target ::= s.target;
+	}
+rule EventUML2EventEMF
+	transform s: UMLfaultTree!Event
+	to t: EMFfaultTree!Event {
+		t.title = s.title;
+		t.description = s.description;
+	}
+rule BasicEventUML2BasicEventEMF
+	transform s: UMLfaultTree!BasicEvent
+	to t: EMFfaultTree!BasicEvent {
+	}
+rule UndevelopedEventUML2UndevelopedEventEMF
+	transform s: UMLfaultTree!UndevelopedEvent
+	to t: EMFfaultTree!UndevelopedEvent {
+	}
+rule ExternalEventUML2ExternalEventEMF
+	transform s: UMLfaultTree!ExternalEvent
+	to t: EMFfaultTree!ExternalEvent {
+	}
+rule IntermediateEventUML2IntermediateEventEMF
+	transform s: UMLfaultTree!IntermediateEvent
+	to t: EMFfaultTree!IntermediateEvent {
+	}
+rule AND_GateUML2AND_GateEMF
+	transform s: UMLfaultTree!AND_Gate
+	to t: EMFfaultTree!AND_Gate {
+	}
+rule OR_GateUML2OR_GateEMF
+	transform s: UMLfaultTree!OR_Gate
+	to t: EMFfaultTree!OR_Gate {
+	}
+

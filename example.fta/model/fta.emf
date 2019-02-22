@@ -1,0 +1,60 @@
+@namespace(uri="http://faulttree/1.0", prefix="fta")
+@Diagram(name="FaultTree")
+package faultTree;
+
+abstract class FTElement {
+}
+
+@Edge(base="Association", source="source", target="target")
+class Connector extends FTElement {
+	ref FTElement source;
+	ref FTElement target;
+}
+
+class FaultTree extends FTElement{
+}
+
+@Node(base="Class", shape="shapes/event.svg")
+class Event extends FTElement {
+	attr String title;
+	attr String description;
+}
+
+abstract class ProbabalisticEvent extends Event {
+	attr float probability;
+}
+
+@Node(base="Class", shape="shapes/basicEvent.svg")
+class BasicEvent extends ProbabalisticEvent {
+}
+
+@Node(base="Class", shape="shapes/undevelopedEvent.svg")
+class UndevelopedEvent extends ProbabalisticEvent {
+	
+}
+
+@Node(base="Class", shape="shapes/externalEvent.svg")
+class ExternalEvent extends ProbabalisticEvent {
+	
+}
+
+@Node(base="Class", shape="shapes/intermediateEvent.svg")
+class IntermediateEvent extends Event {
+	
+}
+
+abstract class Gate extends FTElement {
+	
+}
+
+@Node(base="Class", shape="shapes/andGate.svg")
+class AND_Gate extends Gate {
+	
+}
+
+@Node(base="Class", shape="shapes/orGate.svg")
+class OR_Gate extends Gate {
+	
+}
+
+

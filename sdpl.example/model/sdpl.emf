@@ -2,13 +2,13 @@
 @Diagram(name="SDPL")
 package Process;
 
-@Node(base="Class", shape="shapes/step.svg")
+@Node(base="Class", shape="shapes/step.svg", fontHeight="18")
 class Step {
 	attr String stepID;
 	ref Step[1] next;
 }
 
-@Node(base="Class", shape="shapes/tool.svg")
+@Node(base="Class", shape="shapes/tool.svg", bold="true")
 class Tool {
 	attr String name;
 }

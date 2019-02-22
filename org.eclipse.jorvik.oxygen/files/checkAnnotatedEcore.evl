@@ -1,45 +1,150 @@
+// How to write there is at least one @Diagram?
+
+
+context EPackage {
+	
+	constraint DiagramAnnotationHasName {
+			
+		guard : self.getEAnnotation("Diagram").isDefined()
+		check : self.getEAnnotation("Diagram").details.get("name").isDefined()
+		message : 'Diagram annotation does not have a name detail.'
+	
+	}
+}
+
 context EClass {
 
 	constraint NodeAnnotationHasBaseClass {
-	
-	guard : self.getEAnnotation("Node").isDefined()
-	check : self.getEAnnotation("Node").details.get("base").isDefined()
-	message : 'Base element is not defined for class ' + self.name + '.'
+		
+		guard : self.getEAnnotation("Node").isDefined()
+		check : self.getEAnnotation("Node").details.get("base").isDefined()
+		message : 'Base element is not defined for class ' + self.name + '.'
 	
 	}
 	
 	constraint EdgeAnnotationHasBaseClass {
-	
-	guard : self.getEAnnotation("Edge").isDefined()
-	check : self.getEAnnotation("Edge").details.get("base").isDefined()
-	message : 'Base element is not defined for class ' + self.name + '.'
+		
+		guard : self.getEAnnotation("Edge").isDefined()
+		check : self.getEAnnotation("Edge").details.get("base").isDefined()
+		message : 'Base element is not defined for class ' + self.name + '.'
 	
 	}
 	
 	constraint EdgeAnnotationHasSource {
-	
-	guard : self.getEAnnotation("Edge").isDefined()
-	check : self.getEAnnotation("Edge").details.get("source").isDefined()
-	message : 'Source element is not defined for class ' + self.name + '.'
+		
+		guard : self.getEAnnotation("Edge").isDefined()
+		check : self.getEAnnotation("Edge").details.get("source").isDefined()
+		message : 'Source element is not defined for class ' + self.name + '.'
 	
 	}
 	
 	constraint EdgeAnnotationHasTarget {
-	
-	guard : self.getEAnnotation("Edge").isDefined()
-	check : self.getEAnnotation("Edge").details.get("target").isDefined()
-	message : 'Target element is not defined for class ' + self.name + '.'
+		
+		guard : self.getEAnnotation("Edge").isDefined()
+		check : self.getEAnnotation("Edge").details.get("target").isDefined()
+		message : 'Target element is not defined for class ' + self.name + '.'
 	
 	}
+	
+	constraint LineStyleValueIsCorrect {
+		
+		guard : self.getEAnnotation("Edge").isDefined() and self.getEAnnotation("Edge").details.get("lineStyle").isDefined()
+		check : self.getEAnnotation("Edge").details.get("lineStyle").equals("solid") or 
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("dashed") or
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("dotted") or
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("hidden") or
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("double") 
+		message : "Line style value for element " + self.name + " is not correct. Possible values are: dashed, solid, dotted, hidden or double."
 	}
 	
-	context EReference {
+	constraint EdgeAnnotationBoldValueIsCorrect {
+		
+		guard : self.getEAnnotation("Edge").isDefined() and self.getEAnnotation("Edge").details.get("bold").isDefined()
+		check : self.getEAnnotation("Edge").details.get("bold").equals("true") or 
+			self.getEAnnotation("Edge").details.get("bold").equals("false")
+		message : "Bold value for element " + self.name + " is not correct. Possible values are: true or false."
+	}
+	
+	constraint NodeAnnotationBoldValueIsCorrect {
+		
+		guard : self.getEAnnotation("Node").isDefined() and self.getEAnnotation("Node").details.get("bold").isDefined()
+		check : self.getEAnnotation("Node").details.get("bold").equals("true") or 
+			self.getEAnnotation("Node").details.get("bold").equals("false")
+		message : "Bold value for element " + self.name + " is not correct. Possible values are: true or false."
+	}
+	
+	constraint EdgeAnnotationFontHeightValueIsCorrect {
+		
+		guard : self.getEAnnotation("Edge").isDefined() and self.getEAnnotation("Edge").details.get("fontHeight").isDefined()
+		check : self.getEAnnotation("Edge").details.get("fontHeight").matches("^\\d+$") 
+		message : "Font height value for element " + self.name + " is not correct. It should be an integer."
+	}
+	
+	constraint NodeAnnotationFontHeightValueIsCorrect {
+		
+		guard : self. getEAnnotation("Node").isDefined() and self.getEAnnotation("Node").details.get("fontHeight").isDefined()
+		check : self.getEAnnotation("Node").details.get("fontHeight").matches("^\\d+$") 
+		message : "Font height value for element " + self.name + " is not correct. It should be an integer."
+	}
+	
+	constraint EdgeAnnotationHasAcceptableDetails {
+		guard : self.getEAnnotation("Edge").isDefined()
+		check : self.getEAnnotation("Edge").details.keySet().excludingAll(Sequence{"base", "source", "target", "fontHeight", "bold", "lineStyle"}).isEmpty()
+		
+		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, source, target, fontHeight, bold and/or lineStyle."
+		
+	}
+	
+	constraint NodeAnnotationHasAcceptableDetails {
+		guard : self.getEAnnotation("Node").isDefined()
+		check : self.getEAnnotation("Node").details.keySet().excludingAll(Sequence{"base", "fontHeight", "bold"}).isEmpty()
+		
+		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, fontHeight and/or bold."
+		
+	}
+}
+
+context EReference {
 	
 	constraint EdgeAnnotationRefHasBaseClass {
+		
+		guard : self.getEAnnotation("Edge").isDefined()
+		check : self.getEAnnotation("Edge").details.get("base").isDefined()
+		message : 'Base element is not defined for reference ' + self.name + '.'
 	
-	guard : self.getEAnnotation("Edge").isDefined()
-	check : self.getEAnnotation("Edge").details.get("base").isDefined()
-	message : 'Base element is not defined for reference ' + self.name + '.'
+	}
+
+	constraint LineStyleValueIsCorrect {
+		
+		guard : self.getEAnnotation("Edge").isDefined() and self.getEAnnotation("Edge").details.get("lineStyle").isDefined()
+		check : self.getEAnnotation("Edge").details.get("lineStyle").equals("solid") or 
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("dashed") or
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("dotted") or
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("hidden") or
+			self.getEAnnotation("Edge").details.get("lineStyle").equals("double") 
+		message : "Line style value for element " + self.name + " is not correct. Possible values are: dashed, solid, dotted, hidden or double."
+	}
 	
+	constraint BoldValueIsCorrect {
+		
+		guard : self.getEAnnotation("Edge").isDefined() and self.getEAnnotation("Edge").details.get("bold").isDefined()
+		check : self.getEAnnotation("Edge").details.get("bold").equals("true") or 
+			self.getEAnnotation("Edge").details.get("bold").equals("false")
+		message : "Bold value for element " + self.name + " is not correct. Possible values are: true or false."
+	}
+	
+	constraint FontHeightValueIsCorrect {
+		
+		guard : self.getEAnnotation("Edge").isDefined() and self.getEAnnotation("Edge").details.get("fontHeight").isDefined()
+		check : self.getEAnnotation("Edge").details.get("fontHeight").matches("^\\d+$") 
+		message : "Font height value for element " + self.name + " is not correct. It should be an integer."
+	}
+	
+	constraint EdgeAnnotationHasAcceptableDetails {
+		guard : self.getEAnnotation("Edge").isDefined()
+		check : self.getEAnnotation("Edge").details.keySet().excludingAll(Sequence{"base", "source", "target", "fontHeight", "bold", "lineStyle"}).isEmpty()
+		
+		message : "The annotation details used in " + self.name + " are not correct. Acceptable details are: base, source, target, fontHeight, bold and/or lineStyle."
+		
 	}
 }
