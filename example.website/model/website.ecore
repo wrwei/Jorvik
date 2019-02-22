@@ -34,6 +34,7 @@
         eType="#//Category" containment="true">
       <eAnnotations source="Edge">
         <details key="base" value="Association"/>
+        <details key="lineStyle" value="dashed"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -48,6 +49,7 @@
         eType="#//Article">
       <eAnnotations source="Edge">
         <details key="base" value="Association"/>
+        <details key="lineStyle" value="dotted"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>

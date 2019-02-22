@@ -94,3 +94,9 @@ Compartment[kind="symbol"]  {
 	roundedBendpointsRadius:10;
 	*/
 }
+		[appliedStereotypes~=category] {
+			lineStyle: dashed;
+		}
+		[appliedStereotypes~=article] {
+			lineStyle: dotted;
+		}
