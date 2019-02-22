@@ -1,6 +1,4 @@
 // How to write there is at least one @Diagram?
-
-
 context EPackage {
 	
 	constraint DiagramAnnotationHasName {
@@ -9,6 +7,14 @@ context EPackage {
 		check : self.getEAnnotation("Diagram").details.get("name").isDefined()
 		message : 'Diagram annotation does not have a name detail.'
 	
+	}
+
+	constraint DiagramAnnotationHasAcceptableDetails {
+		guard : self.getEAnnotation("Diagram").isDefined()
+		check : self.getEAnnotation("Diagram").details.keySet().excludingAll(Sequence{"name", "icon"}).isEmpty()
+		
+		message : 'The annotation details used in ' + self.name + ' are not correct. Acceptable details are: name and/or icon.'
+		
 	}
 }
 
