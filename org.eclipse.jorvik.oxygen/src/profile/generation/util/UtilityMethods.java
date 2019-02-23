@@ -129,6 +129,7 @@ public class UtilityMethods {
 		resourcesFolder.create(IResource.FOLDER, true, progressMonitor);
 		
 		IPackageFragmentRoot root = javaProject.getPackageFragmentRoot(srcFolder);
+		@SuppressWarnings("unused")
 		IPackageFragment fragment = root.createPackageFragment("util", true, progressMonitor);
 
 		return project;
@@ -194,6 +195,7 @@ public class UtilityMethods {
 		}
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void createTheProfileUmlFile(String theSelectedFilePath, String theDestinationIProjectFolder, IProject theSelectedFileParentIProject) throws Exception {
 
 		// The emfatic (ecore) source

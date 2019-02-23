@@ -33,6 +33,7 @@ import org.eclipse.ui.PlatformUI;
 
 import profile.generation.util.UtilityMethods;
 
+@SuppressWarnings("restriction")
 public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 
 	//the shell
@@ -42,7 +43,7 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 	private String theSelectedFilePath;
 	
 	//the selected file parent folder, the destination project folder
-	private String theSelectedFileParentFolder, theDestinationProjectFolder;
+	private String theDestinationProjectFolder;
 	
 	//the selected file parent project
 	private IProject theSelectedFileParentIProject;
@@ -67,8 +68,7 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
         Object firstElement = theSelectedFile.getFirstElement();
         //get file
         IFile file = (IFile) Platform.getAdapterManager().getAdapter(firstElement,IFile.class);
-        //populate strings and parent iProject
-        theSelectedFileParentFolder = file.getParent().getLocation().toOSString();
+        file.getParent().getLocation().toOSString();
         theDestinationProjectFolder = file.getProject().getLocation().toOSString();
         theSelectedFilePath = file.getLocation().toOSString();
         theSelectedFileParentIProject = file.getProject();
