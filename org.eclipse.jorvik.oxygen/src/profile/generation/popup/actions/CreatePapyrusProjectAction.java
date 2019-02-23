@@ -22,6 +22,9 @@ import org.eclipse.jface.dialogs.ProgressMonitorDialog;
 import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.pde.core.plugin.IPluginModelBase;
+import org.eclipse.pde.core.plugin.PluginRegistry;
+import org.eclipse.pde.internal.ui.wizards.tools.UpdateClasspathJob;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IActionDelegate;
 import org.eclipse.ui.IObjectActionDelegate;
@@ -81,8 +84,25 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 		try {
 			IRunnableWithProgress op = new IRunnableWithProgress() {
 				public void run(IProgressMonitor monitor) {
+					boolean verbose = false;
+					String errorMessage = null;
+
 					SubMonitor subMonitor = SubMonitor.convert(monitor, 140);
 					try {
+						
+						subMonitor.setTaskName("Validating Annotated Ecore.");
+						errorMessage = tahh.checkAnnotatedEcore(theSelectedFilePath, theSelectedFileParentIProject);
+						if (errorMessage != null) {
+							verbose = true;
+							throw new Exception(errorMessage);
+						}
+						subMonitor.split(10);
+
+						//done
+						subMonitor.setTaskName("Generating the Project Manifest.");
+						tahh.createTheManifestFile(theSelectedFilePath, theDestinationProjectFolder);
+						subMonitor.split(10);
+						
 						//generate plugin.xml
 						subMonitor.setTaskName("Generating the Plugin XML.");
 						tahh.createThePluginXml(theSelectedFilePath, theDestinationProjectFolder);
@@ -114,7 +134,7 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 						subMonitor.split(10);
 
 						//create the creation command
-						subMonitor.setTaskName("Creating Creation Command.");
+						subMonitor.setTaskName("Generating Creation Command.");
 						tahh.createCreationCommand(theSelectedFilePath, theDestinationProjectFolder, theSelectedFileParentIProject);
 						subMonitor.split(10);
 						
@@ -141,17 +161,35 @@ public class CreatePapyrusProjectAction implements IObjectActionDelegate {
 						//tahh.copyTheIcons(theSelectedFilePath, theParentFolder);
 						//tahh.copyTheShapes(theSelectedFilePath, theParentFolder);
 						tahh.refresh(theSelectedFileParentIProject);	
+						
+						IPluginModelBase model = PluginRegistry.findModel(theSelectedFileParentIProject);
+						final IPluginModelBase[] modelArray = {model};
+
+						UpdateClasspathJob j = new UpdateClasspathJob(modelArray);
+						j.doUpdateClasspath(monitor, modelArray);
+
 					} catch (Exception ex) {
 						LogUtil.log(ex);
-						PlatformUI.getWorkbench().getDisplay()
-								.syncExec(new Runnable() {
-									public void run() {
-										MessageDialog
-												.openError(shell, "Error",
-														"An error has occured. Please see the Error Log.");
-									}
+						if (verbose) {
+							String msg = errorMessage;
+							PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
+								public void run() {
+									MessageDialog.openError(shell, "Error",
+											msg);
+								}
 
-								});
+							});
+						}
+						else {
+							PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
+								public void run() {
+									MessageDialog.openError(shell, "Error",
+											"An error has occured. Please see the Error Log.");
+								}
+
+							});
+						}
+
 					} finally {
 						CachedResourceSet.getCache().clear();
 					}
