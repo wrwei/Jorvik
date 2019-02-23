@@ -1,4 +1,8 @@
-// How to write there is at least one @Diagram?
+constraint OnlyOneDiagramAnnotation {
+	check : EAnnotation.all().select(a | a.source.equals("Diagram")).size() == 1
+	message : "Each ECore metamodel should have exactly one @Diagram annotation."
+}
+
 context EPackage {
 	
 	constraint DiagramAnnotationHasName {
