@@ -14,6 +14,9 @@ rule class2stereotype
 	transform c : Source!EClass 
 	to s : Profile!Stereotype {
 		s.name = c.name;
+		if(c.abstract = true) {
+			s.isAbstract = true;
+		}
 		// Add stereotype to the profile
 		profile.ownedStereotype.add(s);
 		// The stereotype needs to refer to the EClass object via its eClassifiers association. 
