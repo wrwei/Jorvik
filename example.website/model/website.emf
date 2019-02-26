@@ -8,7 +8,7 @@ class Web {
 	attr String title;
 	attr String description;
 	attr String keywords;
-	@Edge(base="Association")
+	@Edge(base="Association", icon="icons/line.png")
 	ref Webpage[*] pages;
 }
 
@@ -17,14 +17,14 @@ class Webpage {
 	attr String name;
 	attr String title;
 	attr String description;
-	@Edge(base="Association", lineStyle="dashed")
+	@Edge(base="Association", lineStyle="dashed", icon="icons/line.png")
 	val Category[*] category;
 }
 
 @Node(base="Class", shape="shapes/category.svg", bold="true", icon="icons/category.png")
 class Category {
 	attr String name;
-	@Edge(base="Association", lineStyle="dotted")
+	@Edge(base="Association", lineStyle="dotted", icon="icons/line.png")
 	ref Article[*] article;
 }
 

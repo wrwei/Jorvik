@@ -19,6 +19,7 @@
         eType="#//Webpage">
       <eAnnotations source="Edge">
         <details key="base" value="Association"/>
+        <details key="icon" value="icons/line.png"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -37,6 +38,7 @@
       <eAnnotations source="Edge">
         <details key="base" value="Association"/>
         <details key="lineStyle" value="dashed"/>
+        <details key="icon" value="icons/line.png"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -53,6 +55,7 @@
       <eAnnotations source="Edge">
         <details key="base" value="Association"/>
         <details key="lineStyle" value="dotted"/>
+        <details key="icon" value="icons/line.png"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>

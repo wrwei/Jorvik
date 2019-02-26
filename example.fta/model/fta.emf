@@ -5,7 +5,7 @@ package faultTree;
 abstract class FTElement {
 }
 
-@Edge(base="Association", source="source", target="target")
+@Edge(base="Association", source="source", target="target", icon="icons/line.png", fontHeight="18", bold="true")
 class Connector extends FTElement {
 	ref FTElement source;
 	ref FTElement target;
@@ -14,7 +14,7 @@ class Connector extends FTElement {
 class FaultTree extends FTElement{
 }
 
-@Node(base="Class", shape="shapes/event.svg", icon="icons/event.png")
+@Node(base="Class", shape="shapes/event.svg", icon="icons/event.png", fontHeight="18", bold="true")
 class Event extends FTElement {
 	attr String title;
 	attr String description;
@@ -24,21 +24,21 @@ abstract class ProbabalisticEvent extends Event {
 	attr float probability;
 }
 
-@Node(base="Class", shape="shapes/basicEvent.svg", icon="icons/basicEvent.png")
+@Node(base="Class", shape="shapes/basicEvent.svg", icon="icons/basicEvent.png", fontHeight="18", bold="true")
 class BasicEvent extends ProbabalisticEvent {
 }
 
-@Node(base="Class", shape="shapes/undevelopedEvent.svg", icon="icons/undevelopedEvent.png")
+@Node(base="Class", shape="shapes/undevelopedEvent.svg", icon="icons/undevelopedEvent.png", fontHeight="18", bold="true")
 class UndevelopedEvent extends ProbabalisticEvent {
 	
 }
 
-@Node(base="Class", shape="shapes/externalEvent.svg", icon="icons/externalEvent.png")
+@Node(base="Class", shape="shapes/externalEvent.svg", icon="icons/externalEvent.png", fontHeight="18", bold="true")
 class ExternalEvent extends ProbabalisticEvent {
 	
 }
 
-@Node(base="Class", shape="shapes/intermediateEvent.svg", icon="icons/intermediateEvent.png")
+@Node(base="Class", shape="shapes/intermediateEvent.svg", icon="icons/intermediateEvent.png", fontHeight="18", bold="true")
 class IntermediateEvent extends Event {
 	
 }
@@ -47,12 +47,12 @@ abstract class Gate extends FTElement {
 	
 }
 
-@Node(base="Class", shape="shapes/andGate.svg", icon="icons/andGate.png")
+@Node(base="Class", shape="shapes/andGate.svg", icon="icons/andGate.png", fontHeight="18", bold="true")
 class AND_Gate extends Gate {
 	
 }
 
-@Node(base="Class", shape="shapes/orGate.svg", icon="icons/orGate.png")
+@Node(base="Class", shape="shapes/orGate.svg", icon="icons/orGate.png", fontHeight="18", bold="true")
 class OR_Gate extends Gate {
 	
 }
