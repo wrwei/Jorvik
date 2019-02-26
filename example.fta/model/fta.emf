@@ -14,7 +14,7 @@ class Connector extends FTElement {
 class FaultTree extends FTElement{
 }
 
-@Node(base="Class", shape="shapes/event.svg")
+@Node(base="Class", shape="shapes/event.svg", icon="icons/event.png")
 class Event extends FTElement {
 	attr String title;
 	attr String description;
@@ -24,21 +24,21 @@ abstract class ProbabalisticEvent extends Event {
 	attr float probability;
 }
 
-@Node(base="Class", shape="shapes/basicEvent.svg")
+@Node(base="Class", shape="shapes/basicEvent.svg", icon="icons/basicEvent.png")
 class BasicEvent extends ProbabalisticEvent {
 }
 
-@Node(base="Class", shape="shapes/undevelopedEvent.svg")
+@Node(base="Class", shape="shapes/undevelopedEvent.svg", icon="icons/undevelopedEvent.png")
 class UndevelopedEvent extends ProbabalisticEvent {
 	
 }
 
-@Node(base="Class", shape="shapes/externalEvent.svg")
+@Node(base="Class", shape="shapes/externalEvent.svg", icon="icons/externalEvent.png")
 class ExternalEvent extends ProbabalisticEvent {
 	
 }
 
-@Node(base="Class", shape="shapes/intermediateEvent.svg")
+@Node(base="Class", shape="shapes/intermediateEvent.svg", icon="icons/intermediateEvent.png")
 class IntermediateEvent extends Event {
 	
 }
@@ -47,12 +47,12 @@ abstract class Gate extends FTElement {
 	
 }
 
-@Node(base="Class", shape="shapes/andGate.svg")
+@Node(base="Class", shape="shapes/andGate.svg", icon="icons/andGate.png")
 class AND_Gate extends Gate {
 	
 }
 
-@Node(base="Class", shape="shapes/orGate.svg")
+@Node(base="Class", shape="shapes/orGate.svg", icon="icons/orGate.png")
 class OR_Gate extends Gate {
 	
 }
