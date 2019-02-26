@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="website.website" label="website Palette">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="website.nodes" label="website nodes" description="website nodes">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Web_node" label="Web" description="Web node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.website" iconPath="/icons/web.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_54hwoTmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Webpage_node" label="Webpage" description="Webpage node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.website" iconPath="/icons/webpage.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_54hwozmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Category_node" label="Category" description="Category node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.website" iconPath="/icons/category.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_54hwpTmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Article_node" label="Article" description="Article node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.website" iconPath="/icons/article.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_54hwpzmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="website.edges" label="website edges" description="website edges">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="pages_edge" label="pages" description="pages edge" kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.website" iconPath="/icons/line.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_54iXsTmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="category_edge" label="category" description="category edge" kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.website" iconPath="/icons/line.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_54iXszmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="article_edge" label="article" description="article edge" kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.website" iconPath="/icons/line.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_54iXtTmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <requiredProfiles>website</requiredProfiles>
+</paletteconfiguration:PaletteConfiguration>

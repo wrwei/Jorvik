@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="_54hJkDmgEemfMfPOQU0GTg" identifier="website.elementTypes" name="website shape element nodes and edges" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwoDmgEemfMfPOQU0GTg" identifier="website.Web" name="Web" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_54kz8DmgEemfMfPOQU0GTg" profileUri="http://website/1.0">
+      <stereotypesQualifiedNames>website::Web</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwoTmgEemfMfPOQU0GTg" identifier="website.Web.shape" name="WebShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_54hwoDmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwojmgEemfMfPOQU0GTg" identifier="website.Webpage" name="Webpage" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_54pscDmgEemfMfPOQU0GTg" profileUri="http://website/1.0">
+      <stereotypesQualifiedNames>website::Webpage</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwozmgEemfMfPOQU0GTg" identifier="website.Webpage.shape" name="WebpageShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_54hwojmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwpDmgEemfMfPOQU0GTg" identifier="website.Category" name="Category" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_54sIsDmgEemfMfPOQU0GTg" profileUri="http://website/1.0">
+      <stereotypesQualifiedNames>website::Category</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwpTmgEemfMfPOQU0GTg" identifier="website.Category.shape" name="CategoryShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_54hwpDmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwpjmgEemfMfPOQU0GTg" identifier="website.Article" name="Article" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_54t94DmgEemfMfPOQU0GTg" profileUri="http://website/1.0">
+      <stereotypesQualifiedNames>website::Article</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54hwpzmgEemfMfPOQU0GTg" identifier="website.Article.shape" name="ArticleShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_54hwpjmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54iXsDmgEemfMfPOQU0GTg" identifier="website.pages_Edge" name="pagesEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_54waIDmgEemfMfPOQU0GTg" profileUri="http://website/1.0">
+      <stereotypesQualifiedNames>website::pages</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54iXsTmgEemfMfPOQU0GTg" identifier="website.pages.edge.shape" name="pagesShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_54iXsDmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54iXsjmgEemfMfPOQU0GTg" identifier="website.category_Edge" name="categoryEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_54y2YDmgEemfMfPOQU0GTg" profileUri="http://website/1.0">
+      <stereotypesQualifiedNames>website::category</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54iXszmgEemfMfPOQU0GTg" identifier="website.category.edge.shape" name="categoryShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_54iXsjmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54iXtDmgEemfMfPOQU0GTg" identifier="website.article_Edge" name="articleEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_540rkDmgEemfMfPOQU0GTg" profileUri="http://website/1.0">
+      <stereotypesQualifiedNames>website::article</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_54iXtTmgEemfMfPOQU0GTg" identifier="website.article.edge.shape" name="articleShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_54iXtDmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_54n3QDmgEemfMfPOQU0GTg" identifier="website.Web.advice" target="_54hwoDmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_54oeUDmgEemfMfPOQU0GTg" stereotypeQualifiedName="website::Web" updateName="true">
+      <requiredProfiles>website</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_54q6kDmgEemfMfPOQU0GTg" identifier="website.Webpage.advice" target="_54hwojmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_54q6kTmgEemfMfPOQU0GTg" stereotypeQualifiedName="website::Webpage" updateName="true">
+      <requiredProfiles>website</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_54svwDmgEemfMfPOQU0GTg" identifier="website.Category.advice" target="_54hwpDmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_54tW0DmgEemfMfPOQU0GTg" stereotypeQualifiedName="website::Category" updateName="true">
+      <requiredProfiles>website</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_54vMADmgEemfMfPOQU0GTg" identifier="website.Article.advice" target="_54hwpjmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_54vzEDmgEemfMfPOQU0GTg" stereotypeQualifiedName="website::Article" updateName="true">
+      <requiredProfiles>website</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_54xoQDmgEemfMfPOQU0GTg" identifier="website.pages.advice" target="_54iXsDmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_54xoQTmgEemfMfPOQU0GTg" stereotypeQualifiedName="website::pages" updateName="true">
+      <requiredProfiles>website</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_54zdcDmgEemfMfPOQU0GTg" identifier="website.category.advice" target="_54iXsjmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_54zdcTmgEemfMfPOQU0GTg" stereotypeQualifiedName="website::category" updateName="true">
+      <requiredProfiles>website</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_5415sDmgEemfMfPOQU0GTg" identifier="website.article.advice" target="_54iXtDmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_5415sTmgEemfMfPOQU0GTg" stereotypeQualifiedName="website::article" updateName="true">
+      <requiredProfiles>website</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

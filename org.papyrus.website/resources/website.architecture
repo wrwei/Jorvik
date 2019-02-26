@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_567kYDmgEemfMfPOQU0GTg" id="website.architecture" name="website Architecture Model" description="Architecture Model for website">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_568ygDmgEemfMfPOQU0GTg" id="website.stakeholder" name="website Stakeholder" description="website Architecture Stakeholder" concerns="_568LcDmgEemfMfPOQU0GTg"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_568LcDmgEemfMfPOQU0GTg" id="website.concern" name="website Concern" description="website Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_56-AoDmgEemfMfPOQU0GTg" id="website.description.language" name="website Description Language" description="Description Language for website" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_57I_wDmgEemfMfPOQU0GTg" id="website.viewpoint" name="website View Point" description="View Point for website" concerns="_568LcDmgEemfMfPOQU0GTg" representationKinds="_57CSEDmgEemfMfPOQU0GTg"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_54hJkDmgEemfMfPOQU0GTg"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_57CSEDmgEemfMfPOQU0GTg" id="website.papyrus.diagram" name="website Papyrus Diagram" description="Papyrus Diagram for website" concerns="_568LcDmgEemfMfPOQU0GTg" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.website/resources/websiteDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_57DgMDmgEemfMfPOQU0GTg" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_57F8cDmgEemfMfPOQU0GTg" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_57IYsDmgEemfMfPOQU0GTg" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="website.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

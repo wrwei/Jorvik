@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="_7eLf0DmgEemfMfPOQU0GTg" identifier="faultTree.elementTypes" name="faultTree shape element nodes and edges" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG4DmgEemfMfPOQU0GTg" identifier="faultTree.Event" name="Event" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7ePxQDmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::Event</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG4TmgEemfMfPOQU0GTg" identifier="faultTree.Event.shape" name="EventShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eMG4DmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG4jmgEemfMfPOQU0GTg" identifier="faultTree.BasicEvent" name="BasicEvent" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7eS0kDmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::BasicEvent</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG4zmgEemfMfPOQU0GTg" identifier="faultTree.BasicEvent.shape" name="BasicEventShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eMG4jmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG5DmgEemfMfPOQU0GTg" identifier="faultTree.UndevelopedEvent" name="UndevelopedEvent" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7eV34DmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::UndevelopedEvent</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG5TmgEemfMfPOQU0GTg" identifier="faultTree.UndevelopedEvent.shape" name="UndevelopedEventShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eMG5DmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG5jmgEemfMfPOQU0GTg" identifier="faultTree.ExternalEvent" name="ExternalEvent" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7eZiQDmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::ExternalEvent</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMG5zmgEemfMfPOQU0GTg" identifier="faultTree.ExternalEvent.shape" name="ExternalEventShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eMG5jmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMt8DmgEemfMfPOQU0GTg" identifier="faultTree.IntermediateEvent" name="IntermediateEvent" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7eb-gDmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::IntermediateEvent</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMt8TmgEemfMfPOQU0GTg" identifier="faultTree.IntermediateEvent.shape" name="IntermediateEventShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eMt8DmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMt8jmgEemfMfPOQU0GTg" identifier="faultTree.AND_Gate" name="AND_Gate" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7eeawDmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::AND_Gate</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMt8zmgEemfMfPOQU0GTg" identifier="faultTree.AND_Gate.shape" name="AND_GateShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eMt8jmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMt9DmgEemfMfPOQU0GTg" identifier="faultTree.OR_Gate" name="OR_Gate" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7eg3ADmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::OR_Gate</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eMt9TmgEemfMfPOQU0GTg" identifier="faultTree.OR_Gate.shape" name="OR_GateShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eMt9DmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eN8EDmgEemfMfPOQU0GTg" identifier="faultTree.Connector_Edge" name="ConnectorEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_7ejTQDmgEemfMfPOQU0GTg" profileUri="http://faulttree/1.0">
+      <stereotypesQualifiedNames>faultTree::Connector</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_7eN8ETmgEemfMfPOQU0GTg" identifier="faultTree.Connector.edge.shape" name="ConnectorShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_7eN8EDmgEemfMfPOQU0GTg"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7eRmcDmgEemfMfPOQU0GTg" identifier="faultTree.Event.advice" target="_7eMG4DmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7eRmcTmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::Event" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7eUpwDmgEemfMfPOQU0GTg" identifier="faultTree.BasicEvent.advice" target="_7eMG4jmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7eUpwTmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::BasicEvent" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7eXtEDmgEemfMfPOQU0GTg" identifier="faultTree.UndevelopedEvent.advice" target="_7eMG5DmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7eXtETmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::UndevelopedEvent" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7eawYDmgEemfMfPOQU0GTg" identifier="faultTree.ExternalEvent.advice" target="_7eMG5jmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7eawYTmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::ExternalEvent" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7edzsDmgEemfMfPOQU0GTg" identifier="faultTree.IntermediateEvent.advice" target="_7eMt8DmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7edzsTmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::IntermediateEvent" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7efo4DmgEemfMfPOQU0GTg" identifier="faultTree.AND_Gate.advice" target="_7eMt8jmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7efo4TmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::AND_Gate" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7eiFIDmgEemfMfPOQU0GTg" identifier="faultTree.OR_Gate.advice" target="_7eMt9DmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7eiFITmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::OR_Gate" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_7ekhYDmgEemfMfPOQU0GTg" identifier="faultTree.Connector.advice" target="_7eN8EDmgEemfMfPOQU0GTg">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_7ekhYTmgEemfMfPOQU0GTg" stereotypeQualifiedName="faultTree::Connector" updateName="true">
+      <requiredProfiles>faultTree</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

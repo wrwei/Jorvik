@@ -1,0 +1,159 @@
+[appliedStereotypes~=Event], 
+[appliedStereotypes~=BasicEvent], 
+[appliedStereotypes~=UndevelopedEvent], 
+[appliedStereotypes~=ExternalEvent], 
+[appliedStereotypes~=IntermediateEvent], 
+[appliedStereotypes~=AND_Gate], 
+[appliedStereotypes~=OR_Gate] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=Event] {
+	svgFile: 'platform:/plugin/org.papyrus.faulttree/shapes/event.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+		[appliedStereotypes~=Event] {
+			fontHeight: 18;
+		}
+	[appliedStereotypes~=Event] {
+		bold: true;
+	}
+[appliedStereotypes~=BasicEvent] {
+	svgFile: 'platform:/plugin/org.papyrus.faulttree/shapes/basicEvent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+		[appliedStereotypes~=BasicEvent] {
+			fontHeight: 18;
+		}
+	[appliedStereotypes~=BasicEvent] {
+		bold: true;
+	}
+[appliedStereotypes~=UndevelopedEvent] {
+	svgFile: 'platform:/plugin/org.papyrus.faulttree/shapes/undevelopedEvent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+		[appliedStereotypes~=UndevelopedEvent] {
+			fontHeight: 18;
+		}
+	[appliedStereotypes~=UndevelopedEvent] {
+		bold: true;
+	}
+[appliedStereotypes~=ExternalEvent] {
+	svgFile: 'platform:/plugin/org.papyrus.faulttree/shapes/externalEvent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+		[appliedStereotypes~=ExternalEvent] {
+			fontHeight: 18;
+		}
+	[appliedStereotypes~=ExternalEvent] {
+		bold: true;
+	}
+[appliedStereotypes~=IntermediateEvent] {
+	svgFile: 'platform:/plugin/org.papyrus.faulttree/shapes/intermediateEvent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+		[appliedStereotypes~=IntermediateEvent] {
+			fontHeight: 18;
+		}
+	[appliedStereotypes~=IntermediateEvent] {
+		bold: true;
+	}
+[appliedStereotypes~=AND_Gate] {
+	svgFile: 'platform:/plugin/org.papyrus.faulttree/shapes/andGate.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+		[appliedStereotypes~=AND_Gate] {
+			fontHeight: 18;
+		}
+	[appliedStereotypes~=AND_Gate] {
+		bold: true;
+	}
+[appliedStereotypes~=OR_Gate] {
+	svgFile: 'platform:/plugin/org.papyrus.faulttree/shapes/orGate.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+		[appliedStereotypes~=OR_Gate] {
+			fontHeight: 18;
+		}
+	[appliedStereotypes~=OR_Gate] {
+		bold: true;
+	}
+[appliedStereotypes~=Connector] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}
+		[appliedStereotypes~=Connector] {
+			fontHeight: 18;
+		}
+		[appliedStereotypes~=Connector] {
+			bold: true;
+		}

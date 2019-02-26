@@ -1,0 +1,101 @@
+[appliedStereotypes~=Web], 
+[appliedStereotypes~=Webpage], 
+[appliedStereotypes~=Category], 
+[appliedStereotypes~=Article] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=Web] {
+	svgFile: 'platform:/plugin/org.papyrus.website/shapes/web.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+	[appliedStereotypes~=Web] {
+		bold: true;
+	}
+[appliedStereotypes~=Webpage] {
+	svgFile: 'platform:/plugin/org.papyrus.website/shapes/webpage.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+	[appliedStereotypes~=Webpage] {
+		bold: true;
+	}
+[appliedStereotypes~=Category] {
+	svgFile: 'platform:/plugin/org.papyrus.website/shapes/category.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+	[appliedStereotypes~=Category] {
+		bold: true;
+	}
+[appliedStereotypes~=Article] {
+	svgFile: 'platform:/plugin/org.papyrus.website/shapes/article.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+	[appliedStereotypes~=Article] {
+		bold: true;
+	}
+[appliedStereotypes~=pages], 
+[appliedStereotypes~=category], 
+[appliedStereotypes~=article] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}
+		[appliedStereotypes~=category] {
+			lineStyle: dashed;
+		}
+		[appliedStereotypes~=article] {
+			lineStyle: dotted;
+		}

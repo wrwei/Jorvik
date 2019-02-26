@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="faultTree.faultTree" label="faultTree Palette">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="faultTree.nodes" label="faultTree nodes" description="faultTree nodes">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Event_node" label="Event" description="Event node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/event.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eMG4TmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="BasicEvent_node" label="BasicEvent" description="BasicEvent node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/basicEvent.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eMG4zmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="UndevelopedEvent_node" label="UndevelopedEvent" description="UndevelopedEvent node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/undevelopedEvent.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eMG5TmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="ExternalEvent_node" label="ExternalEvent" description="ExternalEvent node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/externalEvent.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eMG5zmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="IntermediateEvent_node" label="IntermediateEvent" description="IntermediateEvent node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/intermediateEvent.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eMt8TmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="AND_Gate_node" label="AND_Gate" description="AND_Gate node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/andGate.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eMt8zmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="OR_Gate_node" label="OR_Gate" description="OR_Gate node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/orGate.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eMt9TmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="faultTree.edges" label="faultTree edges" description="faultTree edges">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Connector_edge" label="Connector" description="Connector edge" kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.faulttree" iconPath="/icons/line.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_7eN8ETmgEemfMfPOQU0GTg"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <requiredProfiles>faultTree</requiredProfiles>
+</paletteconfiguration:PaletteConfiguration>
