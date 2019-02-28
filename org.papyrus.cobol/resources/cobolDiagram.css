@@ -1,0 +1,173 @@
+[appliedStereotypes~=COBOLElement], 
+[appliedStereotypes~=COBOLClassifier], 
+[appliedStereotypes~=COBOLSimpleType], 
+[appliedStereotypes~=COBOLComposedType], 
+[appliedStereotypes~=COBOLElementInitialValue], 
+[appliedStereotypes~=COBOL88Element], 
+[appliedStereotypes~=COBOL88ElementValue], 
+[appliedStereotypes~=COBOLRedefiningElement], 
+[appliedStereotypes~=COBOL66Element], 
+[appliedStereotypes~=COBOLSourceText], 
+[appliedStereotypes~=COBOLFixedLengthArray], 
+[appliedStereotypes~=COBOLVariableLengthArray] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=COBOLElement] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLClassifier] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLSimpleType] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLComposedType] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLElementInitialValue] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOL88Element] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOL88ElementValue] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLRedefiningElement] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOL66Element] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLSourceText] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLFixedLengthArray] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=COBOLVariableLengthArray] {
+	svgFile: 'platform:/plugin/org.papyrus.cobol/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=sharedType], 
+[appliedStereotypes~=group], 
+[appliedStereotypes~=initial], 
+[appliedStereotypes~=contains], 
+[appliedStereotypes~=source], 
+[appliedStereotypes~=array], 
+[appliedStereotypes~=typedElements], 
+[appliedStereotypes~=elements], 
+[appliedStereotypes~=has], 
+[appliedStereotypes~=redefines], 
+[appliedStereotypes~=end], 
+[appliedStereotypes~=start], 
+[appliedStereotypes~=dependingOn] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

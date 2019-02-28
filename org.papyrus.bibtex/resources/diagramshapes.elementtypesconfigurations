@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:stereotypematcher="http://www.eclipse.org/papyrus/uml/types/stereotypematcher/1.1" xmi:id="_tjIeUDtuEemVvrziPwI6Kw" identifier="bibTeX.elementTypes" name="bibTeX shape element nodes and edges" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFYDtuEemVvrziPwI6Kw" identifier="bibTeX.BibTeXFile" name="BibTeXFile" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjK6kDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::BibTeXFile</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFYTtuEemVvrziPwI6Kw" identifier="bibTeX.BibTeXFile.shape" name="BibTeXFileShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFYDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFYjtuEemVvrziPwI6Kw" identifier="bibTeX.Author" name="Author" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjMvwDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Author</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFYztuEemVvrziPwI6Kw" identifier="bibTeX.Author.shape" name="AuthorShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFYjtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFZDtuEemVvrziPwI6Kw" identifier="bibTeX.Article" name="Article" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjOk8DtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Article</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFZTtuEemVvrziPwI6Kw" identifier="bibTeX.Article.shape" name="ArticleShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFZDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFZjtuEemVvrziPwI6Kw" identifier="bibTeX.TechReport" name="TechReport" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjPzEDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::TechReport</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFZztuEemVvrziPwI6Kw" identifier="bibTeX.TechReport.shape" name="TechReportShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFZjtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFaDtuEemVvrziPwI6Kw" identifier="bibTeX.Unpublished" name="Unpublished" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjRoQDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Unpublished</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFaTtuEemVvrziPwI6Kw" identifier="bibTeX.Unpublished.shape" name="UnpublishedShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFaDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFajtuEemVvrziPwI6Kw" identifier="bibTeX.Manual" name="Manual" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjTdcDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Manual</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFaztuEemVvrziPwI6Kw" identifier="bibTeX.Manual.shape" name="ManualShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFajtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFbDtuEemVvrziPwI6Kw" identifier="bibTeX.Proceedings" name="Proceedings" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjUrkDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Proceedings</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFbTtuEemVvrziPwI6Kw" identifier="bibTeX.Proceedings.shape" name="ProceedingsShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFbDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFbjtuEemVvrziPwI6Kw" identifier="bibTeX.InProceedings" name="InProceedings" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjWgwDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::InProceedings</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFbztuEemVvrziPwI6Kw" identifier="bibTeX.InProceedings.shape" name="InProceedingsShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFbjtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFcDtuEemVvrziPwI6Kw" identifier="bibTeX.Booklet" name="Booklet" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjXu4DtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Booklet</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFcTtuEemVvrziPwI6Kw" identifier="bibTeX.Booklet.shape" name="BookletShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFcDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFcjtuEemVvrziPwI6Kw" identifier="bibTeX.Book" name="Book" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjZkEDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Book</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJFcztuEemVvrziPwI6Kw" identifier="bibTeX.Book.shape" name="BookShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJFcjtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJscDtuEemVvrziPwI6Kw" identifier="bibTeX.InCollection" name="InCollection" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjbZQDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::InCollection</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJscTtuEemVvrziPwI6Kw" identifier="bibTeX.InCollection.shape" name="InCollectionShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJscDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJscjtuEemVvrziPwI6Kw" identifier="bibTeX.InBook" name="InBook" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjcnYDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::InBook</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJscztuEemVvrziPwI6Kw" identifier="bibTeX.InBook.shape" name="InBookShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJscjtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJsdDtuEemVvrziPwI6Kw" identifier="bibTeX.Misc" name="Misc" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjeckDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::Misc</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJsdTtuEemVvrziPwI6Kw" identifier="bibTeX.Misc.shape" name="MiscShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJsdDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJsdjtuEemVvrziPwI6Kw" identifier="bibTeX.ThesisEntry" name="ThesisEntry" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjgRwDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::ThesisEntry</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJsdztuEemVvrziPwI6Kw" identifier="bibTeX.ThesisEntry.shape" name="ThesisEntryShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJsdjtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJseDtuEemVvrziPwI6Kw" identifier="bibTeX.PhDThesis" name="PhDThesis" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjiG8DtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::PhDThesis</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJseTtuEemVvrziPwI6Kw" identifier="bibTeX.PhDThesis.shape" name="PhDThesisShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJseDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJsejtuEemVvrziPwI6Kw" identifier="bibTeX.MasterThesis" name="MasterThesis" hint="UML::Artifact" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjjVEDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::MasterThesis</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Artifact"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjJseztuEemVvrziPwI6Kw" identifier="bibTeX.MasterThesis.shape" name="MasterThesisShape" hint="Class_Shape" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Class_Shape"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjJsejtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjKTgDtuEemVvrziPwI6Kw" identifier="bibTeX.entries_Edge" name="entriesEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjlKQDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::entries</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjKTgTtuEemVvrziPwI6Kw" identifier="bibTeX.entries.edge.shape" name="entriesShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjKTgDtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjKTgjtuEemVvrziPwI6Kw" identifier="bibTeX.authors_Edge" name="authorsEdge" hint="UML::Association" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="stereotypematcher:StereotypeApplicationMatcherConfiguration" xmi:id="_tjm_cDtuEemVvrziPwI6Kw" profileUri="bibtex">
+      <stereotypesQualifiedNames>bibTeX::authors</stereotypesQualifiedNames>
+    </matcherConfiguration>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationBase"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="_tjKTgztuEemVvrziPwI6Kw" identifier="bibTeX.authors.edge.shape" name="authorsShape" hint="Association_Edge" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Association_Edge"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="#_tjKTgjtuEemVvrziPwI6Kw"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjMIsDtuEemVvrziPwI6Kw" identifier="bibTeX.BibTeXFile.advice" target="_tjJFYDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjMIsTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::BibTeXFile" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjN94DtuEemVvrziPwI6Kw" identifier="bibTeX.Author.advice" target="_tjJFYjtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjN94TtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Author" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjPMADtuEemVvrziPwI6Kw" identifier="bibTeX.Article.advice" target="_tjJFZDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjPMATtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Article" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjRBMDtuEemVvrziPwI6Kw" identifier="bibTeX.TechReport.advice" target="_tjJFZjtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjRBMTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::TechReport" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjS2YDtuEemVvrziPwI6Kw" identifier="bibTeX.Unpublished.advice" target="_tjJFaDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjS2YTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Unpublished" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjUEgDtuEemVvrziPwI6Kw" identifier="bibTeX.Manual.advice" target="_tjJFajtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjUEgTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Manual" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjV5sDtuEemVvrziPwI6Kw" identifier="bibTeX.Proceedings.advice" target="_tjJFbDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjV5sTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Proceedings" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjXH0DtuEemVvrziPwI6Kw" identifier="bibTeX.InProceedings.advice" target="_tjJFbjtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjXH0TtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::InProceedings" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjY9ADtuEemVvrziPwI6Kw" identifier="bibTeX.Booklet.advice" target="_tjJFcDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjY9ATtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Booklet" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjaLIDtuEemVvrziPwI6Kw" identifier="bibTeX.Book.advice" target="_tjJFcjtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjaLITtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Book" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjcAUDtuEemVvrziPwI6Kw" identifier="bibTeX.InCollection.advice" target="_tjJscDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjcAUTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::InCollection" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjd1gDtuEemVvrziPwI6Kw" identifier="bibTeX.InBook.advice" target="_tjJscjtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjd1gTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::InBook" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjfqsDtuEemVvrziPwI6Kw" identifier="bibTeX.Misc.advice" target="_tjJsdDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjfqsTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::Misc" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjhf4DtuEemVvrziPwI6Kw" identifier="bibTeX.ThesisEntry.advice" target="_tjJsdjtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjhf4TtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::ThesisEntry" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjiuADtuEemVvrziPwI6Kw" identifier="bibTeX.PhDThesis.advice" target="_tjJseDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjiuATtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::PhDThesis" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjkjMDtuEemVvrziPwI6Kw" identifier="bibTeX.MasterThesis.advice" target="_tjJsejtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjkjMTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::MasterThesis" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjmYYDtuEemVvrziPwI6Kw" identifier="bibTeX.entries.advice" target="_tjKTgDtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjmYYTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::entries" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_tjoNkDtuEemVvrziPwI6Kw" identifier="bibTeX.authors.advice" target="_tjKTgjtuEemVvrziPwI6Kw">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_tjoNkTtuEemVvrziPwI6Kw" stereotypeQualifiedName="bibTeX::authors" updateName="true">
+      <requiredProfiles>bibTeX</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

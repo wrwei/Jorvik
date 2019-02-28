@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_5bfzcDtuEemVvrziPwI6Kw" id="cobol.architecture" name="cobol Architecture Model" description="Architecture Model for cobol">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_5bfzcjtuEemVvrziPwI6Kw" id="cobol.stakeholder" name="cobol Stakeholder" description="cobol Architecture Stakeholder" concerns="_5bfzcTtuEemVvrziPwI6Kw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_5bfzcTtuEemVvrziPwI6Kw" id="cobol.concern" name="cobol Concern" description="cobol Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_5bgagDtuEemVvrziPwI6Kw" id="cobol.description.language" name="cobol Description Language" description="Description Language for cobol" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_5bnIMTtuEemVvrziPwI6Kw" id="cobol.viewpoint" name="cobol View Point" description="View Point for cobol" concerns="_5bfzcTtuEemVvrziPwI6Kw" representationKinds="_5biPsDtuEemVvrziPwI6Kw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_5ZZhsDtuEemVvrziPwI6Kw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_5biPsDtuEemVvrziPwI6Kw" id="cobol.papyrus.diagram" name="cobol Papyrus Diagram" description="Papyrus Diagram for cobol" concerns="_5bfzcTtuEemVvrziPwI6Kw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.cobol/resources/cobolDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_5bi2wDtuEemVvrziPwI6Kw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_5blTADtuEemVvrziPwI6Kw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_5bnIMDtuEemVvrziPwI6Kw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="cobol.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

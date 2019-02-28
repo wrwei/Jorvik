@@ -1,0 +1,81 @@
+rule COBOLElementUML2COBOLElementEMF
+	transform s: UMLcobol!COBOLElement
+	to t: EMFcobol!COBOLElement {
+		t.level = s.level;
+		t.refined = s.refined;
+		t.name = s.name;
+		t.sharedType ::= s.sharedType;
+		t.group ::= s.group;
+		t.initial ::= s.initial;
+		t.contains ::= s.contains;
+		t.source ::= s.source;
+		t.array ::= s.array;
+	}
+rule COBOLClassifierUML2COBOLClassifierEMF
+	transform s: UMLcobol!COBOLClassifier
+	to t: EMFcobol!COBOLClassifier {
+		t.typeded = s.typeded;
+		t.name = s.name;
+		t.typedElements ::= s.typedElements;
+	}
+rule COBOLSimpleTypeUML2COBOLSimpleTypeEMF
+	transform s: UMLcobol!COBOLSimpleType
+	to t: EMFcobol!COBOLSimpleType {
+		t.usageValue = s.usageValue;
+		t.pictureString = s.pictureString;
+		t.usage = s.usage;
+	}
+rule COBOLComposedTypeUML2COBOLComposedTypeEMF
+	transform s: UMLcobol!COBOLComposedType
+	to t: EMFcobol!COBOLComposedType {
+		t.elements ::= s.elements;
+	}
+rule COBOLElementInitialValueUML2COBOLElementInitialValueEMF
+	transform s: UMLcobol!COBOLElementInitialValue
+	to t: EMFcobol!COBOLElementInitialValue {
+		t.initVal = s.initVal;
+		t.valueKind = s.valueKind;
+	}
+rule COBOL88ElementUML2COBOL88ElementEMF
+	transform s: UMLcobol!COBOL88Element
+	to t: EMFcobol!COBOL88Element {
+		t.name = s.name;
+		t.has ::= s.has;
+	}
+rule COBOL88ElementValueUML2COBOL88ElementValueEMF
+	transform s: UMLcobol!COBOL88ElementValue
+	to t: EMFcobol!COBOL88ElementValue {
+		t.lowerLimit = s.lowerLimit;
+		t.upperLimit = s.upperLimit;
+		t.range = s.range;
+	}
+rule COBOLRedefiningElementUML2COBOLRedefiningElementEMF
+	transform s: UMLcobol!COBOLRedefiningElement
+	to t: EMFcobol!COBOLRedefiningElement {
+		t.redefines ::= s.redefines;
+	}
+rule COBOL66ElementUML2COBOL66ElementEMF
+	transform s: UMLcobol!COBOL66Element
+	to t: EMFcobol!COBOL66Element {
+		t.name = s.name;
+		t.end ::= s.end;
+		t.start ::= s.start;
+	}
+rule COBOLSourceTextUML2COBOLSourceTextEMF
+	transform s: UMLcobol!COBOLSourceText
+	to t: EMFcobol!COBOLSourceText {
+		t.source = s.source;
+		t.fileName = s.fileName;
+	}
+rule COBOLFixedLengthArrayUML2COBOLFixedLengthArrayEMF
+	transform s: UMLcobol!COBOLFixedLengthArray
+	to t: EMFcobol!COBOLFixedLengthArray {
+		t.maxUpper = s.maxUpper;
+	}
+rule COBOLVariableLengthArrayUML2COBOLVariableLengthArrayEMF
+	transform s: UMLcobol!COBOLVariableLengthArray
+	to t: EMFcobol!COBOLVariableLengthArray {
+		t.minUpper = s.minUpper;
+		t.dependingOn ::= s.dependingOn;
+	}
+

@@ -1,0 +1,38 @@
+rule ActorUML2ActorEMF
+	transform s: UMLUseCase!Actor
+	to t: EMFUseCase!Actor {
+	}
+rule UseCaseUML2UseCaseEMF
+	transform s: UMLUseCase!UseCase
+	to t: EMFUseCase!UseCase {
+		t.includes ::= s.includes;
+		t.theExtend ::= s.theExtend;
+	}
+rule ExtendUML2ExtendEMF
+	transform s: UMLUseCase!Extend
+	to t: EMFUseCase!Extend {
+		t.source ::= s.source;
+		t.extensions ::= s.extensions;
+	}
+rule IncludeUML2IncludeEMF
+	transform s: UMLUseCase!Include
+	to t: EMFUseCase!Include {
+		t.source ::= s.source;
+		t.includingCases ::= s.includingCases;
+	}
+rule UseCaseContainerUML2UseCaseContainerEMF
+	transform s: UMLUseCase!UseCaseContainer
+	to t: EMFUseCase!UseCaseContainer {
+		t.ownedElements ::= s.ownedElements;
+	}
+rule BehavioredClassifierUML2BehavioredClassifierEMF
+	transform s: UMLUseCase!BehavioredClassifier
+	to t: EMFUseCase!BehavioredClassifier {
+	}
+rule AssociationUML2AssociationEMF
+	transform s: UMLUseCase!Association
+	to t: EMFUseCase!Association {
+		t.actors ::= s.actors;
+		t.useCases ::= s.useCases;
+	}
+

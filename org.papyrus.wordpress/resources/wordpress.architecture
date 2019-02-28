@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_SSapsDtvEemVvrziPwI6Kw" id="wordpress.architecture" name="wordpress Architecture Model" description="Architecture Model for wordpress">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_SSbQwDtvEemVvrziPwI6Kw" id="wordpress.stakeholder" name="wordpress Stakeholder" description="wordpress Architecture Stakeholder" concerns="_SSapsTtvEemVvrziPwI6Kw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_SSapsTtvEemVvrziPwI6Kw" id="wordpress.concern" name="wordpress Concern" description="wordpress Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_SSbQwTtvEemVvrziPwI6Kw" id="wordpress.description.language" name="wordpress Description Language" description="Description Language for wordpress" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_SSilgTtvEemVvrziPwI6Kw" id="wordpress.viewpoint" name="wordpress View Point" description="View Point for wordpress" concerns="_SSapsTtvEemVvrziPwI6Kw" representationKinds="_SSeUEDtvEemVvrziPwI6Kw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_R11bYDtvEemVvrziPwI6Kw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_SSeUEDtvEemVvrziPwI6Kw" id="wordpress.papyrus.diagram" name="wordpress Papyrus Diagram" description="Papyrus Diagram for wordpress" concerns="_SSapsTtvEemVvrziPwI6Kw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.wordpress/resources/wordpressDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_SSe7IDtvEemVvrziPwI6Kw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_SSgwUDtvEemVvrziPwI6Kw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_SSilgDtvEemVvrziPwI6Kw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="wordpress.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

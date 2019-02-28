@@ -1,0 +1,104 @@
+[appliedStereotypes~=Zoo], 
+[appliedStereotypes~=Tamer], 
+[appliedStereotypes~=Doctor], 
+[appliedStereotypes~=Fan], 
+[appliedStereotypes~=Tiger], 
+[appliedStereotypes~=Lion] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=Zoo] {
+	svgFile: 'platform:/plugin/org.papyrus.zoo/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Tamer] {
+	svgFile: 'platform:/plugin/org.papyrus.zoo/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Doctor] {
+	svgFile: 'platform:/plugin/org.papyrus.zoo/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Fan] {
+	svgFile: 'platform:/plugin/org.papyrus.zoo/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Tiger] {
+	svgFile: 'platform:/plugin/org.papyrus.zoo/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Lion] {
+	svgFile: 'platform:/plugin/org.papyrus.zoo/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=personel], 
+[appliedStereotypes~=animals], 
+[appliedStereotypes~=responsiblePerson], 
+[appliedStereotypes~=fans] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

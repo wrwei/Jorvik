@@ -1,5 +1,5 @@
 @namespace(uri="usecase", prefix="usecase")
-@Diagram(label="Usecase", icon="icons/application-diagram-16.png")
+@Diagram(name="Usecase", icon="icons/application-diagram-16.png")
 package UseCase;
 
 class UsecaseRoot {

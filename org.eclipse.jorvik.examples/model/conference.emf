@@ -1,5 +1,5 @@
 @namespace(uri="conference", prefix="conference")
-@Diagram(label="Conference", icon="icons/application-diagram-16.png")
+@Diagram(name="Conference", icon="icons/application-diagram-16.png")
 package conference;
 
 class ConferenceRoot {
@@ -28,8 +28,7 @@ class Track extends ConferenceElement {
 
 @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")
 class Slot extends TimedElement {
-   @Edge(base="Association", icon="icons/association-16.png")
- 
+  @Edge(base="Association", icon="icons/association-16.png")
   val Talk[1] talk;
 }
 

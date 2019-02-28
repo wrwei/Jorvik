@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_GvbHoDtvEemVvrziPwI6Kw" id="UseCase.architecture" name="UseCase Architecture Model" description="Architecture Model for UseCase">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_GvbHojtvEemVvrziPwI6Kw" id="UseCase.stakeholder" name="UseCase Stakeholder" description="UseCase Architecture Stakeholder" concerns="_GvbHoTtvEemVvrziPwI6Kw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_GvbHoTtvEemVvrziPwI6Kw" id="UseCase.concern" name="UseCase Concern" description="UseCase Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_GvbHoztvEemVvrziPwI6Kw" id="UseCase.description.language" name="UseCase Description Language" description="Description Language for UseCase" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_GvjDcDtvEemVvrziPwI6Kw" id="UseCase.viewpoint" name="UseCase View Point" description="View Point for UseCase" concerns="_GvbHoTtvEemVvrziPwI6Kw" representationKinds="_Gvdj4DtvEemVvrziPwI6Kw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_Gt3BYDtvEemVvrziPwI6Kw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_Gvdj4DtvEemVvrziPwI6Kw" id="UseCase.papyrus.diagram" name="UseCase Papyrus Diagram" description="Papyrus Diagram for UseCase" concerns="_GvbHoTtvEemVvrziPwI6Kw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.usecase/resources/usecaseDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_GveK8DtvEemVvrziPwI6Kw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_GvgnMDtvEemVvrziPwI6Kw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_GvicYDtvEemVvrziPwI6Kw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="usecase.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

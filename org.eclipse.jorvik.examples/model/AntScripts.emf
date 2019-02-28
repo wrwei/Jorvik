@@ -1,5 +1,5 @@
 @namespace(uri="ant", prefix="ant")
-@Diagram(label="Ant Scripts", icon="icons/application-diagram-16.png")
+@Diagram(name="Ant Scripts", icon="icons/application-diagram-16.png")
 package AntScripts;
 
 class AntRoot {

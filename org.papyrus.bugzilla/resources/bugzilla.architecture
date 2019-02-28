@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_xRC6gDtuEemVvrziPwI6Kw" id="bugzilla.architecture" name="bugzilla Architecture Model" description="Architecture Model for bugzilla">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_xRC6gjtuEemVvrziPwI6Kw" id="bugzilla.stakeholder" name="bugzilla Stakeholder" description="bugzilla Architecture Stakeholder" concerns="_xRC6gTtuEemVvrziPwI6Kw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_xRC6gTtuEemVvrziPwI6Kw" id="bugzilla.concern" name="bugzilla Concern" description="bugzilla Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_xRC6gztuEemVvrziPwI6Kw" id="bugzilla.description.language" name="bugzilla Description Language" description="Description Language for bugzilla" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_xRJoMDtuEemVvrziPwI6Kw" id="bugzilla.viewpoint" name="bugzilla View Point" description="View Point for bugzilla" concerns="_xRC6gTtuEemVvrziPwI6Kw" representationKinds="_xRFWwDtuEemVvrziPwI6Kw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_xPXfgDtuEemVvrziPwI6Kw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_xRFWwDtuEemVvrziPwI6Kw" id="bugzilla.papyrus.diagram" name="bugzilla Papyrus Diagram" description="Papyrus Diagram for bugzilla" concerns="_xRC6gTtuEemVvrziPwI6Kw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.bugzilla/resources/bugzillaDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_xRFWwTtuEemVvrziPwI6Kw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_xRHL8DtuEemVvrziPwI6Kw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_xRJBIDtuEemVvrziPwI6Kw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="bugzilla.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

@@ -1,5 +1,5 @@
 @namespace(uri="Zoo", prefix="Zoo")
-@Diagram(label="Zoo", icon="icons/application-diagram-16.png")
+@Diagram(name="Zoo", icon="icons/application-diagram-16.png")
 package Zoo;
 
 @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")

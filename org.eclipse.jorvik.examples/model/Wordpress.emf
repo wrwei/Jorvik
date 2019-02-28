@@ -1,5 +1,5 @@
 @namespace(uri="wordpressmetamodel", prefix="wordpressmetamodel")
-@Diagram(label="Wordpress", icon="icons/application-diagram-16.png")
+@Diagram(name="Wordpress", icon="icons/application-diagram-16.png")
 package wordpress;
 
 class Website {
@@ -44,7 +44,6 @@ class Category {
   attr String description;
   @Edge(base="Association", icon="icons/association-16.png")
   ref Post[*] categoryPost;
-  @Edge(base="Association", icon="icons/association-16.png")
   ref Category parent;
 }
 
@@ -138,7 +137,7 @@ class MenuItem {
   @Edge(base="Association", icon="icons/association-16.png")
   ref NavigationNode menuItemPage;
   @Edge(base="Association", icon="icons/association-16.png")
-  ref ExternalLink MenuItemExternal;
+  ref ExternalLink menuItemExternal;
   attr String navigationLabel;
 }
 

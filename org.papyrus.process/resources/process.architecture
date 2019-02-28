@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_XVDFoDs5EemiA-SrWVVlnw" id="Process.architecture" name="Process Architecture Model" description="Architecture Model for Process">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_XVFh4Ds5EemiA-SrWVVlnw" id="Process.stakeholder" name="Process Stakeholder" description="Process Architecture Stakeholder" concerns="_XVE60Ds5EemiA-SrWVVlnw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_XVE60Ds5EemiA-SrWVVlnw" id="Process.concern" name="Process Concern" description="Process Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_XVIlMDs5EemiA-SrWVVlnw" id="Process.description.language" name="Process Description Language" description="Description Language for Process" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_XVd8YDs5EemiA-SrWVVlnw" id="Process.viewpoint" name="Process View Point" description="View Point for Process" concerns="_XVE60Ds5EemiA-SrWVVlnw" representationKinds="_XVQhADs5EemiA-SrWVVlnw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_XQLzwDs5EemiA-SrWVVlnw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_XVQhADs5EemiA-SrWVVlnw" id="Process.papyrus.diagram" name="Process Papyrus Diagram" description="Papyrus Diagram for Process" concerns="_XVE60Ds5EemiA-SrWVVlnw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.process/resources/processDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_XVS9QDs5EemiA-SrWVVlnw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_XVX1wDs5EemiA-SrWVVlnw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_XVcuQDs5EemiA-SrWVVlnw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="process.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

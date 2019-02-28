@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_CfMokDtvEemVvrziPwI6Kw" id="profesor.architecture" name="profesor Architecture Model" description="Architecture Model for profesor">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_CfNPoTtvEemVvrziPwI6Kw" id="profesor.stakeholder" name="profesor Stakeholder" description="profesor Architecture Stakeholder" concerns="_CfNPoDtvEemVvrziPwI6Kw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_CfNPoDtvEemVvrziPwI6Kw" id="profesor.concern" name="profesor Concern" description="profesor Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_CfNPojtvEemVvrziPwI6Kw" id="profesor.description.language" name="profesor Description Language" description="Description Language for profesor" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_CfTWQTtvEemVvrziPwI6Kw" id="profesor.viewpoint" name="profesor View Point" description="View Point for profesor" concerns="_CfNPoDtvEemVvrziPwI6Kw" representationKinds="_CfPr4DtvEemVvrziPwI6Kw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_Cdk38DtvEemVvrziPwI6Kw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_CfPr4DtvEemVvrziPwI6Kw" id="profesor.papyrus.diagram" name="profesor Papyrus Diagram" description="Papyrus Diagram for profesor" concerns="_CfNPoDtvEemVvrziPwI6Kw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.profesor/resources/profesorDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_CfPr4TtvEemVvrziPwI6Kw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_CfRhEDtvEemVvrziPwI6Kw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_CfTWQDtvEemVvrziPwI6Kw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="profesor.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

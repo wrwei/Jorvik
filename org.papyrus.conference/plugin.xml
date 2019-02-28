@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+  <extension point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+    <profile description="conference Profile" name="conference Profile" path="pathmap://resources/conference/model.profile.uml" provider="Epsilon"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.uri_mapping">
+    <mapping source="pathmap://resources/conference/" target="platform:/plugin/org.papyrus.conference/"/>
+  </extension>
+  <extension point="org.eclipse.papyrus.infra.architecture.models">
+    <model path="resources/conference.architecture"/>
+  </extension>
+</plugin>

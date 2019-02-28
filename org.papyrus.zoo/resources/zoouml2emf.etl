@@ -1,0 +1,35 @@
+rule ZooUML2ZooEMF
+	transform s: UMLZoo!Zoo
+	to t: EMFZoo!Zoo {
+		t.name = s.name;
+		t.address = s.address;
+		t.owner = s.owner;
+		t.phone = s.phone;
+		t.personel ::= s.personel;
+		t.animals ::= s.animals;
+	}
+rule TamerUML2TamerEMF
+	transform s: UMLZoo!Tamer
+	to t: EMFZoo!Tamer {
+		t.level = s.level;
+	}
+rule DoctorUML2DoctorEMF
+	transform s: UMLZoo!Doctor
+	to t: EMFZoo!Doctor {
+		t.expertise = s.expertise;
+		t.vetHospitalName = s.vetHospitalName;
+	}
+rule FanUML2FanEMF
+	transform s: UMLZoo!Fan
+	to t: EMFZoo!Fan {
+	}
+rule TigerUML2TigerEMF
+	transform s: UMLZoo!Tiger
+	to t: EMFZoo!Tiger {
+		t.tigerType = s.tigerType;
+	}
+rule LionUML2LionEMF
+	transform s: UMLZoo!Lion
+	to t: EMFZoo!Lion {
+	}
+
