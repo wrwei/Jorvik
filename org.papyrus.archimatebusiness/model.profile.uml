@@ -1,1001 +1,1001 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_2oOxoDc8EemUr5o8kbIRyQ" name="ArchimateBusiness" URI="archimate-business" metaclassReference="_2oZJsTc8EemUr5o8kbIRyQ _2oiToTc8EemUr5o8kbIRyQ _2osrsTc8EemUr5o8kbIRyQ _2pWzATc8EemUr5o8kbIRyQ _2phyJDc8EemUr5o8kbIRyQ _2p4XcTc8EemUr5o8kbIRyQ _2qCvhDc8EemUr5o8kbIRyQ _2qfbdDc8EemUr5o8kbIRyQ _2qy9czc8EemUr5o8kbIRyQ">
-  <eAnnotations xmi:id="_2oOxojc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-    <contents xmi:type="ecore:EPackage" xmi:id="_2oOxoTc8EemUr5o8kbIRyQ" name="ArchimateBusiness" nsURI="http:///schemas/ArchimateBusiness/something/1" nsPrefix="ArchimateBusiness">
-      <eAnnotations xmi:id="_2oOxozc8EemUr5o8kbIRyQ" source="PapyrusVersion">
-        <details xmi:id="_2oOxpDc8EemUr5o8kbIRyQ" key="Version" value="0.0.1"/>
-        <details xmi:id="_2oOxpTc8EemUr5o8kbIRyQ" key="Comment" value=""/>
-        <details xmi:id="_2oOxpjc8EemUr5o8kbIRyQ" key="Copyright" value=""/>
-        <details xmi:id="_2oOxpzc8EemUr5o8kbIRyQ" key="Date" value="2017-02-01"/>
-        <details xmi:id="_2oOxqDc8EemUr5o8kbIRyQ" key="Author" value=""/>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_CoO6sDttEemVvrziPwI6Kw" name="ArchimateBusiness" URI="archimate-business" metaclassReference="_CpI5oTttEemVvrziPwI6Kw _CpthYDttEemVvrziPwI6Kw _CqK0YTttEemVvrziPwI6Kw _CsyDgTttEemVvrziPwI6Kw _CteAATttEemVvrziPwI6Kw _CusIATttEemVvrziPwI6Kw _Cvc9ADttEemVvrziPwI6Kw _CwsTITttEemVvrziPwI6Kw _CxgygDttEemVvrziPwI6Kw">
+  <eAnnotations xmi:id="_CoO6sjttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_CoO6sTttEemVvrziPwI6Kw" name="ArchimateBusiness" nsURI="http:///schemas/ArchimateBusiness/something/1" nsPrefix="ArchimateBusiness">
+      <eAnnotations xmi:id="_CoPhwDttEemVvrziPwI6Kw" source="PapyrusVersion">
+        <details xmi:id="_CoPhwTttEemVvrziPwI6Kw" key="Version" value="0.0.1"/>
+        <details xmi:id="_CoQI0DttEemVvrziPwI6Kw" key="Comment" value=""/>
+        <details xmi:id="_CoQI0TttEemVvrziPwI6Kw" key="Copyright" value=""/>
+        <details xmi:id="_CoQI0jttEemVvrziPwI6Kw" key="Date" value="2017-02-01"/>
+        <details xmi:id="_CoQI0zttEemVvrziPwI6Kw" key="Author" value=""/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2pfV4Dc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2pfV4Tc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_CtM6QDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_CtM6QTttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2prjIDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2prjITc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_Ct42wDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_Ct42wTttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2p17MDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2p17MTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_CucQYDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_CucQYTttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2qA6UDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2qA6UTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_CvKCEDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_CvKCETttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2qL5cDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2qL5cTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_Cv3MsDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_Cv3MsTttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2qUcUDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2qUcUTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_CwSqgDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_CwSqgTttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2qc_MDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2qc_MTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_CwmMgDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_CwmMgTttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2qn-UDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2qn-UTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_Cw8x0DttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_Cw9Y4DttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2qwhMDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2qwhMTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_CxUlQDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_CxUlQTttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eAnnotations xmi:id="_2q65QDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore">
-        <details xmi:id="_2q65QTc8EemUr5o8kbIRyQ" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+      <eAnnotations xmi:id="_Cx0UgDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_Cx07kDttEemVvrziPwI6Kw" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
       </eAnnotations>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oPYwjc8EemUr5o8kbIRyQ" name="NodeElement">
-        <eAnnotations xmi:id="_2oPYwzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYsDc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2odbIDc8EemUr5o8kbIRyQ" name="base_Class" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoR-ADttEemVvrziPwI6Kw" name="NodeElement">
+        <eAnnotations xmi:id="_CoR-ATttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW8DttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CpYxQDttEemVvrziPwI6Kw" name="base_Class" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oPYxDc8EemUr5o8kbIRyQ" name="WorkPackage" eSuperTypes="_2oPYwjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oPYxTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYsTc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2onzMDc8EemUr5o8kbIRyQ" name="base_OpaqueBehavior" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoSlEDttEemVvrziPwI6Kw" name="WorkPackage" eSuperTypes="_CoR-ADttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoSlETttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW8TttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Cp7j0DttEemVvrziPwI6Kw" name="base_OpaqueBehavior" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//OpaqueBehavior"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oP_wDc8EemUr5o8kbIRyQ" name="Deliverable" eSuperTypes="_2oPYwjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oP_wTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYsjc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2oyLQDc8EemUr5o8kbIRyQ" name="base_Artifact" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoSlEjttEemVvrziPwI6Kw" name="Deliverable" eSuperTypes="_CoR-ADttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoSlEzttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW8jttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CqY20DttEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oP_wjc8EemUr5o8kbIRyQ" name="Plateau" eSuperTypes="_2oPYwjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oP_wzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYszc8EemUr5o8kbIRyQ"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoSlFDttEemVvrziPwI6Kw" name="Plateau" eSuperTypes="_CoR-ADttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoSlFTttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW8zttEemVvrziPwI6Kw"/>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oP_xDc8EemUr5o8kbIRyQ" name="Gap" eSuperTypes="_2oPYwjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oP_xTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYtDc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2o_moDc8EemUr5o8kbIRyQ" name="base_Artifact" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoTMIDttEemVvrziPwI6Kw" name="Gap" eSuperTypes="_CoR-ADttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoTMITttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW9DttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CrAh4DttEemVvrziPwI6Kw" name="base_Artifact" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Artifact"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oP_xjc8EemUr5o8kbIRyQ" name="Grouping" eSuperTypes="_2oPYwjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oP_xzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYtTc8EemUr5o8kbIRyQ"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoTMIjttEemVvrziPwI6Kw" name="Grouping" eSuperTypes="_CoR-ADttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoTMIzttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW9TttEemVvrziPwI6Kw"/>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oP_yDc8EemUr5o8kbIRyQ" name="Junction" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oP_yTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYtjc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2pLz4Dc8EemUr5o8kbIRyQ" name="base_OpaqueBehavior" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoTzMDttEemVvrziPwI6Kw" name="Junction" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoTzMTttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW9jttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CrqpMDttEemVvrziPwI6Kw" name="base_OpaqueBehavior" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//OpaqueBehavior"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oP_yjc8EemUr5o8kbIRyQ" name="Relationship">
-        <eAnnotations xmi:id="_2oP_yzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYtzc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2oTqIDc8EemUr5o8kbIRyQ" name="source" lowerBound="1" eType="_2oPYwjc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2oURMDc8EemUr5o8kbIRyQ" name="target" lowerBound="1" eType="_2oPYwjc8EemUr5o8kbIRyQ"/>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2pTIoDc8EemUr5o8kbIRyQ" name="base_Class" ordered="false" lowerBound="1">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoTzMjttEemVvrziPwI6Kw" name="Relationship">
+        <eAnnotations xmi:id="_CoTzMzttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW9zttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Cok48DttEemVvrziPwI6Kw" name="source" lowerBound="1" eType="_CoR-ADttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ComHEDttEemVvrziPwI6Kw" name="target" lowerBound="1" eType="_CoR-ADttEemVvrziPwI6Kw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Cr_ZUDttEemVvrziPwI6Kw" name="base_Class" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oP_zDc8EemUr5o8kbIRyQ" name="Association" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oP_zTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYuDc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2pf88Dc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2pgkAjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2pgkAzc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoUaQDttEemVvrziPwI6Kw" name="Association" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoUaQTttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW-DttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_CtOvcDttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CtU2EDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CtU2ETttEemVvrziPwI6Kw" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2pf88jc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2pf88zc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2pf89Dc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CtPWgTttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CtPWgjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CtPWgzttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2pf89zc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2pf8-Dc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2pf8-Tc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CtP9kTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CtQkoDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CtQkoTttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2pf8-jc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2pgkADc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CtQkojttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CtRywDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2pgkATc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CtTA4DttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2phLEDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2phyITc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2phyIjc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_CtWEMDttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_Ctcx4DttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_Ctcx4TttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2phLEjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2phLEzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2phLFDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CtWEMjttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CtWEMzttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CtWrQDttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2phLFzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2phLGDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2phLGTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CtXSUTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CtXSUjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CtXSUzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2phLGjc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2phLGzc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CtXSVDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CtZHgDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2phyIDc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_Cta8sDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2pbrgDc8EemUr5o8kbIRyQ" name="base_Association" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Cs_e4DttEemVvrziPwI6Kw" name="base_Association" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oQm0Dc8EemUr5o8kbIRyQ" name="Access" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oQm0Tc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYuTc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2prjJDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2psxQDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2psxQTc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Usage.endType->selectByKind(UML::Class), target = self.base_Usage.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoUaQjttEemVvrziPwI6Kw" name="Access" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoUaQzttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW-TttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_Ct6r8DttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CuCAsDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CuCnwDttEemVvrziPwI6Kw" key="body" value="let source = self.base_Usage.endType->selectByKind(UML::Class), target = self.base_Usage.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2prjJjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2psKMDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2psKMTc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_Ct76EDttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_Ct76ETttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Ct76EjttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2psKNDc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2psKNTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2psKNjc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_Ct9IMTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_Ct9IMjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Ct9IMzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2psKNzc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2psKODc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_Ct9vQDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_Ct-9YDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2psKOTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CuAykDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2psxRDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2ptYVzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2ptYWDc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_CuDO0DttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_CuIHUDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CuIHUTttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2psxRjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2psxRzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2psxSDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CuD14TttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CuD14jttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CuD14zttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2ptYUTc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2ptYUjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2ptYUzc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CuFEATttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CuFEAjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CuFEAzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2ptYVDc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2ptYVTc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CuFEBDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CuGSIDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2ptYVjc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CuHgQDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2pn4wDc8EemUr5o8kbIRyQ" name="base_Usage" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ctq0UDttEemVvrziPwI6Kw" name="base_Usage" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Usage"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oQm0jc8EemUr5o8kbIRyQ" name="UsedBy" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oQm0zc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYujc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2p17NDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2p3JUDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2p3JUTc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Usage.endType->selectByKind(UML::Class), target = self.base_Usage.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoVBUDttEemVvrziPwI6Kw" name="UsedBy" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoVBUTttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW-jttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_CudegDttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CuiXADttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CuiXATttEemVvrziPwI6Kw" key="body" value="let source = self.base_Usage.endType->selectByKind(UML::Class), target = self.base_Usage.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2p17Njc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2p17Nzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2p17ODc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CueFkTttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CueFkjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CueFkzttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2p2iQjc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2p2iQzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2p2iRDc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CuesoTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CuesojttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CufTsDttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2p2iRTc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2p2iRjc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CufTsTttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_Cugh0DttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2p2iRzc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CuhI4DttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2p3JVDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2p3wYjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2p3wYzc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_CujlIDttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_CuprwDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CuprwTttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2p3JVjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2p3JVzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2p3JWDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CukMMTttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CukzQDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CukzQTttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2p3JWzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2p3JXDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2p3JXTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CulaUTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CumBYDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CumBYTttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2p3JXjc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2p3wYDc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CumBYjttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CunPgDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2p3wYTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CuodoDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2pxCsDc8EemUr5o8kbIRyQ" name="base_Usage" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CuQqMDttEemVvrziPwI6Kw" name="base_Usage" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Usage"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oQm1Dc8EemUr5o8kbIRyQ" name="Realization" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oQm1Tc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYuzc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2qA6VDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2qBhZzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qBhaDc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Realization.endType->selectByKind(UML::Class), target = self.base_Realization.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoVoYDttEemVvrziPwI6Kw" name="Realization" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoVoYTttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW-zttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_CvL3QDttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CvSk8DttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CvSk8TttEemVvrziPwI6Kw" key="body" value="let source = self.base_Realization.endType->selectByKind(UML::Class), target = self.base_Realization.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qA6Vjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qA6Vzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qA6WDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CvMeUTttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CvMeUjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CvMeUzttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qBhYTc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qBhYjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qBhYzc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CvNscTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CvNscjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CvNsczttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qBhZDc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qBhZTc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CvOTgDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CvPhoDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qBhZjc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CvQvwDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2qCIcDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2qCvgTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qCvgjc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_CvTzEDttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_CvagwDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CvagwTttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qCIcjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qCIczc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qCIdDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CvUaITttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CvVBMDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CvVBMTttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qCIdzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qCIeDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qCIeTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CvWPUTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CvWPUjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CvWPUzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qCIejc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qCIezc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CvWPVDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CvYEgDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qCvgDc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CvZSoDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2p9P8Dc8EemUr5o8kbIRyQ" name="base_Realization" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Cu7_oDttEemVvrziPwI6Kw" name="base_Realization" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Realization"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oQm1jc8EemUr5o8kbIRyQ" name="Assignment" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oQm1zc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYvDc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2qL5dDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2qNHkDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qNHkTc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Dependency.endType->selectByKind(UML::Class), target = self.base_Dependency.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoVoYjttEemVvrziPwI6Kw" name="Assignment" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoVoYzttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW_DttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_Cv4a0DttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_Cv96YDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_Cv96YTttEemVvrziPwI6Kw" key="body" value="let source = self.base_Dependency.endType->selectByKind(UML::Class), target = self.base_Dependency.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qL5djc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qL5dzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qL5eDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_Cv5B4TttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_Cv5B4jttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cv5B4zttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qMggTc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qMggjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qMggzc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_Cv5o8TttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_Cv6QADttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cv6QATttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qMghDc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qMghTc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_Cv6QAjttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_Cv7eIDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qMghjc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_Cv8sQDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2qNHlDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2qNuojc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qNuozc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_Cv_vkDttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_CwEBADttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CwEBATttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qNHljc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qNHlzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qNHmDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CwAWoTttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CwAWojttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwAWozttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qNHmzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qNHnDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qNHnTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CwBkwTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CwBkwjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwBkwzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qNHnjc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qNuoDc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CwCL0DttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CwCy4DttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qNuoTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CwDZ8DttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2qIPEDc8EemUr5o8kbIRyQ" name="base_Dependency" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Cvq_cDttEemVvrziPwI6Kw" name="base_Dependency" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oQm2Dc8EemUr5o8kbIRyQ" name="Aggregation" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oQm2Tc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYvTc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2qVDYDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2qVqcTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qVqcjc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoWPcDttEemVvrziPwI6Kw" name="Aggregation" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoWPcTttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW_TttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_CwT4oDttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CwVt0DttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CwVt0TttEemVvrziPwI6Kw" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qVDYjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qVDYzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qVDZDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CwT4ojttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CwT4ozttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwT4pDttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qVDZzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qVDaDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qVDaTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CwUfsTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CwUfsjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwUfszttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qVDajc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qVDazc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CwUftDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CwVGwDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qVqcDc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CwVGwTttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2qVqdTc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2qWRhzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qWRiDc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_CwWU4DttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_CwYxIDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CwYxITttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qVqdzc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qVqeDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qVqeTc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CwWU4jttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CwWU4zttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwWU5DttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qWRgTc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qWRgjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qWRgzc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CwW78jttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CwW78zttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwW79DttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qWRhDc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qWRhTc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CwW79TttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CwXjADttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qWRhjc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CwYKEDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2qQx8Dc8EemUr5o8kbIRyQ" name="base_Association" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CwKusDttEemVvrziPwI6Kw" name="base_Association" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oQm2jc8EemUr5o8kbIRyQ" name="Composition" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oQm2zc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYvjc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2qdmQDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2qeNUjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qeNUzc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoWPcjttEemVvrziPwI6Kw" name="Composition" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoW2gDttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW_jttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_CwmzkDttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CwpP0DttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CwpP0TttEemVvrziPwI6Kw" key="body" value="let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qdmQjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qdmQzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qdmRDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CwnaoDttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CwnaoTttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwnaojttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qdmRzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qdmSDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qdmSTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CwnapTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CwnapjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CwnapzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qdmSjc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qeNUDc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CwoBsDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CwoBsTttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qeNUTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CwoowDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2qe0YDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2qfbcTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qfbcjc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_Cwp24DttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_CwrsEDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CwrsETttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qe0Yjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qe0Yzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qe0ZDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_Cwp24jttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_Cwp24zttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cwqd8DttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qe0Zzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qe0aDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qe0aTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_Cwqd8zttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_Cwqd9DttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cwqd9TttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qe0ajc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qe0azc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_Cwqd9jttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CwrFADttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qfbcDc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CwrFATttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2qZU0Dc8EemUr5o8kbIRyQ" name="base_Association" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CweQsDttEemVvrziPwI6Kw" name="base_Association" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Association"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oQm3Dc8EemUr5o8kbIRyQ" name="Flow" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oRN4Dc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYvzc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2qn-VDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2qpMcDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qpMcTc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_InformationFlow.endType->selectByKind(UML::Class), target = self.base_InformationFlow.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoW2gTttEemVvrziPwI6Kw" name="Flow" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoW2gjttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRW_zttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_Cw9_8DttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CxAcMDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CxAcMTttEemVvrziPwI6Kw" key="body" value="let source = self.base_InformationFlow.endType->selectByKind(UML::Class), target = self.base_InformationFlow.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qn-Vjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qn-Vzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qn-WDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_Cw-nATttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_Cw-nAjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cw-nAzttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qolYTc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qolYjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qolYzc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_Cw_OETttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_Cw_OEjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cw_OEzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qolZDc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qolZTc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_Cw_OFDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_Cw_1IDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qolZjc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_Cw_1ITttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2qpMdDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2qpzgjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qpzgzc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_CxBDQDttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_CxC4cTttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CxC4cjttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qpMdjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qpMdzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qpMeDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CxBDQjttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CxBDQzttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CxBDRDttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qpMezc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qpMfDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qpMfTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CxBqUTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CxBqUjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CxBqUzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qpMfjc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qpzgDc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CxBqVDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CxCRYDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qpzgTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CxC4cDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2qkT8Dc8EemUr5o8kbIRyQ" name="base_InformationFlow" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Cw0O8DttEemVvrziPwI6Kw" name="base_InformationFlow" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InformationFlow"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oRN4Tc8EemUr5o8kbIRyQ" name="Triggering" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oRN4jc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYwDc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2qxIQDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2qxvUjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qxvUzc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_InformationFlow.endType->selectByKind(UML::Class), target = self.base_InformationFlow.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoXdkDttEemVvrziPwI6Kw" name="Triggering" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoXdkTttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRXADttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_CxVzYDttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_CxZdwDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_CxZdwTttEemVvrziPwI6Kw" key="body" value="let source = self.base_InformationFlow.endType->selectByKind(UML::Class), target = self.base_InformationFlow.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qxIQjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qxIQzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qxIRDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CxWacTttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CxWacjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CxWaczttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qxIRzc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qxISDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qxISTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CxXBgTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CxXBgjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CxXBgzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qxISjc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qxvUDc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CxXBhDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CxXokDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qxvUTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CxY2sDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2qxvVjc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2qy9cDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2qy9cTc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_Cxar4DttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_Cxe9UDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_Cxe9UTttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2qyWYTc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2qyWYjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qyWYzc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_CxbS8DttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_CxbS8TttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CxbS8jttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2qyWZjc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2qyWZzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2qyWaDc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_CxchETttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_CxchEjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_CxchEzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2qyWaTc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2qyWajc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_CxchFDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_CxdvMDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2qyWazc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_CxeWQDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2qsPwDc8EemUr5o8kbIRyQ" name="base_InformationFlow" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CxKNMDttEemVvrziPwI6Kw" name="base_InformationFlow" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//InformationFlow"/>
         </eStructuralFeatures>
       </eClassifiers>
-      <eClassifiers xmi:type="ecore:EClass" xmi:id="_2oRN4zc8EemUr5o8kbIRyQ" name="Specialization" eSuperTypes="_2oP_yjc8EemUr5o8kbIRyQ">
-        <eAnnotations xmi:id="_2oRN5Dc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_2oPYwTc8EemUr5o8kbIRyQ"/>
-        <eOperations xmi:id="_2q65RDc8EemUr5o8kbIRyQ" name="CheckEndTypes">
-          <eAnnotations xmi:id="_2q8HYDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2q8HYTc8EemUr5o8kbIRyQ" key="body" value="let source = self.base_Generalization.endType->selectByKind(UML::Class), target = self.base_Generalization.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CoXdkjttEemVvrziPwI6Kw" name="Specialization" eSuperTypes="_CoTzMjttEemVvrziPwI6Kw">
+        <eAnnotations xmi:id="_CoXdkzttEemVvrziPwI6Kw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_CoRXATttEemVvrziPwI6Kw"/>
+        <eOperations xmi:id="_Cx1ioDttEemVvrziPwI6Kw" name="CheckEndTypes">
+          <eAnnotations xmi:id="_Cx3-4DttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_Cx3-4TttEemVvrziPwI6Kw" key="body" value="let source = self.base_Generalization.endType->selectByKind(UML::Class), target = self.base_Generalization.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2q65Rjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2q7gUDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2q7gUTc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_Cx2JsDttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_Cx2JsTttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cx2JsjttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2q7gVDc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2q7gVTc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2q7gVjc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_Cx2JtTttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_Cx2JtjttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cx2JtzttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2q7gVzc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2q7gWDc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_Cx2wwDttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_Cx2wwTttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2q7gWTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_Cx3X0DttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eOperations xmi:id="_2q8HZDc8EemUr5o8kbIRyQ" name="CheckNavigability">
-          <eAnnotations xmi:id="_2q8ucjc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
-            <details xmi:id="_2q8uczc8EemUr5o8kbIRyQ" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
+        <eOperations xmi:id="_Cx5NADttEemVvrziPwI6Kw" name="CheckNavigability">
+          <eAnnotations xmi:id="_Cx8QUDttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+            <details xmi:id="_Cx83YDttEemVvrziPwI6Kw" key="body" value="let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif"/>
           </eAnnotations>
           <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-          <eParameters xmi:id="_2q8HZjc8EemUr5o8kbIRyQ" name="diagnostics">
-            <eAnnotations xmi:id="_2q8HZzc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2q8HaDc8EemUr5o8kbIRyQ" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+          <eParameters xmi:id="_Cx5NAjttEemVvrziPwI6Kw" name="diagnostics">
+            <eAnnotations xmi:id="_Cx5NAzttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cx5NBDttEemVvrziPwI6Kw" key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
             </eAnnotations>
             <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
           </eParameters>
-          <eParameters xmi:id="_2q8Hazc8EemUr5o8kbIRyQ" name="context">
-            <eAnnotations xmi:id="_2q8HbDc8EemUr5o8kbIRyQ" source="http://www.eclipse.org/emf/2002/GenModel">
-              <details xmi:id="_2q8HbTc8EemUr5o8kbIRyQ" key="documentation" value="The cache of context-specific information."/>
+          <eParameters xmi:id="_Cx50EjttEemVvrziPwI6Kw" name="context">
+            <eAnnotations xmi:id="_Cx50EzttEemVvrziPwI6Kw" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_Cx6bIDttEemVvrziPwI6Kw" key="documentation" value="The cache of context-specific information."/>
             </eAnnotations>
-            <eGenericType xmi:id="_2q8Hbjc8EemUr5o8kbIRyQ">
-              <eTypeArguments xmi:id="_2q8ucDc8EemUr5o8kbIRyQ">
+            <eGenericType xmi:id="_Cx6bITttEemVvrziPwI6Kw">
+              <eTypeArguments xmi:id="_Cx7CMDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
-              <eTypeArguments xmi:id="_2q8ucTc8EemUr5o8kbIRyQ">
+              <eTypeArguments xmi:id="_Cx7pQDttEemVvrziPwI6Kw">
                 <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
               </eTypeArguments>
               <eClassifier xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EMap"/>
             </eGenericType>
           </eParameters>
         </eOperations>
-        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_2q318Dc8EemUr5o8kbIRyQ" name="base_Generalization" ordered="false" lowerBound="1">
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CxrxoDttEemVvrziPwI6Kw" name="base_Generalization" ordered="false" lowerBound="1">
           <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Generalization"/>
         </eStructuralFeatures>
       </eClassifiers>
     </contents>
   </eAnnotations>
-  <elementImport xmi:id="_2oZJsTc8EemUr5o8kbIRyQ" alias="Class">
+  <elementImport xmi:id="_CpI5oTttEemVvrziPwI6Kw" alias="Class">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
   </elementImport>
-  <elementImport xmi:id="_2oiToTc8EemUr5o8kbIRyQ" alias="OpaqueBehavior">
+  <elementImport xmi:id="_CpthYDttEemVvrziPwI6Kw" alias="OpaqueBehavior">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#OpaqueBehavior"/>
   </elementImport>
-  <elementImport xmi:id="_2osrsTc8EemUr5o8kbIRyQ" alias="Artifact">
+  <elementImport xmi:id="_CqK0YTttEemVvrziPwI6Kw" alias="Artifact">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
   </elementImport>
-  <elementImport xmi:id="_2pWzATc8EemUr5o8kbIRyQ" alias="Association">
+  <elementImport xmi:id="_CsyDgTttEemVvrziPwI6Kw" alias="Association">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
   </elementImport>
-  <elementImport xmi:id="_2phyJDc8EemUr5o8kbIRyQ" alias="Usage">
+  <elementImport xmi:id="_CteAATttEemVvrziPwI6Kw" alias="Usage">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Usage"/>
   </elementImport>
-  <elementImport xmi:id="_2p4XcTc8EemUr5o8kbIRyQ" alias="Realization">
+  <elementImport xmi:id="_CusIATttEemVvrziPwI6Kw" alias="Realization">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Realization"/>
   </elementImport>
-  <elementImport xmi:id="_2qCvhDc8EemUr5o8kbIRyQ" alias="Dependency">
+  <elementImport xmi:id="_Cvc9ADttEemVvrziPwI6Kw" alias="Dependency">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
   </elementImport>
-  <elementImport xmi:id="_2qfbdDc8EemUr5o8kbIRyQ" alias="InformationFlow">
+  <elementImport xmi:id="_CwsTITttEemVvrziPwI6Kw" alias="InformationFlow">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InformationFlow"/>
   </elementImport>
-  <elementImport xmi:id="_2qy9czc8EemUr5o8kbIRyQ" alias="Generalization">
+  <elementImport xmi:id="_CxgygDttEemVvrziPwI6Kw" alias="Generalization">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Generalization"/>
   </elementImport>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYsDc8EemUr5o8kbIRyQ" name="NodeElement">
-    <ownedAttribute xmi:id="_2oZJsDc8EemUr5o8kbIRyQ" name="base_Class" association="_2ofQUDc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW8DttEemVvrziPwI6Kw" name="NodeElement" isAbstract="true">
+    <ownedAttribute xmi:id="_CpI5oDttEemVvrziPwI6Kw" name="base_Class" association="_CpkXcDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYsTc8EemUr5o8kbIRyQ" name="WorkPackage">
-    <generalization xmi:id="_2oRN5Tc8EemUr5o8kbIRyQ" general="_2oPYsDc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2oiToDc8EemUr5o8kbIRyQ" name="base_OpaqueBehavior" association="_2opoYDc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW8TttEemVvrziPwI6Kw" name="WorkPackage">
+    <generalization xmi:id="_CoZSwDttEemVvrziPwI6Kw" general="_CoRW8DttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_Cps6UDttEemVvrziPwI6Kw" name="base_OpaqueBehavior" association="_CqAcUDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#OpaqueBehavior"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYsjc8EemUr5o8kbIRyQ" name="Deliverable">
-    <generalization xmi:id="_2oR08Tc8EemUr5o8kbIRyQ" general="_2oPYsDc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2osrsDc8EemUr5o8kbIRyQ" name="base_Artifact" association="_2o0AcDc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW8jttEemVvrziPwI6Kw" name="Deliverable">
+    <generalization xmi:id="_Coag4DttEemVvrziPwI6Kw" general="_CoRW8DttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CqK0YDttEemVvrziPwI6Kw" name="base_Artifact" association="_CqeWYDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYszc8EemUr5o8kbIRyQ" name="Plateau">
-    <generalization xmi:id="_2oR08zc8EemUr5o8kbIRyQ" general="_2oPYsDc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2o3DwDc8EemUr5o8kbIRyQ" name="base_Class" association="_2o5gADc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW8zttEemVvrziPwI6Kw" name="Plateau">
+    <generalization xmi:id="_CobvADttEemVvrziPwI6Kw" general="_CoRW8DttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CqoucDttEemVvrziPwI6Kw" name="base_Class" association="_CqwqQDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYtDc8EemUr5o8kbIRyQ" name="Gap">
-    <generalization xmi:id="_2oScADc8EemUr5o8kbIRyQ" general="_2oPYsDc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2o78QDc8EemUr5o8kbIRyQ" name="base_Artifact" association="_2pBb0Dc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW9DttEemVvrziPwI6Kw" name="Gap">
+    <generalization xmi:id="_CodkMDttEemVvrziPwI6Kw" general="_CoRW8DttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_Cq50MDttEemVvrziPwI6Kw" name="base_Artifact" association="_CrEzUDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYtTc8EemUr5o8kbIRyQ" name="Grouping">
-    <generalization xmi:id="_2oScAjc8EemUr5o8kbIRyQ" general="_2oPYsDc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2pD4EDc8EemUr5o8kbIRyQ" name="base_Class" association="_2pGUUDc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW9TttEemVvrziPwI6Kw" name="Grouping">
+    <generalization xmi:id="_CoeyUDttEemVvrziPwI6Kw" general="_CoRW8DttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CrPLYDttEemVvrziPwI6Kw" name="base_Class" association="_CrY8YDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYtjc8EemUr5o8kbIRyQ" name="Junction">
-    <generalization xmi:id="_2oScBDc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2pJXoDc8EemUr5o8kbIRyQ" name="base_OpaqueBehavior" association="_2pNCADc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW9jttEemVvrziPwI6Kw" name="Junction">
+    <generalization xmi:id="_CogngDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CritYDttEemVvrziPwI6Kw" name="base_OpaqueBehavior" association="_CrwIwDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#OpaqueBehavior"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYtzc8EemUr5o8kbIRyQ" name="Relationship">
-    <ownedAttribute xmi:id="_2oTDETc8EemUr5o8kbIRyQ" name="source" type="_2oPYsDc8EemUr5o8kbIRyQ" association="_2oTDFDc8EemUr5o8kbIRyQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2oTDEjc8EemUr5o8kbIRyQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2oTDEzc8EemUr5o8kbIRyQ" value="1"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW9zttEemVvrziPwI6Kw" name="Relationship" isAbstract="true">
+    <ownedAttribute xmi:id="_Cojq0DttEemVvrziPwI6Kw" name="source" type="_CoRW8DttEemVvrziPwI6Kw" association="_CokR4DttEemVvrziPwI6Kw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cojq0TttEemVvrziPwI6Kw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cojq0jttEemVvrziPwI6Kw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2oTqIjc8EemUr5o8kbIRyQ" name="target" type="_2oPYsDc8EemUr5o8kbIRyQ" association="_2oTqJTc8EemUr5o8kbIRyQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2oTqIzc8EemUr5o8kbIRyQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2oTqJDc8EemUr5o8kbIRyQ" value="1"/>
+    <ownedAttribute xmi:id="_Cok48jttEemVvrziPwI6Kw" name="target" type="_CoRW8DttEemVvrziPwI6Kw" association="_ColgADttEemVvrziPwI6Kw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cok48zttEemVvrziPwI6Kw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cok49DttEemVvrziPwI6Kw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2pQFUDc8EemUr5o8kbIRyQ" name="base_Class" association="_2pUWwDc8EemUr5o8kbIRyQ">
+    <ownedAttribute xmi:id="_Cr4roDttEemVvrziPwI6Kw" name="base_Class" association="_Cso5kDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYuDc8EemUr5o8kbIRyQ" name="Association">
-    <ownedRule xmi:id="_2pfV4jc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYuDc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2pfV4zc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW-DttEemVvrziPwI6Kw" name="Association">
+    <ownedRule xmi:id="_CtM6QjttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW-DttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CtM6QzttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2pgkBDc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYuDc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2pgkBTc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_CtU2EjttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW-DttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CtU2EzttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oURMjc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2pWzADc8EemUr5o8kbIRyQ" name="base_Association" association="_2pbrgTc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_CopKYDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CsyDgDttEemVvrziPwI6Kw" name="base_Association" association="_Cs_e4TttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYuTc8EemUr5o8kbIRyQ" name="Access">
-    <ownedRule xmi:id="_2prjIjc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYuTc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2prjIzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW-TttEemVvrziPwI6Kw" name="Access">
+    <ownedRule xmi:id="_Ct42wjttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW-TttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ct42wzttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Usage.endType->selectByKind(UML::Class), target = self.base_Usage.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2psxQjc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYuTc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2psxQzc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_CuCnwTttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW-TttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CuCnwjttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oU4QTc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2phyIzc8EemUr5o8kbIRyQ" name="base_Usage" association="_2pn4wTc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_CosNsDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CteAADttEemVvrziPwI6Kw" name="base_Usage" association="_Ctq0UTttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Usage"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYujc8EemUr5o8kbIRyQ" name="UsedBy">
-    <ownedRule xmi:id="_2p17Mjc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYujc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2p17Mzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW-jttEemVvrziPwI6Kw" name="UsedBy">
+    <ownedRule xmi:id="_CucQYjttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW-jttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CucQYzttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Usage.endType->selectByKind(UML::Class), target = self.base_Usage.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2p3JUjc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYujc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2p3JUzc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_Cui-EDttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW-jttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Cui-ETttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oU4Qzc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2pt_YDc8EemUr5o8kbIRyQ" name="base_Usage" association="_2pxCsTc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_CovRADttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CuJ8gDttEemVvrziPwI6Kw" name="base_Usage" association="_CuQqMTttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Usage"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYuzc8EemUr5o8kbIRyQ" name="Realization">
-    <ownedRule xmi:id="_2qA6Ujc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYuzc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qA6Uzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW-zttEemVvrziPwI6Kw" name="Realization">
+    <ownedRule xmi:id="_CvKpIDttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW-zttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CvKpITttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Realization.endType->selectByKind(UML::Class), target = self.base_Realization.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2qBhaTc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYuzc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qBhajc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_CvTMADttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW-zttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CvTMATttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oVfUTc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2p4XcDc8EemUr5o8kbIRyQ" name="base_Realization" association="_2p9P8Tc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_CoxtQDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CusIADttEemVvrziPwI6Kw" name="base_Realization" association="_Cu7_oTttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Realization"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYvDc8EemUr5o8kbIRyQ" name="Assignment">
-    <ownedRule xmi:id="_2qL5cjc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYvDc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qL5czc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW_DttEemVvrziPwI6Kw" name="Assignment">
+    <ownedRule xmi:id="_Cv3MsjttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW_DttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Cv3zwDttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Dependency.endType->selectByKind(UML::Class), target = self.base_Dependency.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2qNHkjc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYvDc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qNHkzc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_Cv-hcDttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW_DttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Cv-hcTttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oVfUzc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2qCvgzc8EemUr5o8kbIRyQ" name="base_Dependency" association="_2qIPETc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_Co0wkDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CvcV8DttEemVvrziPwI6Kw" name="base_Dependency" association="_Cvq_cTttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYvTc8EemUr5o8kbIRyQ" name="Aggregation">
-    <ownedRule xmi:id="_2qUcUjc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYvTc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qUcUzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW_TttEemVvrziPwI6Kw" name="Aggregation">
+    <ownedRule xmi:id="_CwSqgjttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW_TttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CwTRkDttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2qVqczc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYvTc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qVqdDc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_CwVt0jttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW_TttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CwVt0zttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oWGYTc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2qOVsDc8EemUr5o8kbIRyQ" name="base_Association" association="_2qQx8Tc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_Co3z4DttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CwEoEDttEemVvrziPwI6Kw" name="base_Association" association="_CwKusTttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYvjc8EemUr5o8kbIRyQ" name="Composition">
-    <ownedRule xmi:id="_2qc_Mjc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYvjc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qc_Mzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW_jttEemVvrziPwI6Kw" name="Composition">
+    <ownedRule xmi:id="_CwmMgjttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW_jttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CwmMgzttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Association.endType->selectByKind(UML::Class), target = self.base_Association.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2qeNVDc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYvjc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qeNVTc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_CwpP0jttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW_jttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CwpP0zttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oWtcTc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2qW4kDc8EemUr5o8kbIRyQ" name="base_Association" association="_2qZ74Dc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_Co6QIDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CwZYMDttEemVvrziPwI6Kw" name="base_Association" association="_Cwe3wDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYvzc8EemUr5o8kbIRyQ" name="Flow">
-    <ownedRule xmi:id="_2qn-Ujc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYvzc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qn-Uzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRW_zttEemVvrziPwI6Kw" name="Flow">
+    <ownedRule xmi:id="_Cw9Y4TttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRW_zttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Cw9Y4jttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_InformationFlow.endType->selectByKind(UML::Class), target = self.base_InformationFlow.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2qpMcjc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYvzc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qpMczc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_CxAcMjttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRW_zttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CxAcMzttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oXUgDc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2qfbczc8EemUr5o8kbIRyQ" name="base_InformationFlow" association="_2qkT8Tc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_Co8FUDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CwsTIDttEemVvrziPwI6Kw" name="base_InformationFlow" association="_Cw02ADttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InformationFlow"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYwDc8EemUr5o8kbIRyQ" name="Triggering">
-    <ownedRule xmi:id="_2qwhMjc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYwDc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qwhMzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRXADttEemVvrziPwI6Kw" name="Triggering">
+    <ownedRule xmi:id="_CxUlQjttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRXADttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CxVMUDttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_InformationFlow.endType->selectByKind(UML::Class), target = self.base_InformationFlow.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2qxvVDc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYwDc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2qxvVTc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_CxaE0DttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRXADttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_CxaE0TttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oX7kDc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2qqakDc8EemUr5o8kbIRyQ" name="base_InformationFlow" association="_2qsPwTc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_Co-hkDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CxEGkDttEemVvrziPwI6Kw" name="base_InformationFlow" association="_CxKNMTttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#InformationFlow"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Stereotype" xmi:id="_2oPYwTc8EemUr5o8kbIRyQ" name="Specialization">
-    <ownedRule xmi:id="_2q65Qjc8EemUr5o8kbIRyQ" name="CheckEndTypes" constrainedElement="_2oPYwTc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2q65Qzc8EemUr5o8kbIRyQ">
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_CoRXATttEemVvrziPwI6Kw" name="Specialization">
+    <ownedRule xmi:id="_Cx07kTttEemVvrziPwI6Kw" name="CheckEndTypes" constrainedElement="_CoRXATttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Cx07kjttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let source = self.base_Generalization.endType->selectByKind(UML::Class), target = self.base_Generalization.endType->selectByKind(UML::Class) in source->exists(c|c.extension_NodeElement->notEmpty()) and target->exists(c|c.extension_NodeElement -> notEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2q8HYjc8EemUr5o8kbIRyQ" name="CheckNavigability" constrainedElement="_2oPYwTc8EemUr5o8kbIRyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2q8HYzc8EemUr5o8kbIRyQ">
+    <ownedRule xmi:id="_Cx4l8DttEemVvrziPwI6Kw" name="CheckNavigability" constrainedElement="_CoRXATttEemVvrziPwI6Kw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Cx4l8TttEemVvrziPwI6Kw">
         <language>OCL</language>
         <body>let memberEnds = self.base_Association.memberEnd in let NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty()), NodeElementEnd = memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_NodeElement->notEmpty())in if NodeElementEnd->notEmpty() and NodeElementEnd->notEmpty() then NodeElementEnd->first().isNavigable() = true and NodeElementEnd->first().isNavigable() = false else false endif</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_2oX7kjc8EemUr5o8kbIRyQ" general="_2oPYtzc8EemUr5o8kbIRyQ"/>
-    <ownedAttribute xmi:id="_2qy9cjc8EemUr5o8kbIRyQ" name="base_Generalization" association="_2q318Tc8EemUr5o8kbIRyQ">
+    <generalization xmi:id="_CpF2UDttEemVvrziPwI6Kw" general="_CoRW9zttEemVvrziPwI6Kw"/>
+    <ownedAttribute xmi:id="_CxgLcDttEemVvrziPwI6Kw" name="base_Generalization" association="_CxsYsDttEemVvrziPwI6Kw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Generalization"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_2oTDFDc8EemUr5o8kbIRyQ" memberEnd="_2oTDFTc8EemUr5o8kbIRyQ _2oTDETc8EemUr5o8kbIRyQ">
-    <eAnnotations xmi:id="_2oTDGDc8EemUr5o8kbIRyQ" source="org.eclipse.papyrus">
-      <details xmi:id="_2oTDGTc8EemUr5o8kbIRyQ" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CokR4DttEemVvrziPwI6Kw" memberEnd="_CokR4TttEemVvrziPwI6Kw _Cojq0DttEemVvrziPwI6Kw">
+    <eAnnotations xmi:id="_CokR5DttEemVvrziPwI6Kw" source="org.eclipse.papyrus">
+      <details xmi:id="_CokR5TttEemVvrziPwI6Kw" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:id="_2oTDFTc8EemUr5o8kbIRyQ" name="RelationshipEnd" type="_2oPYtzc8EemUr5o8kbIRyQ" association="_2oTDFDc8EemUr5o8kbIRyQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2oTDFjc8EemUr5o8kbIRyQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2oTDFzc8EemUr5o8kbIRyQ" value="1"/>
+    <ownedEnd xmi:id="_CokR4TttEemVvrziPwI6Kw" name="RelationshipEnd" type="_CoRW9zttEemVvrziPwI6Kw" association="_CokR4DttEemVvrziPwI6Kw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CokR4jttEemVvrziPwI6Kw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CokR4zttEemVvrziPwI6Kw" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_2oTqJTc8EemUr5o8kbIRyQ" memberEnd="_2oTqJjc8EemUr5o8kbIRyQ _2oTqIjc8EemUr5o8kbIRyQ">
-    <eAnnotations xmi:id="_2oTqKTc8EemUr5o8kbIRyQ" source="org.eclipse.papyrus">
-      <details xmi:id="_2oTqKjc8EemUr5o8kbIRyQ" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ColgADttEemVvrziPwI6Kw" memberEnd="_ColgATttEemVvrziPwI6Kw _Cok48jttEemVvrziPwI6Kw">
+    <eAnnotations xmi:id="_ColgBDttEemVvrziPwI6Kw" source="org.eclipse.papyrus">
+      <details xmi:id="_ColgBTttEemVvrziPwI6Kw" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:id="_2oTqJjc8EemUr5o8kbIRyQ" name="RelationshipEnd" type="_2oPYtzc8EemUr5o8kbIRyQ" association="_2oTqJTc8EemUr5o8kbIRyQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2oTqJzc8EemUr5o8kbIRyQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2oTqKDc8EemUr5o8kbIRyQ" value="1"/>
+    <ownedEnd xmi:id="_ColgATttEemVvrziPwI6Kw" name="RelationshipEnd" type="_CoRW9zttEemVvrziPwI6Kw" association="_ColgADttEemVvrziPwI6Kw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ColgAjttEemVvrziPwI6Kw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ColgAzttEemVvrziPwI6Kw" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2ofQUDc8EemUr5o8kbIRyQ" name="E_NodeElement_Class1" memberEnd="_2ofQUTc8EemUr5o8kbIRyQ _2oZJsDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2ofQUTc8EemUr5o8kbIRyQ" name="extension_NodeElement" type="_2oPYsDc8EemUr5o8kbIRyQ" aggregation="composite" association="_2ofQUDc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CpkXcDttEemVvrziPwI6Kw" name="E_NodeElement_Class1" memberEnd="_CpkXcTttEemVvrziPwI6Kw _CpI5oDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CpkXcTttEemVvrziPwI6Kw" name="extension_NodeElement" type="_CoRW8DttEemVvrziPwI6Kw" aggregation="composite" association="_CpkXcDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2opoYDc8EemUr5o8kbIRyQ" name="E_WorkPackage_OpaqueBehavior1" memberEnd="_2opoYTc8EemUr5o8kbIRyQ _2oiToDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2opoYTc8EemUr5o8kbIRyQ" name="extension_WorkPackage" type="_2oPYsTc8EemUr5o8kbIRyQ" aggregation="composite" association="_2opoYDc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CqAcUDttEemVvrziPwI6Kw" name="E_WorkPackage_OpaqueBehavior1" memberEnd="_CqAcUTttEemVvrziPwI6Kw _Cps6UDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CqAcUTttEemVvrziPwI6Kw" name="extension_WorkPackage" type="_CoRW8TttEemVvrziPwI6Kw" aggregation="composite" association="_CqAcUDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2o0AcDc8EemUr5o8kbIRyQ" name="E_Deliverable_Artifact1" memberEnd="_2o0ngDc8EemUr5o8kbIRyQ _2osrsDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2o0ngDc8EemUr5o8kbIRyQ" name="extension_Deliverable" type="_2oPYsjc8EemUr5o8kbIRyQ" aggregation="composite" association="_2o0AcDc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CqeWYDttEemVvrziPwI6Kw" name="E_Deliverable_Artifact1" memberEnd="_CqeWYTttEemVvrziPwI6Kw _CqK0YDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CqeWYTttEemVvrziPwI6Kw" name="extension_Deliverable" type="_CoRW8jttEemVvrziPwI6Kw" aggregation="composite" association="_CqeWYDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2o5gADc8EemUr5o8kbIRyQ" name="E_Plateau_Class1" memberEnd="_2o5gATc8EemUr5o8kbIRyQ _2o3DwDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2o5gATc8EemUr5o8kbIRyQ" name="extension_Plateau" type="_2oPYszc8EemUr5o8kbIRyQ" aggregation="composite" association="_2o5gADc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CqwqQDttEemVvrziPwI6Kw" name="E_Plateau_Class1" memberEnd="_CqwqQTttEemVvrziPwI6Kw _CqoucDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CqwqQTttEemVvrziPwI6Kw" name="extension_Plateau" type="_CoRW8zttEemVvrziPwI6Kw" aggregation="composite" association="_CqwqQDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2pBb0Dc8EemUr5o8kbIRyQ" name="E_Gap_Artifact1" memberEnd="_2pBb0Tc8EemUr5o8kbIRyQ _2o78QDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2pBb0Tc8EemUr5o8kbIRyQ" name="extension_Gap" type="_2oPYtDc8EemUr5o8kbIRyQ" aggregation="composite" association="_2pBb0Dc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CrEzUDttEemVvrziPwI6Kw" name="E_Gap_Artifact1" memberEnd="_CrEzUTttEemVvrziPwI6Kw _Cq50MDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CrEzUTttEemVvrziPwI6Kw" name="extension_Gap" type="_CoRW9DttEemVvrziPwI6Kw" aggregation="composite" association="_CrEzUDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2pGUUDc8EemUr5o8kbIRyQ" name="E_Grouping_Class1" memberEnd="_2pGUUTc8EemUr5o8kbIRyQ _2pD4EDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2pGUUTc8EemUr5o8kbIRyQ" name="extension_Grouping" type="_2oPYtTc8EemUr5o8kbIRyQ" aggregation="composite" association="_2pGUUDc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CrY8YDttEemVvrziPwI6Kw" name="E_Grouping_Class1" memberEnd="_CrY8YTttEemVvrziPwI6Kw _CrPLYDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CrY8YTttEemVvrziPwI6Kw" name="extension_Grouping" type="_CoRW9TttEemVvrziPwI6Kw" aggregation="composite" association="_CrY8YDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2pNCADc8EemUr5o8kbIRyQ" name="E_Junction_OpaqueBehavior1" memberEnd="_2pNCATc8EemUr5o8kbIRyQ _2pJXoDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2pNCATc8EemUr5o8kbIRyQ" name="extension_Junction" type="_2oPYtjc8EemUr5o8kbIRyQ" aggregation="composite" association="_2pNCADc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CrwIwDttEemVvrziPwI6Kw" name="E_Junction_OpaqueBehavior1" memberEnd="_CrwIwTttEemVvrziPwI6Kw _CritYDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CrwIwTttEemVvrziPwI6Kw" name="extension_Junction" type="_CoRW9jttEemVvrziPwI6Kw" aggregation="composite" association="_CrwIwDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2pUWwDc8EemUr5o8kbIRyQ" name="E_Relationship_Class1" memberEnd="_2pUWwTc8EemUr5o8kbIRyQ _2pQFUDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2pUWwTc8EemUr5o8kbIRyQ" name="extension_Relationship" type="_2oPYtzc8EemUr5o8kbIRyQ" aggregation="composite" association="_2pUWwDc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Cso5kDttEemVvrziPwI6Kw" name="E_Relationship_Class1" memberEnd="_Cso5kTttEemVvrziPwI6Kw _Cr4roDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Cso5kTttEemVvrziPwI6Kw" name="extension_Relationship" type="_CoRW9zttEemVvrziPwI6Kw" aggregation="composite" association="_Cso5kDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2pbrgTc8EemUr5o8kbIRyQ" name="E_Association_Association1" memberEnd="_2pbrgjc8EemUr5o8kbIRyQ _2pWzADc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2pbrgjc8EemUr5o8kbIRyQ" name="extension_Association" type="_2oPYuDc8EemUr5o8kbIRyQ" aggregation="composite" association="_2pbrgTc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Cs_e4TttEemVvrziPwI6Kw" name="E_Association_Association1" memberEnd="_Cs_e4jttEemVvrziPwI6Kw _CsyDgDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Cs_e4jttEemVvrziPwI6Kw" name="extension_Association" type="_CoRW-DttEemVvrziPwI6Kw" aggregation="composite" association="_Cs_e4TttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2pn4wTc8EemUr5o8kbIRyQ" name="E_Access_Usage1" memberEnd="_2pn4wjc8EemUr5o8kbIRyQ _2phyIzc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2pn4wjc8EemUr5o8kbIRyQ" name="extension_Access" type="_2oPYuTc8EemUr5o8kbIRyQ" aggregation="composite" association="_2pn4wTc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Ctq0UTttEemVvrziPwI6Kw" name="E_Access_Usage1" memberEnd="_Ctq0UjttEemVvrziPwI6Kw _CteAADttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Ctq0UjttEemVvrziPwI6Kw" name="extension_Access" type="_CoRW-TttEemVvrziPwI6Kw" aggregation="composite" association="_Ctq0UTttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2pxCsTc8EemUr5o8kbIRyQ" name="E_UsedBy_Usage1" memberEnd="_2pxCsjc8EemUr5o8kbIRyQ _2pt_YDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2pxCsjc8EemUr5o8kbIRyQ" name="extension_UsedBy" type="_2oPYujc8EemUr5o8kbIRyQ" aggregation="composite" association="_2pxCsTc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CuQqMTttEemVvrziPwI6Kw" name="E_UsedBy_Usage1" memberEnd="_CuQqMjttEemVvrziPwI6Kw _CuJ8gDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CuQqMjttEemVvrziPwI6Kw" name="extension_UsedBy" type="_CoRW-jttEemVvrziPwI6Kw" aggregation="composite" association="_CuQqMTttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2p9P8Tc8EemUr5o8kbIRyQ" name="E_Realization_Realization1" memberEnd="_2p9P8jc8EemUr5o8kbIRyQ _2p4XcDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2p9P8jc8EemUr5o8kbIRyQ" name="extension_Realization" type="_2oPYuzc8EemUr5o8kbIRyQ" aggregation="composite" association="_2p9P8Tc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Cu7_oTttEemVvrziPwI6Kw" name="E_Realization_Realization1" memberEnd="_Cu7_ojttEemVvrziPwI6Kw _CusIADttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Cu7_ojttEemVvrziPwI6Kw" name="extension_Realization" type="_CoRW-zttEemVvrziPwI6Kw" aggregation="composite" association="_Cu7_oTttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2qIPETc8EemUr5o8kbIRyQ" name="E_Assignment_Dependency1" memberEnd="_2qIPEjc8EemUr5o8kbIRyQ _2qCvgzc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2qIPEjc8EemUr5o8kbIRyQ" name="extension_Assignment" type="_2oPYvDc8EemUr5o8kbIRyQ" aggregation="composite" association="_2qIPETc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Cvq_cTttEemVvrziPwI6Kw" name="E_Assignment_Dependency1" memberEnd="_Cvq_cjttEemVvrziPwI6Kw _CvcV8DttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Cvq_cjttEemVvrziPwI6Kw" name="extension_Assignment" type="_CoRW_DttEemVvrziPwI6Kw" aggregation="composite" association="_Cvq_cTttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2qQx8Tc8EemUr5o8kbIRyQ" name="E_Aggregation_Association1" memberEnd="_2qQx8jc8EemUr5o8kbIRyQ _2qOVsDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2qQx8jc8EemUr5o8kbIRyQ" name="extension_Aggregation" type="_2oPYvTc8EemUr5o8kbIRyQ" aggregation="composite" association="_2qQx8Tc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CwKusTttEemVvrziPwI6Kw" name="E_Aggregation_Association1" memberEnd="_CwKusjttEemVvrziPwI6Kw _CwEoEDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CwKusjttEemVvrziPwI6Kw" name="extension_Aggregation" type="_CoRW_TttEemVvrziPwI6Kw" aggregation="composite" association="_CwKusTttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2qZ74Dc8EemUr5o8kbIRyQ" name="E_Composition_Association1" memberEnd="_2qZ74Tc8EemUr5o8kbIRyQ _2qW4kDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2qZ74Tc8EemUr5o8kbIRyQ" name="extension_Composition" type="_2oPYvjc8EemUr5o8kbIRyQ" aggregation="composite" association="_2qZ74Dc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Cwe3wDttEemVvrziPwI6Kw" name="E_Composition_Association1" memberEnd="_Cwe3wTttEemVvrziPwI6Kw _CwZYMDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Cwe3wTttEemVvrziPwI6Kw" name="extension_Composition" type="_CoRW_jttEemVvrziPwI6Kw" aggregation="composite" association="_Cwe3wDttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2qkT8Tc8EemUr5o8kbIRyQ" name="E_Flow_InformationFlow1" memberEnd="_2qkT8jc8EemUr5o8kbIRyQ _2qfbczc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2qkT8jc8EemUr5o8kbIRyQ" name="extension_Flow" type="_2oPYvzc8EemUr5o8kbIRyQ" aggregation="composite" association="_2qkT8Tc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Cw02ADttEemVvrziPwI6Kw" name="E_Flow_InformationFlow1" memberEnd="_Cw02ATttEemVvrziPwI6Kw _CwsTIDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Cw02ATttEemVvrziPwI6Kw" name="extension_Flow" type="_CoRW_zttEemVvrziPwI6Kw" aggregation="composite" association="_Cw02ADttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2qsPwTc8EemUr5o8kbIRyQ" name="E_Triggering_InformationFlow1" memberEnd="_2qsPwjc8EemUr5o8kbIRyQ _2qqakDc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2qsPwjc8EemUr5o8kbIRyQ" name="extension_Triggering" type="_2oPYwDc8EemUr5o8kbIRyQ" aggregation="composite" association="_2qsPwTc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CxKNMTttEemVvrziPwI6Kw" name="E_Triggering_InformationFlow1" memberEnd="_CxKNMjttEemVvrziPwI6Kw _CxEGkDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CxKNMjttEemVvrziPwI6Kw" name="extension_Triggering" type="_CoRXADttEemVvrziPwI6Kw" aggregation="composite" association="_CxKNMTttEemVvrziPwI6Kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Extension" xmi:id="_2q318Tc8EemUr5o8kbIRyQ" name="E_Specialization_Generalization1" memberEnd="_2q318jc8EemUr5o8kbIRyQ _2qy9cjc8EemUr5o8kbIRyQ">
-    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_2q318jc8EemUr5o8kbIRyQ" name="extension_Specialization" type="_2oPYwTc8EemUr5o8kbIRyQ" aggregation="composite" association="_2q318Tc8EemUr5o8kbIRyQ"/>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_CxsYsDttEemVvrziPwI6Kw" name="E_Specialization_Generalization1" memberEnd="_CxsYsTttEemVvrziPwI6Kw _CxgLcDttEemVvrziPwI6Kw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_CxsYsTttEemVvrziPwI6Kw" name="extension_Specialization" type="_CoRXATttEemVvrziPwI6Kw" aggregation="composite" association="_CxsYsDttEemVvrziPwI6Kw"/>
   </packagedElement>
 </uml:Profile>

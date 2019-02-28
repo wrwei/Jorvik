@@ -290,17 +290,21 @@ public class UtilityMethods {
 		//element types model
 		EmfModel elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
 				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
+		
+		EmfModel umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDITypes", "true", "false");
+
 
 		ArrayList<IModel> allTheModels = new ArrayList<IModel>();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2, elementTypes));
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2, elementTypes, umlDITypes));
 		doTheETLTransformation(allTheModels, "files/paletteConfigurationM2M.etl");
 		
 		// User's transformation, if any
 		sourceModel = createAndLoadAnEmfModel("http://www.eclipse.org/emf/2002/Ecore", theSelectedFilePath, "Source", "true", "false");
 		//palette 
 		targetModel = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8, "
-						+ "http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
-						+ "resources" + File.separator + name + ".paletteconfiguration", "Target", "false", "true");
+				+ "http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", theDestinationIProjectFolder + File.separator
+				+ "resources" + File.separator + name + ".paletteconfiguration", "Target", "true", "true");
 				
 		//palette metamodel
 		paletteConfigurationM2 = createAndLoadAnEmfMetaModel("http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8", "PaletteConfigurationM2", "true", "false");
@@ -308,9 +312,12 @@ public class UtilityMethods {
 		//element types model
 		elementTypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
 				theDestinationIProjectFolder + File.separator + "resources" + File.separator + "diagramshapes.elementtypesconfigurations", "ElementTypes", "true", "false");
+		
+		umlDITypes = createAndLoadAnEmfModel("http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2", 
+				"platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations", "UMLDITypes", "true", "false");
 
 		allTheModels.clear();
-		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2, elementTypes));
+		allTheModels.addAll(Arrays.asList(sourceModel, targetModel, paletteConfigurationM2, elementTypes, umlDITypes));
 		doTheUsersETLTransformation(allTheModels, "paletteConfigurationM2M.etl", theSelectedFileParentIProject);
 	}
 	

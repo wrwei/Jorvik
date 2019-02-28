@@ -8,7 +8,7 @@
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
       <details key="shape" value="shapes/step.svg"/>
-      <details key="fontHeight" value="18"/>
+      <details key="icon" value="icons/step.png"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="stepID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="#//Step"/>
@@ -17,6 +17,7 @@
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
       <details key="shape" value="shapes/tool.svg"/>
+      <details key="icon" value="icons/tool.png"/>
       <details key="bold" value="true"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -25,18 +26,22 @@
     <eAnnotations source="Node">
       <details key="base" value="Class"/>
       <details key="shape" value="shapes/per.svg"/>
+      <details key="icon" value="icons/per.png"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="familiarWith" upperBound="-1"
         eType="#//Tool">
       <eAnnotations source="Edge">
         <details key="base" value="Association"/>
+        <details key="icon" value="icons/line.png"/>
+        <details key="fontHeight" value="15"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Role">
     <eAnnotations source="Edge">
       <details key="base" value="Association"/>
+      <details key="icon" value="icons/line.png"/>
       <details key="source" value="src"/>
       <details key="target" value="tar"/>
     </eAnnotations>

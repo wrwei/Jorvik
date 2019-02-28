@@ -4,67 +4,61 @@
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Node_node" label="Node" description="Node node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/node-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WgaMjc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LThP0TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Device_node" label="Device" description="Device node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/device-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WgaNDc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LThP0zttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Network_node" label="Network" description="Network node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/network-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WgaNjc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LThP1TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="CommunicationPath_node" label="CommunicationPath" description="CommunicationPath node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/communication-path-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WgaODc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LThP1zttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="InfrastructureInterface_node" label="InfrastructureInterface" description="InfrastructureInterface node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/infrastructure-interface-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WgaOjc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LThP2TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="SystemSoftware_node" label="SystemSoftware" description="SystemSoftware node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/system-software-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhBQDc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LThP2zttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="InfrastructureFunction_node" label="InfrastructureFunction" description="InfrastructureFunction node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/infrastructure-function-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhBQjc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LThP3TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="InfrastructureService_node" label="InfrastructureService" description="InfrastructureService node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/infrastructure-service-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhBRDc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTh24TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Artifact_node" label="Artifact" description="Artifact node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/artifact-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhBRjc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTh24zttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Grouping_node" label="Grouping" description="Grouping node" kind="CreationTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/grouping-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhBSDc8EemUr5o8kbIRyQ"/>
-      </elementDescriptors>
-    </ownedConfigurations>
-    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Junction_node" label="Junction" description="Junction node" kind="CreationTool">
-      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/junction-16.png"/>
-      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhBSjc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTh25TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
@@ -72,61 +66,81 @@
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Association_edge" label="Association" description="Association edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/association-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoUTc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTid8TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Access_edge" label="Access" description="Access edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/access-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoUzc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTid8zttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="UsedBy_edge" label="UsedBy" description="UsedBy edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/used-by-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoVTc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTid9TttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Realization_edge" label="Realization" description="Realization edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/realization-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoVzc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTid9zttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Assignment_edge" label="Assignment" description="Assignment edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/assignment-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoWTc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTjFATttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Aggregation_edge" label="Aggregation" description="Aggregation edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/aggregation-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoWzc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTjFAzttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Composition_edge" label="Composition" description="Composition edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/composition-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoXTc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTjFBTttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Flow_edge" label="Flow" description="Flow edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/flow-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoXzc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTjFBzttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Triggering_edge" label="Triggering" description="Triggering edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/triggering-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WhoYTc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTjFCTttEemVvrziPwI6Kw"/>
       </elementDescriptors>
     </ownedConfigurations>
     <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Specialization_edge" label="Specialization" description="Specialization edge" kind="ConnectionTool">
       <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/specialization-16.png"/>
       <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
-        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_6WiPYDc8EemUr5o8kbIRyQ"/>
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTjFCzttEemVvrziPwI6Kw"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="Junction_node" label="Junction" description="Junction node" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.papyrus.archimatetechnology" iconPath="/icons/junction-16.png"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="diagramshapes.elementtypesconfigurations#_LTh25zttEemVvrziPwI6Kw"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="ArchimateTechnology.common" label="ArchimateTechnology common" description="Common">
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="grouping" label="Grouping" description="Grouping" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Package.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_Shape"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="comment" label="Comment" description="Comment" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Comment.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Comment_Shape"/>
       </elementDescriptors>
     </ownedConfigurations>
   </drawerConfigurations>
