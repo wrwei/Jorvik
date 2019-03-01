@@ -1,0 +1,72 @@
+rule BibTeXFileUML2BibTeXFileEMF
+	transform s: UMLbibTeX!BibTeXFile
+	to t: EMFbibTeX!BibTeXFile {
+		t.entries ::= s.entries;
+	}
+rule AuthorUML2AuthorEMF
+	transform s: UMLbibTeX!Author
+	to t: EMFbibTeX!Author {
+		t.author = s.author;
+	}
+rule ArticleUML2ArticleEMF
+	transform s: UMLbibTeX!Article
+	to t: EMFbibTeX!Article {
+		t.journal = s.journal;
+	}
+rule TechReportUML2TechReportEMF
+	transform s: UMLbibTeX!TechReport
+	to t: EMFbibTeX!TechReport {
+	}
+rule UnpublishedUML2UnpublishedEMF
+	transform s: UMLbibTeX!Unpublished
+	to t: EMFbibTeX!Unpublished {
+		t.note = s.note;
+	}
+rule ManualUML2ManualEMF
+	transform s: UMLbibTeX!Manual
+	to t: EMFbibTeX!Manual {
+	}
+rule ProceedingsUML2ProceedingsEMF
+	transform s: UMLbibTeX!Proceedings
+	to t: EMFbibTeX!Proceedings {
+	}
+rule InProceedingsUML2InProceedingsEMF
+	transform s: UMLbibTeX!InProceedings
+	to t: EMFbibTeX!InProceedings {
+	}
+rule BookletUML2BookletEMF
+	transform s: UMLbibTeX!Booklet
+	to t: EMFbibTeX!Booklet {
+	}
+rule BookUML2BookEMF
+	transform s: UMLbibTeX!Book
+	to t: EMFbibTeX!Book {
+		t.publisher = s.publisher;
+	}
+rule InCollectionUML2InCollectionEMF
+	transform s: UMLbibTeX!InCollection
+	to t: EMFbibTeX!InCollection {
+	}
+rule InBookUML2InBookEMF
+	transform s: UMLbibTeX!InBook
+	to t: EMFbibTeX!InBook {
+		t.chapter = s.chapter;
+	}
+rule MiscUML2MiscEMF
+	transform s: UMLbibTeX!Misc
+	to t: EMFbibTeX!Misc {
+	}
+rule ThesisEntryUML2ThesisEntryEMF
+	transform s: UMLbibTeX!ThesisEntry
+	to t: EMFbibTeX!ThesisEntry {
+		t.school = s.school;
+	}
+rule PhDThesisUML2PhDThesisEMF
+	transform s: UMLbibTeX!PhDThesis
+	to t: EMFbibTeX!PhDThesis {
+	}
+rule MasterThesisUML2MasterThesisEMF
+	transform s: UMLbibTeX!MasterThesis
+	to t: EMFbibTeX!MasterThesis {
+	}
+

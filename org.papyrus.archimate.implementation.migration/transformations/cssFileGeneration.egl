@@ -1,0 +1,195 @@
+[%
+var ePackName = Source!EPackage.all().first().name;
+var allNodeStereotypes = Source!EClass.all().select(c|c.getEAnnotation("Node").isDefined() or c.getEAnnotation("Edge").isDefined());
+var allClassStereotypes = Source!EClass.all().select(c|c.getEAnnotation("Node").isDefined());
+var allAssociationStereotypes = Source!EClass.all().select(a|a.getEAnnotation("Edge").isDefined());
+for (stereo in allClassStereotypes) {
+%]
+[appliedStereotypes~=[%=stereo.name%]][% if (hasMore){%], 
+[%}
+}%] { 
+		displayIcon:true;
+		transparency:0;
+		followSVGSymbol:false;
+}
+
+* > Label[type=StereotypeLabel]{
+    visible: false;
+}
+
+[appliedStereotypes~=BusinessActor] {
+    svgFile: '';
+}
+
+[appliedStereotypes~=BusinessActor] {
+    svgFile: '';
+}
+
+[appliedStereotypes~=Stakeholder],
+[appliedStereotypes~=Driver],
+[appliedStereotypes~=Assessment] {
+	fillColor:#C390D4;
+}
+
+[appliedStereotypes~=Goal],
+[appliedStereotypes~=Requirement],
+[appliedStereotypes~=Principle],
+[appliedStereotypes~=Constraint] {
+	fillColor:#ACACE6;
+}
+
+[appliedStereotypes~=BusinessActor],
+[appliedStereotypes~=BusinessRole],
+[appliedStereotypes~=BusinessCollaboration],
+[appliedStereotypes~=BusinessInterface],
+[appliedStereotypes~=Location],
+[appliedStereotypes~=BusinessProcess], 
+[appliedStereotypes~=BusinessFunction],
+[appliedStereotypes~=BusinessInteraction],
+[appliedStereotypes~=BusinessEvent],
+[appliedStereotypes~=BusinessService],
+[appliedStereotypes~=BusinessObject],
+[appliedStereotypes~=Representation],
+[appliedStereotypes~=Meaning], 
+[appliedStereotypes~=Value],
+[appliedStereotypes~=Product],
+[appliedStereotypes~=Contract] {
+	fillColor:#F3F76D;
+}
+
+[appliedStereotypes~=ApplicationComponent],
+[appliedStereotypes~=ApplicationFunction],
+[appliedStereotypes~=ApplicationInterface], 
+[appliedStereotypes~=ApplicationService],
+[appliedStereotypes~=ApplicationCollaboration],
+[appliedStereotypes~=DataObject],
+[appliedStereotypes~=ApplicationInteraction] {
+	fillColor:#65F7EE;
+}
+
+[appliedStereotypes~=SystemSoftware],
+[appliedStereotypes~=Node],
+[appliedStereotypes~=Network], 
+[appliedStereotypes~=InfrastructureFunction],
+[appliedStereotypes~=Device],
+[appliedStereotypes~=Artifact],
+[appliedStereotypes~=InfrastructureInterface],
+[appliedStereotypes~=InfrastructureService] {
+	fillColor:#92FC99;
+}
+
+[appliedStereotypes~=Plateau],
+[appliedStereotypes~=Gap] {
+	fillColor:#A7FCC0;
+}
+
+[appliedStereotypes~=Deliverable],
+[appliedStereotypes~=WorkPackage] {
+	fillColor:#FCA7AD;
+}
+
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[%
+for (stereo in allClassStereotypes) {
+if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("shape").isDefined()) {
+%]
+[appliedStereotypes~=[%=stereo.name%]] {
+	svgFile: '';
+}
+[%
+}
+}
+%]
+
+[%
+for (stereo in allClassStereotypes) {
+if (stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("shape").isDefined()) {
+%]
+[appliedStereotypes~=[%=stereo.name%]].Symbol {
+	svgFile: 'platform:/plugin/[%=ePackName%]/[%=stereo.eAnnotations.selectOne(ean|ean.source.equals("Node")).details.get("shape")%]';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[%
+}
+}
+%]
+
+Association { /* , Generalization */
+	targetDecoration: none;
+}
+
+Association > Label:sourceMultiplicity {
+	visible:false;
+}
+
+Association > Label:targetMultiplicity {
+	visible:false;
+}
+
+Association > Label:sourceRole {
+	visible:false;
+}
+
+Association > Label:targetRole {
+	visible:false;
+}
+
+Association > Label:name {
+	visible:false;
+}
+
+Association > Label:stereotype {
+	visible:false;
+}
+
+Dependency > Label:name {
+	visible:false;
+}
+
+Dependency > Label:stereotype {
+	visible:false;
+}
+
+Realization > Label:name {
+	visible:false;
+}
+
+Realization > Label:stereotype {
+	visible:false;
+}
+
+Usage > Label:name {
+	visible:false;
+}
+
+Usage > Label:stereotype {
+	visible:false;
+}
+
+Generalization > Label:name {
+	visible:false;
+}
+
+Generalization > Label:stereotype {
+	visible:false;
+}
+
+[appliedStereotypes~=Assignment] {
+	targetDecoration: none;
+}

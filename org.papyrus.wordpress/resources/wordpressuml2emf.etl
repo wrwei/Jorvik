@@ -1,0 +1,142 @@
+rule PostUML2PostEMF
+	transform s: UMLwordpress!Post
+	to t: EMFwordpress!Post {
+		t.stickFrontPage = s.stickFrontPage;
+		t.format = s.format;
+		t.postCategory ::= s.postCategory;
+		t.postMedia ::= s.postMedia;
+		t.postTag ::= s.postTag;
+		t.postLink ::= s.postLink;
+		t.postComment ::= s.postComment;
+		t.postUser ::= s.postUser;
+	}
+rule CategoryUML2CategoryEMF
+	transform s: UMLwordpress!Category
+	to t: EMFwordpress!Category {
+		t.name = s.name;
+		t.description = s.description;
+		t.categoryPost ::= s.categoryPost;
+		t.parent ::= s.parent;
+	}
+rule MediaUML2MediaEMF
+	transform s: UMLwordpress!Media
+	to t: EMFwordpress!Media {
+		t.title = s.title;
+		t.description = s.description;
+		t.aligment = s.aligment;
+		t.formatSize = s.formatSize;
+		t.dimensions = s.dimensions;
+		t.mediaUser ::= s.mediaUser;
+		t.mediaNode ::= s.mediaNode;
+	}
+rule TagUML2TagEMF
+	transform s: UMLwordpress!Tag
+	to t: EMFwordpress!Tag {
+		t.name = s.name;
+		t.description = s.description;
+		t.tagPost ::= s.tagPost;
+	}
+rule LinkUML2LinkEMF
+	transform s: UMLwordpress!Link
+	to t: EMFwordpress!Link {
+		t.url = s.url;
+		t.name = s.name;
+		t.target = s.target;
+		t.visible = s.visible;
+		t.theLinkCategory ::= s.theLinkCategory;
+	}
+rule LinkCategoryUML2LinkCategoryEMF
+	transform s: UMLwordpress!LinkCategory
+	to t: EMFwordpress!LinkCategory {
+		t.categoryLink ::= s.categoryLink;
+	}
+rule NavigationNodeUML2NavigationNodeEMF
+	transform s: UMLwordpress!NavigationNode
+	to t: EMFwordpress!NavigationNode {
+		t.order = s.order;
+		t.parent ::= s.parent;
+		t.pageTemplate ::= s.pageTemplate;
+		t.pageComment ::= s.pageComment;
+		t.pageUser ::= s.pageUser;
+	}
+rule TemplateUML2TemplateEMF
+	transform s: UMLwordpress!Template
+	to t: EMFwordpress!Template {
+		t.templateWidget ::= s.templateWidget;
+	}
+rule CommentUML2CommentEMF
+	transform s: UMLwordpress!Comment
+	to t: EMFwordpress!Comment {
+		t.text = s.text;
+		t.commentPost ::= s.commentPost;
+		t.commentPage ::= s.commentPage;
+		t.commentUser ::= s.commentUser;
+		t.parent ::= s.parent;
+		t.commentContent ::= s.commentContent;
+	}
+rule UserUML2UserEMF
+	transform s: UMLwordpress!User
+	to t: EMFwordpress!User {
+		t.name = s.name;
+	}
+rule WidgetAreaUML2WidgetAreaEMF
+	transform s: UMLwordpress!WidgetArea
+	to t: EMFwordpress!WidgetArea {
+		t.areaWidget ::= s.areaWidget;
+	}
+rule WidgetUML2WidgetEMF
+	transform s: UMLwordpress!Widget
+	to t: EMFwordpress!Widget {
+		t.active = s.active;
+		t.theWidgetArea ::= s.theWidgetArea;
+		t.widgetMenu ::= s.widgetMenu;
+	}
+rule MenuUML2MenuEMF
+	transform s: UMLwordpress!Menu
+	to t: EMFwordpress!Menu {
+		t.menuWidget ::= s.menuWidget;
+	}
+rule MenuItemUML2MenuItemEMF
+	transform s: UMLwordpress!MenuItem
+	to t: EMFwordpress!MenuItem {
+		t.navigationLabel = s.navigationLabel;
+		t.menuItemPage ::= s.menuItemPage;
+		t.menuItemExternal ::= s.menuItemExternal;
+	}
+rule ExternalLinkUML2ExternalLinkEMF
+	transform s: UMLwordpress!ExternalLink
+	to t: EMFwordpress!ExternalLink {
+	}
+rule ThemeUML2ThemeEMF
+	transform s: UMLwordpress!Theme
+	to t: EMFwordpress!Theme {
+		t.name = s.name;
+		t.themeWidgetArea ::= s.themeWidgetArea;
+	}
+rule NodeUML2NodeEMF
+	transform s: UMLwordpress!Node
+	to t: EMFwordpress!Node {
+		t.title = s.title;
+		t.date = s.date;
+		t.text = s.text;
+		t.status = s.status;
+		t.visibility = s.visibility;
+		t.nodeMedia ::= s.nodeMedia;
+	}
+rule ContentUML2ContentEMF
+	transform s: UMLwordpress!Content
+	to t: EMFwordpress!Content {
+		t.title = s.title;
+		t.date = s.date;
+		t.text = s.text;
+		t.visibility = s.visibility;
+		t.status = s.status;
+		t.contentComment ::= s.contentComment;
+	}
+rule PageUML2PageEMF
+	transform s: UMLwordpress!Page
+	to t: EMFwordpress!Page {
+		t.order = s.order;
+		t.parent ::= s.parent;
+	}
+

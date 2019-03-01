@@ -4,6 +4,8 @@ pre {
 	theConfiguration.label = ePackName + " Palette";
 	theConfiguration.id = ePackName + "." + ePackName;
 	theConfiguration.requiredProfiles.add(ePackName);
+	theConfiguration.errln("err");
+	
 	
 	var theNodesDrawerConfiguration = new Target!DrawerConfiguration;
 	theNodesDrawerConfiguration.description = ePackName + " nodes";

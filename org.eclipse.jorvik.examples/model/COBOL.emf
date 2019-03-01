@@ -1,5 +1,5 @@
 @namespace(uri="cobol", prefix="cobol")
-@Diagram(label="COBOL", icon="icons/application-diagram-16.png")
+@Diagram(name="COBOL", icon="icons/application-diagram-16.png")
 package cobol;
 
 class COBOLRoot {

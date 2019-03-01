@@ -2,7 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bibTeX" nsURI="bibtex" nsPrefix="bibtex">
   <eAnnotations source="Diagram">
-    <details key="label" value="BibTeX"/>
+    <details key="name" value="BibTeX"/>
     <details key="icon" value="icons/application-diagram-16.png"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="BibTeXFile">

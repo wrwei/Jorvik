@@ -2,7 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cobol" nsURI="cobol" nsPrefix="cobol">
   <eAnnotations source="Diagram">
-    <details key="label" value="COBOL"/>
+    <details key="name" value="COBOL"/>
     <details key="icon" value="icons/application-diagram-16.png"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="COBOLRoot">
@@ -62,7 +62,12 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="array" upperBound="-1"
-        eType="#//COBOLFixedLengthArray" containment="true"/>
+        eType="#//COBOLFixedLengthArray" containment="true">
+      <eAnnotations source="Edge">
+        <details key="base" value="Association"/>
+        <details key="icon" value="icons/association-16.png"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="COBOLClassifier">
     <eAnnotations source="Node">
@@ -191,6 +196,11 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxUpper" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="COBOLVariableLengthArray" eSuperTypes="#//COBOLFixedLengthArray">
+    <eAnnotations source="Node">
+      <details key="base" value="Class"/>
+      <details key="shape" value="shapes/ApplicationComponent.svg"/>
+      <details key="icon" value="icons/application-component-16.png"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="minUpper" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependingOn" lowerBound="1"
         eType="#//COBOLElement">

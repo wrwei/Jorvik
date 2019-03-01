@@ -1,0 +1,33 @@
+rule DepartamentoUML2DepartamentoEMF
+	transform s: UMLprofesor!Departamento
+	to t: EMFprofesor!Departamento {
+		t.nombre = s.nombre;
+		t.cargaMaximaSemanal = s.cargaMaximaSemanal;
+		t.cargaMaximaDiaria = s.cargaMaximaDiaria;
+		t.director ::= s.director;
+		t.profesores ::= s.profesores;
+	}
+rule ProfesorUML2ProfesorEMF
+	transform s: UMLprofesor!Profesor
+	to t: EMFprofesor!Profesor {
+		t.nomina = s.nomina;
+		t.nombre = s.nombre;
+		t.clasesSeguidas = s.clasesSeguidas;
+		t.cip = s.cip;
+		t.deprt ::= s.deprt;
+		t.horarios ::= s.horarios;
+		t.restricciones ::= s.restricciones;
+	}
+rule IntervaloUML2IntervaloEMF
+	transform s: UMLprofesor!Intervalo
+	to t: EMFprofesor!Intervalo {
+		t.fin = s.fin;
+		t.inicio = s.inicio;
+		t.dia = s.dia;
+	}
+rule DiscapacidadUML2DiscapacidadEMF
+	transform s: UMLprofesor!Discapacidad
+	to t: EMFprofesor!Discapacidad {
+		t.nombre = s.nombre;
+	}
+

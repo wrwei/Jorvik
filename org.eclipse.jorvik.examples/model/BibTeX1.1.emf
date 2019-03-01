@@ -1,5 +1,5 @@
 @namespace(uri="bibtex", prefix="bibtex")
-@Diagram(label="BibTeX", icon="icons/application-diagram-16.png")
+@Diagram(name="BibTeX", icon="icons/application-diagram-16.png")
 package bibTeX;
   
   @Node(base="Class", shape="shapes/ApplicationComponent.svg", icon="icons/application-component-16.png")

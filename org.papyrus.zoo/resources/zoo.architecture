@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_Wqby0DtvEemVvrziPwI6Kw" id="Zoo.architecture" name="Zoo Architecture Model" description="Architecture Model for Zoo">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_Wqby0jtvEemVvrziPwI6Kw" id="Zoo.stakeholder" name="Zoo Stakeholder" description="Zoo Architecture Stakeholder" concerns="_Wqby0TtvEemVvrziPwI6Kw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_Wqby0TtvEemVvrziPwI6Kw" id="Zoo.concern" name="Zoo Concern" description="Zoo Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_Wqby0ztvEemVvrziPwI6Kw" id="Zoo.description.language" name="Zoo Description Language" description="Description Language for Zoo" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_Wqh5cTtvEemVvrziPwI6Kw" id="Zoo.viewpoint" name="Zoo View Point" description="View Point for Zoo" concerns="_Wqby0TtvEemVvrziPwI6Kw" representationKinds="_WqdoADtvEemVvrziPwI6Kw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_Wo9MIDtvEemVvrziPwI6Kw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_WqdoADtvEemVvrziPwI6Kw" id="Zoo.papyrus.diagram" name="Zoo Papyrus Diagram" description="Papyrus Diagram for Zoo" concerns="_Wqby0TtvEemVvrziPwI6Kw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.zoo/resources/zooDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_WqdoATtvEemVvrziPwI6Kw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_WqgEQDtvEemVvrziPwI6Kw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_Wqh5cDtvEemVvrziPwI6Kw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="zoo.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

@@ -1,0 +1,52 @@
+pre {
+	Target!PaletteConfiguration.all().size().errln("size: ");
+	var ePackName = Source!EPackage.all().first().name;
+	var theConfiguration = Target!PaletteConfiguration.all().first();
+	
+	var commonDrawer = new Target!DrawerConfiguration;
+	commonDrawer.description = "Common";
+	commonDrawer.id = ePackName + ".common";
+	commonDrawer.label = ePackName + " common";
+	
+	var grouping = new Target!ToolConfiguration;
+	grouping.description = "Grouping";
+	grouping.label = "Grouping";
+	grouping.id = "grouping";
+	grouping.kind = PaletteConfigurationM2!ToolKind#CreationTool;
+	
+	commonDrawer.ownedConfigurations.add(grouping);
+    var groupingIconDescriptor = new Target!IconDescriptor;
+    groupingIconDescriptor.pluginID = "org.eclipse.uml2.uml.edit";
+    groupingIconDescriptor.iconPath = "/icons/full/obj16/Package.gif";
+    grouping.icon = groupingIconDescriptor;
+    
+    var theElementDescriptor = new Target!ElementDescriptor;
+ 	var specializationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.all().select(st|st.identifier="org.eclipse.papyrus.umldi.Package_Shape").first();
+	theElementDescriptor.elementType = specializationTypeConfig;
+	grouping.elementDescriptors.add(theElementDescriptor);
+    		
+	var comment = new Target!ToolConfiguration;
+	comment.description = "Comment";
+	comment.label = "Comment";
+	comment.id = "comment";
+	comment.kind = PaletteConfigurationM2!ToolKind#CreationTool;
+	
+	commonDrawer.ownedConfigurations.add(grouping);
+    var commentIconDescriptor = new Target!IconDescriptor;
+    commentIconDescriptor.pluginID = "org.eclipse.uml2.uml.edit";
+    commentIconDescriptor.iconPath = "/icons/full/obj16/Comment.gif";
+    comment.icon = commentIconDescriptor;
+    
+	var theElementDescriptor = new Target!ElementDescriptor;
+ 	var specializationTypeConfig = UMLDITypes!SpecializationTypeConfiguration.all().select(st|st.identifier="org.eclipse.papyrus.umldi.Comment_Shape").first();
+	theElementDescriptor.elementType = specializationTypeConfig;
+	comment.elementDescriptors.add(theElementDescriptor);
+	
+	theConfiguration.drawerConfigurations.add(commonDrawer);
+	commonDrawer.ownedConfigurations.add(grouping);
+	commonDrawer.ownedConfigurations.add(comment);
+	
+	var edgeDrawer = Target!DrawerConfiguration.all().selectOne(dc|dc.id="ArchimateBusiness.edges");
+	var junction = Target!ToolConfiguration.all().selectOne(tc|tc.id="Junction_node");
+	edgeDrawer.ownedConfigurations.add(junction);
+}

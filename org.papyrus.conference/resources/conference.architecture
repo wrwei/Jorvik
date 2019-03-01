@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architecture:ArchitectureDomain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:gmfdiagrepresentation="http://www.eclipse.org/papyrus/infra/gmfdiag/representation" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" xmlns:representation="http://www.eclipse.org/papyrus/infra/core/architecture/representation" xmi:id="_-S2j8DtuEemVvrziPwI6Kw" id="conference.architecture" name="conference Architecture Model" description="Architecture Model for conference">
+  <stakeholders xmi:type="architecture:Stakeholder" xmi:id="_-S2j8jtuEemVvrziPwI6Kw" id="conference.stakeholder" name="conference Stakeholder" description="conference Architecture Stakeholder" concerns="_-S2j8TtuEemVvrziPwI6Kw"/>
+  <concerns xmi:type="architecture:Concern" xmi:id="_-S2j8TtuEemVvrziPwI6Kw" id="conference.concern" name="conference Concern" description="conference Architecture Concern"/>
+  <contexts xmi:type="architecture:ArchitectureDescriptionLanguage" xmi:id="_-S2j8ztuEemVvrziPwI6Kw" id="conference.description.language" name="conference Description Language" description="Description Language for conference" creationCommandClass="util.CreationCommand">
+    <viewpoints xmi:type="architecture:ArchitectureViewpoint" xmi:id="_-S8qkTtuEemVvrziPwI6Kw" id="conference.viewpoint" name="conference View Point" description="View Point for conference" concerns="_-S2j8TtuEemVvrziPwI6Kw" representationKinds="_-S5AMDtuEemVvrziPwI6Kw"/>
+    <elementTypes xmi:type="elementtypesconfigurations:ElementTypeSetConfiguration" href="diagramshapes.elementtypesconfigurations#_-RTEwDtuEemVvrziPwI6Kw"/>
+    <representationKinds xmi:type="gmfdiagrepresentation:PapyrusDiagram" xmi:id="_-S5AMDtuEemVvrziPwI6Kw" id="conference.papyrus.diagram" name="conference Papyrus Diagram" description="Papyrus Diagram for conference" concerns="_-S2j8TtuEemVvrziPwI6Kw" implementationID="PapyrusUMLClassDiagram" customStyle="platform:/plugin/org.papyrus.conference/resources/conferenceDiagram.css" creationCommandClass="org.eclipse.papyrus.uml.diagram.clazz.CreateClassDiagramCommand">
+      <modelRules xmi:type="representation:ModelRule" xmi:id="_-S5AMTtuEemVvrziPwI6Kw" permit="true" elementMultiplicity="1" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </modelRules>
+      <owningRules xmi:type="representation:OwningRule" xmi:id="_-S61YDtuEemVvrziPwI6Kw" permit="true" multiplicity="-1">
+        <element xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+      </owningRules>
+      <childRules xmi:type="gmfdiagrepresentation:ChildRule" xmi:id="_-S8qkDtuEemVvrziPwI6Kw" permit="true"/>
+      <palettes xmi:type="paletteconfiguration:PaletteConfiguration" href="conference.paletteconfiguration#/"/>
+    </representationKinds>
+    <metamodel xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+  </contexts>
+</architecture:ArchitectureDomain>

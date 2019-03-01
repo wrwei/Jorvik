@@ -1,0 +1,238 @@
+[appliedStereotypes~=Post], 
+[appliedStereotypes~=Category], 
+[appliedStereotypes~=Media], 
+[appliedStereotypes~=Tag], 
+[appliedStereotypes~=Link], 
+[appliedStereotypes~=LinkCategory], 
+[appliedStereotypes~=NavigationNode], 
+[appliedStereotypes~=Template], 
+[appliedStereotypes~=Comment], 
+[appliedStereotypes~=User], 
+[appliedStereotypes~=WidgetArea], 
+[appliedStereotypes~=Widget], 
+[appliedStereotypes~=Menu], 
+[appliedStereotypes~=MenuItem], 
+[appliedStereotypes~=ExternalLink], 
+[appliedStereotypes~=Theme], 
+[appliedStereotypes~=Node], 
+[appliedStereotypes~=Content], 
+[appliedStereotypes~=Page] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=Post] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Category] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Media] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Tag] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=LinkCategory] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=NavigationNode] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Template] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Comment] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=User] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=WidgetArea] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Widget] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Menu] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=MenuItem] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=ExternalLink] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Theme] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Node] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Content] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Page] {
+	svgFile: 'platform:/plugin/org.papyrus.wordpress/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=postCategory], 
+[appliedStereotypes~=postMedia], 
+[appliedStereotypes~=postTag], 
+[appliedStereotypes~=postLink], 
+[appliedStereotypes~=postComment], 
+[appliedStereotypes~=postUser], 
+[appliedStereotypes~=categoryPost], 
+[appliedStereotypes~=tagPost], 
+[appliedStereotypes~=theLinkCategory], 
+[appliedStereotypes~=parent], 
+[appliedStereotypes~=commentPost], 
+[appliedStereotypes~=commentUser], 
+[appliedStereotypes~=commentContent], 
+[appliedStereotypes~=theWidgetArea], 
+[appliedStereotypes~=menuItemPage], 
+[appliedStereotypes~=menuItemExternal], 
+[appliedStereotypes~=parent] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

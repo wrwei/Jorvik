@@ -2,7 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="wordpress" nsURI="wordpressmetamodel" nsPrefix="wordpressmetamodel">
   <eAnnotations source="Diagram">
-    <details key="label" value="Wordpress"/>
+    <details key="name" value="Wordpress"/>
     <details key="icon" value="icons/application-diagram-16.png"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Website">
@@ -101,12 +101,7 @@
         <details key="icon" value="icons/association-16.png"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Category">
-      <eAnnotations source="Edge">
-        <details key="base" value="Association"/>
-        <details key="icon" value="icons/association-16.png"/>
-      </eAnnotations>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Category"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Media">
     <eAnnotations source="Node">
@@ -274,7 +269,7 @@
         <details key="icon" value="icons/association-16.png"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="MenuItemExternal" eType="#//ExternalLink">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="menuItemExternal" eType="#//ExternalLink">
       <eAnnotations source="Edge">
         <details key="base" value="Association"/>
         <details key="icon" value="icons/association-16.png"/>

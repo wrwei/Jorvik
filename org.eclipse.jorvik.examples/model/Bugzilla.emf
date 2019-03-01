@@ -1,5 +1,5 @@
 @namespace(uri="bugzilla", prefix="bugzilla")
-@Diagram(label="Bugzilla", icon="icons/application-diagram-16.png")
+@Diagram(name="Bugzilla", icon="icons/application-diagram-16.png")
 package bugzilla;
 
   class BugzillaRoot {

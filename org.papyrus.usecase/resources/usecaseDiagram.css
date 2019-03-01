@@ -1,0 +1,84 @@
+[appliedStereotypes~=Actor], 
+[appliedStereotypes~=UseCase], 
+[appliedStereotypes~=UseCaseContainer], 
+[appliedStereotypes~=BehavioredClassifier] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=Actor] {
+	svgFile: 'platform:/plugin/org.papyrus.usecase/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=UseCase] {
+	svgFile: 'platform:/plugin/org.papyrus.usecase/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=UseCaseContainer] {
+	svgFile: 'platform:/plugin/org.papyrus.usecase/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=BehavioredClassifier] {
+	svgFile: 'platform:/plugin/org.papyrus.usecase/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Extend], 
+[appliedStereotypes~=Include], 
+[appliedStereotypes~=Association], 
+[appliedStereotypes~=ownedElements] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

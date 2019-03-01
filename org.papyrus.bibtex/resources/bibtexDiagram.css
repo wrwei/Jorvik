@@ -1,0 +1,202 @@
+[appliedStereotypes~=BibTeXFile], 
+[appliedStereotypes~=Author], 
+[appliedStereotypes~=Article], 
+[appliedStereotypes~=TechReport], 
+[appliedStereotypes~=Unpublished], 
+[appliedStereotypes~=Manual], 
+[appliedStereotypes~=Proceedings], 
+[appliedStereotypes~=InProceedings], 
+[appliedStereotypes~=Booklet], 
+[appliedStereotypes~=Book], 
+[appliedStereotypes~=InCollection], 
+[appliedStereotypes~=InBook], 
+[appliedStereotypes~=Misc], 
+[appliedStereotypes~=ThesisEntry], 
+[appliedStereotypes~=PhDThesis], 
+[appliedStereotypes~=MasterThesis] { 
+	displayName:true;
+	elementIcon:false;
+	isNameWrap: true;
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Hide compartment for all elements - just show the name and related icon. */
+Compartment {
+    visible:false;
+}
+
+/* Show symbol compartment so that text is "pushed" to upper boundary of element. */
+Compartment[kind="symbol"]  {
+    visible:true;
+}
+
+/* Default settings for "Symbol" shapes. */
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+/* Turn on "floating label" for "Symbol" shapes. */
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=BibTeXFile] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Author] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Article] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=TechReport] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Unpublished] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Manual] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Proceedings] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=InProceedings] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Booklet] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Book] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=InCollection] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=InBook] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=Misc] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=ThesisEntry] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=PhDThesis] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=MasterThesis] {
+	svgFile: 'platform:/plugin/org.papyrus.bibtex/shapes/ApplicationComponent.svg';
+	/*
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+80;
+	displayName:false;
+	
+	*/
+}
+[appliedStereotypes~=entries], 
+[appliedStereotypes~=authors] { 
+ 	/*
+	routing:Rectilinear;
+	roundedBendpointsRadius:10;
+	*/
+}

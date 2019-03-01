@@ -10,7 +10,6 @@
 	displayName:true;
 	elementIcon:false;
 	isNameWrap: true;
-	bold:true;
 	transparency:100;
 	followSVGSymbol:true;
 	displayIcon:false;
@@ -138,4 +137,255 @@ Compartment[kind="symbol"]  {
 	routing:Rectilinear;
 	roundedBendpointsRadius:10;
 	*/
+}
+
+[appliedStereotypes~=ApplicationComponent], 
+[appliedStereotypes~=ApplicationCollaboration], 
+[appliedStereotypes~=ApplicationInterface], 
+[appliedStereotypes~=ApplicationFunction], 
+[appliedStereotypes~=ApplicationInteraction], 
+[appliedStereotypes~=ApplicationService], 
+[appliedStereotypes~=DataObject], 
+[appliedStereotypes~=Grouping], 
+[appliedStereotypes~=Junction] { 
+		displayIcon:true;
+		transparency:0;
+		followSVGSymbol:false;
+}
+
+* > Label[type=StereotypeLabel]{
+    visible: false;
+}
+
+[appliedStereotypes~=BusinessActor] {
+    svgFile: '';
+}
+
+[appliedStereotypes~=BusinessActor] {
+    svgFile: '';
+}
+
+[appliedStereotypes~=Stakeholder],
+[appliedStereotypes~=Driver],
+[appliedStereotypes~=Assessment] {
+	fillColor:#C390D4;
+}
+
+[appliedStereotypes~=Goal],
+[appliedStereotypes~=Requirement],
+[appliedStereotypes~=Principle],
+[appliedStereotypes~=Constraint] {
+	fillColor:#ACACE6;
+}
+
+[appliedStereotypes~=BusinessActor],
+[appliedStereotypes~=BusinessRole],
+[appliedStereotypes~=BusinessCollaboration],
+[appliedStereotypes~=BusinessInterface],
+[appliedStereotypes~=Location],
+[appliedStereotypes~=BusinessProcess], 
+[appliedStereotypes~=BusinessFunction],
+[appliedStereotypes~=BusinessInteraction],
+[appliedStereotypes~=BusinessEvent],
+[appliedStereotypes~=BusinessService],
+[appliedStereotypes~=BusinessObject],
+[appliedStereotypes~=Representation],
+[appliedStereotypes~=Meaning], 
+[appliedStereotypes~=Value],
+[appliedStereotypes~=Product],
+[appliedStereotypes~=Contract] {
+	fillColor:#F3F76D;
+}
+
+[appliedStereotypes~=ApplicationComponent],
+[appliedStereotypes~=ApplicationFunction],
+[appliedStereotypes~=ApplicationInterface], 
+[appliedStereotypes~=ApplicationService],
+[appliedStereotypes~=ApplicationCollaboration],
+[appliedStereotypes~=DataObject],
+[appliedStereotypes~=ApplicationInteraction] {
+	fillColor:#65F7EE;
+}
+
+[appliedStereotypes~=SystemSoftware],
+[appliedStereotypes~=Node],
+[appliedStereotypes~=Network], 
+[appliedStereotypes~=InfrastructureFunction],
+[appliedStereotypes~=Device],
+[appliedStereotypes~=Artifact],
+[appliedStereotypes~=InfrastructureInterface],
+[appliedStereotypes~=InfrastructureService] {
+	fillColor:#92FC99;
+}
+
+[appliedStereotypes~=Plateau],
+[appliedStereotypes~=Gap] {
+	fillColor:#A7FCC0;
+}
+
+[appliedStereotypes~=Deliverable],
+[appliedStereotypes~=WorkPackage] {
+	fillColor:#FCA7AD;
+}
+
+*.Symbol {
+	transparency:100;
+	followSVGSymbol:true;
+	displayIcon:false;
+}
+
+*.Symbol > Label {
+	visible:true;
+}
+
+/* Turn off "stereotype label" for "Symbol" shapes. */
+*.Symbol > Label[type=StereotypeLabel] {
+	visible:false;
+}
+
+[appliedStereotypes~=ApplicationComponent] {
+	svgFile: '';
+}
+[appliedStereotypes~=ApplicationCollaboration] {
+	svgFile: '';
+}
+[appliedStereotypes~=ApplicationInterface] {
+	svgFile: '';
+}
+[appliedStereotypes~=ApplicationFunction] {
+	svgFile: '';
+}
+[appliedStereotypes~=ApplicationInteraction] {
+	svgFile: '';
+}
+[appliedStereotypes~=ApplicationService] {
+	svgFile: '';
+}
+[appliedStereotypes~=DataObject] {
+	svgFile: '';
+}
+[appliedStereotypes~=Grouping] {
+	svgFile: '';
+}
+[appliedStereotypes~=Junction] {
+	svgFile: '';
+}
+
+[appliedStereotypes~=ApplicationComponent].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationComponent.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=ApplicationCollaboration].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationCollaboration.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=ApplicationInterface].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationInterface.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=ApplicationFunction].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationFunction.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=ApplicationInteraction].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationInteraction.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=ApplicationService].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/ApplicationService.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=DataObject].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/DataObject.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=Grouping].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/Grouping.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+[appliedStereotypes~=Junction].Symbol {
+	svgFile: 'platform:/plugin/ArchimateApplication/shapes/Junction.svg';
+	floatingLabelOffsetWidth:+23;
+    floatingLabelOffsetHeight:+95;
+	displayName:false;
+}
+
+Association { /* , Generalization */
+	targetDecoration: none;
+}
+
+Association > Label:sourceMultiplicity {
+	visible:false;
+}
+
+Association > Label:targetMultiplicity {
+	visible:false;
+}
+
+Association > Label:sourceRole {
+	visible:false;
+}
+
+Association > Label:targetRole {
+	visible:false;
+}
+
+Association > Label:name {
+	visible:false;
+}
+
+Association > Label:stereotype {
+	visible:false;
+}
+
+Dependency > Label:name {
+	visible:false;
+}
+
+Dependency > Label:stereotype {
+	visible:false;
+}
+
+Realization > Label:name {
+	visible:false;
+}
+
+Realization > Label:stereotype {
+	visible:false;
+}
+
+Usage > Label:name {
+	visible:false;
+}
+
+Usage > Label:stereotype {
+	visible:false;
+}
+
+Generalization > Label:name {
+	visible:false;
+}
+
+Generalization > Label:stereotype {
+	visible:false;
+}
+
+[appliedStereotypes~=Assignment] {
+	targetDecoration: none;
 }

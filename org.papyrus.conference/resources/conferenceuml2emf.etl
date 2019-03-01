@@ -1,0 +1,39 @@
+rule ConferenceUML2ConferenceEMF
+	transform s: UMLconference!Conference
+	to t: EMFconference!Conference {
+		t.name = s.name;
+		t.elements ::= s.elements;
+		t.organizers ::= s.organizers;
+		t.speakers ::= s.speakers;
+	}
+rule TrackUML2TrackEMF
+	transform s: UMLconference!Track
+	to t: EMFconference!Track {
+		t.slots ::= s.slots;
+	}
+rule SlotUML2SlotEMF
+	transform s: UMLconference!Slot
+	to t: EMFconference!Slot {
+		t.talk ::= s.talk;
+	}
+rule TalkUML2TalkEMF
+	transform s: UMLconference!Talk
+	to t: EMFconference!Talk {
+		t.presenter ::= s.presenter;
+	}
+rule ParticipantUML2ParticipantEMF
+	transform s: UMLconference!Participant
+	to t: EMFconference!Participant {
+		t.country = s.country;
+	}
+rule LunchUML2LunchEMF
+	transform s: UMLconference!Lunch
+	to t: EMFconference!Lunch {
+	}
+rule TimedElementUML2TimedElementEMF
+	transform s: UMLconference!TimedElement
+	to t: EMFconference!TimedElement {
+		t.hour = s.hour;
+		t.minute = s.minute;
+	}
+

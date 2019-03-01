@@ -1,0 +1,70 @@
+rule BugUML2BugEMF
+	transform s: UMLbugzilla!Bug
+	to t: EMFbugzilla!Bug {
+		t.error = s.error;
+		t.bug_id = s.bug_id;
+		t.exporter = s.exporter;
+		t.urlbase = s.urlbase;
+		t.bug_status = s.bug_status;
+		t.resolution = s.resolution;
+		t.product = s.product;
+		t.priority = s.priority;
+		t.version = s.version;
+		t.rep_platform = s.rep_platform;
+		t.assigned_to = s.assigned_to;
+		t.delta_ts = s.delta_ts;
+		t.component = s.component;
+		t.reporter = s.reporter;
+		t.target_milestone = s.target_milestone;
+		t.bug_severity = s.bug_severity;
+		t.creation_ts = s.creation_ts;
+		t.qa_contact = s.qa_contact;
+		t.status_whiteboard = s.status_whiteboard;
+		t.op_sys = s.op_sys;
+		t.bug_file_loc = s.bug_file_loc;
+		t.short_desc = s.short_desc;
+		t.bug_bugzillaRoot ::= s.bug_bugzillaRoot;
+		t.keywords ::= s.keywords;
+		t.dependson ::= s.dependson;
+		t.blocks ::= s.blocks;
+		t.cc ::= s.cc;
+		t.long_desc ::= s.long_desc;
+		t.attachment ::= s.attachment;
+	}
+rule KeywordsUML2KeywordsEMF
+	transform s: UMLbugzilla!Keywords
+	to t: EMFbugzilla!Keywords {
+	}
+rule DependsonUML2DependsonEMF
+	transform s: UMLbugzilla!Dependson
+	to t: EMFbugzilla!Dependson {
+	}
+rule BlocksUML2BlocksEMF
+	transform s: UMLbugzilla!Blocks
+	to t: EMFbugzilla!Blocks {
+	}
+rule CcUML2CcEMF
+	transform s: UMLbugzilla!Cc
+	to t: EMFbugzilla!Cc {
+	}
+rule LongDescUML2LongDescEMF
+	transform s: UMLbugzilla!LongDesc
+	to t: EMFbugzilla!LongDesc {
+		t.isPrivate = s.isPrivate;
+		t.who = s.who;
+		t.bug_when = s.bug_when;
+		t.thetext = s.thetext;
+	}
+rule AttachmentUML2AttachmentEMF
+	transform s: UMLbugzilla!Attachment
+	to t: EMFbugzilla!Attachment {
+		t.isObsolete = s.isObsolete;
+		t.isPatch = s.isPatch;
+		t.isPrivate = s.isPrivate;
+		t.theId = s.theId;
+		t.date = s.date;
+		t.desc = s.desc;
+		t.theType = s.theType;
+		t.data = s.data;
+	}
+

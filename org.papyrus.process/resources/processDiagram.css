@@ -4,7 +4,6 @@
 	displayName:true;
 	elementIcon:false;
 	isNameWrap: true;
-	bold:true;
 	transparency:100;
 	followSVGSymbol:true;
 	displayIcon:false;
@@ -55,6 +54,9 @@ Compartment[kind="symbol"]  {
 	
 	*/
 }
+	[appliedStereotypes~=Tool] {
+		bold: true;
+	}
 [appliedStereotypes~=Person] {
 	svgFile: 'platform:/plugin/org.papyrus.process/shapes/per.svg';
 	/*
@@ -71,3 +73,6 @@ Compartment[kind="symbol"]  {
 	roundedBendpointsRadius:10;
 	*/
 }
+		[appliedStereotypes~=familiarWith] {
+			fontHeight: 15;
+		}

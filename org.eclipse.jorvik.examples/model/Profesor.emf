@@ -1,5 +1,5 @@
 @namespace(uri="profesor", prefix="profesor")
-@Diagram(label="Professor", icon="icons/application-diagram-16.png")
+@Diagram(name="Professor", icon="icons/application-diagram-16.png")
 package profesor;
 
 class ProfesorRoot {
