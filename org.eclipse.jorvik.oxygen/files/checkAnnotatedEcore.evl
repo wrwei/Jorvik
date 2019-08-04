@@ -4,6 +4,11 @@ constraint OnlyOneDiagramAnnotation {
 	message : "Each ECore metamodel should have exactly one @Diagram annotation."
 }
 
+constraint EdgesHaveUniqueNames {
+	check : ENamedElement.all().select(e|e.getEAnnotation("Edge").isDefined()).size() == ENamedElement.all().select(e|e.getEAnnotation("Edge").isDefined()).name.asSet().size()
+	message : "Each element annotated with @Edge should have a unique name."
+}
+
 context EPackage {
 	
 	constraint DiagramAnnotationHasName {
