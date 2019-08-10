@@ -289,7 +289,13 @@ operation calculateTheBodyOfTheCheckEndTypesConstraint(s,c) {
 		source = c.eContainingClass.name;
 		target = c.etype.name;
 	}
-	return "let source = self.base_" + base + ".endType->selectByKind(UML::" + sourceBase + "), target = self.base_" + base + ".endType->selectByKind(UML::" + targetBase + ") in source->exists(c|c.extension_" + source + "->notEmpty()) and target->exists(c|c.extension_" + target + " -> notEmpty())";
+	if(base = "Association"){
+		return "let source = self.base_" + base + ".endType->selectByKind(UML::" + sourceBase + "), target = self.base_" + base + ".endType->selectByKind(UML::" + targetBase + ") in source->exists(c|c.extension_" + source + "->notEmpty()) and target->exists(c|c.extension_" + target + " -> notEmpty())";
+	}
+	else if(base = "Dependency" or base = "Realization" or base = "Usage" or base = "InformationFlow" or base = "Generalization"){
+		return "let source = self.base_" + base + ".source->selectByKind(UML::" + sourceBase + "), target = self.base_" + base + ".target->selectByKind(UML::" + targetBase + ") in source->exists(c|c.extension_" + source + "->notEmpty()) and target->exists(c|c.extension_" + target + " -> notEmpty())";
+	}
+	
 }
 
 operation calculateTheBodyOfTheCheckNavigabilityConstraint(s,c) {
@@ -307,11 +313,18 @@ operation calculateTheBodyOfTheCheckNavigabilityConstraint(s,c) {
 		source = c.eContainingClass.name;
 		target = c.etype.name;
 	}
-	return "let memberEnds = self.base_Association.memberEnd in let " + target +"End = " +
+	var base = c.getEAnnotation("Edge").details.get("base").firstToUpperCase();
+	if(base = "Association"){
+		return "let memberEnds = self.base_Association.memberEnd in let " + target +"End = " +
 	"memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_" + source +"->notEmpty()), " + source + "End = " +
 	"memberEnds->select(type.oclIsKindOf(UML::Class) and type.oclAsType(UML::Class).extension_" + target + "->notEmpty())in " +
 	"if " + source + "End->notEmpty() and " + target + "End->notEmpty() then " + source + "End->first().isNavigable() = " +
 	"true and " + target + "End->first().isNavigable() = false else false endif";
+	}
+	else if(base = "Dependency" or base = "Realization" or base = "Usage" or base = "InformationFlow" or base = "Generalization"){
+		return "let source = self.base_" + base +".source, target = self.base_" + base + ".target in if source->notEmpty() and target->notEmpty() then source.isNavigable() = true and target.isNavigable = false else false endif";
+	}
+	
 }
 
 operation calculateTheBodyOfTheCheckNavigabilityConstraintTwo(s,c) {
