@@ -49,12 +49,13 @@ context EClass {
 		guard : self.satisfies("EdgeAnnotationHasBaseClass")
 		check {
 			var c = self.getEAnnotation("Edge").details.get("base");
-			c = "Association" or
-			c = "Dependency" or
-			c = "Realization" or
-			c = "Usage" or
-			c = "InformationFlow" or
-			c = "Generalization";
+			return 
+			(c = "Association") or
+			(c = "Dependency") or
+			(c = "Realization") or
+			(c = "Usage") or
+			(c = "InformationFlow") or
+			(c = "Generalization");
 		} 
 		message : 'Base element ' + self.getEAnnotation("Edge").details.get("base") + 'is not supported.'
 	
