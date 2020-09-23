@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.jorvik.feature_1.0.0.202009231658.jar" id="org.eclipse.jorvik.feature" version="1.0.0.202009231658">
+      <category name="org.eclipse.jorvik"/>
+   </feature>
+   <category-def name="org.eclipse.jorvik" label="Jorvik"/>
+</site>
